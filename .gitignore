@@ -2,8 +2,10 @@ single_vis/
 data/
 classification/log*
 classification/output
+classification/__pycache__
 segmentation/log*
 segmentation/output
+segmentation/__pycache__
 shapenetpart/log*
 shapenetpart/output
-
+shapenetpart/__pycache__
