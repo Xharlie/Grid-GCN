@@ -1,0 +1,9 @@
+single_vis/
+data/
+classification/log*
+classification/output
+segmentation/log*
+segmentation/output
+shapenetpart/log*
+shapenetpart/output
+
