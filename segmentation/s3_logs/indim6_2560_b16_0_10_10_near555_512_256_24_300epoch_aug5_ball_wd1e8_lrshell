@@ -1,0 +1,693 @@
+nohup: ignoring input
+/mnt/truenas/scratch/qiangeng/dev/GGCN/segmentation/train/../../gridifyop/additional.so
+pid: 8383
+take_up_shapes [[16, 256, 5, 24, 256], [16, 512, 5, 256, 128], [16, 2560, 5, 512, 128]]
+pt_mlp_lst: [32, 32, 64]
+pt_mlp_lst: [64, 64, 128]
+pt_mlp_lst: [128, 128, 256]
+uplayer 0, take_up_shapes: [16, 256, 5, 24, 260]
+pt_mlp_lst: [128]
+uplayer 1, take_up_shapes: [16, 512, 5, 256, 132]
+pt_mlp_lst: [128]
+uplayer 2, take_up_shapes: [16, 2560, 5, 512, 132]
+pt_mlp_lst: [128]
+[('fc1/bn_beta', (128,)),
+ ('fc1/bn_gamma', (128,)),
+ ('fc1_bias', (128,)),
+ ('fc1_weight', (128, 128, 1)),
+ ('fc2_bias', (14,)),
+ ('fc2_weight', (14, 128, 1)),
+ ('sub_g_0/conv1/bn_beta', (32,)),
+ ('sub_g_0/conv1/bn_gamma', (32,)),
+ ('sub_g_0/conv1_bias', (32,)),
+ ('sub_g_0/conv1_weight', (32, 6, 1, 1)),
+ ('sub_g_0/conv2/bn_beta', (32,)),
+ ('sub_g_0/conv2/bn_gamma', (32,)),
+ ('sub_g_0/conv2_bias', (32,)),
+ ('sub_g_0/conv2_weight', (32, 32, 1, 1)),
+ ('sub_g_0/conv3/bn_beta', (64,)),
+ ('sub_g_0/conv3/bn_gamma', (64,)),
+ ('sub_g_0/conv3_bias', (64,)),
+ ('sub_g_0/conv3_weight', (64, 32, 1, 1)),
+ ('sub_g_0/update_att_mlp2d_frst/conv1/bn_beta', (16,)),
+ ('sub_g_0/update_att_mlp2d_frst/conv1/bn_gamma', (16,)),
+ ('sub_g_0/update_att_mlp2d_frst/conv1_bias', (16,)),
+ ('sub_g_0/update_att_mlp2d_frst/conv1_weight', (16, 10, 1, 1)),
+ ('sub_g_0/update_att_mlp2d_scnd/conv1/bn_beta', (64,)),
+ ('sub_g_0/update_att_mlp2d_scnd/conv1/bn_gamma', (64,)),
+ ('sub_g_0/update_att_mlp2d_scnd/conv1_bias', (64,)),
+ ('sub_g_0/update_att_mlp2d_scnd/conv1_weight', (64, 16, 1, 1)),
+ ('sub_g_1/conv1/bn_beta', (64,)),
+ ('sub_g_1/conv1/bn_gamma', (64,)),
+ ('sub_g_1/conv1_bias', (64,)),
+ ('sub_g_1/conv1_weight', (64, 64, 1, 1)),
+ ('sub_g_1/conv2/bn_beta', (64,)),
+ ('sub_g_1/conv2/bn_gamma', (64,)),
+ ('sub_g_1/conv2_bias', (64,)),
+ ('sub_g_1/conv2_weight', (64, 64, 1, 1)),
+ ('sub_g_1/conv3/bn_beta', (128,)),
+ ('sub_g_1/conv3/bn_gamma', (128,)),
+ ('sub_g_1/conv3_bias', (128,)),
+ ('sub_g_1/conv3_weight', (128, 64, 1, 1)),
+ ('sub_g_1/update_att_mlp2d_frst/conv1/bn_beta', (32,)),
+ ('sub_g_1/update_att_mlp2d_frst/conv1/bn_gamma', (32,)),
+ ('sub_g_1/update_att_mlp2d_frst/conv1_bias', (32,)),
+ ('sub_g_1/update_att_mlp2d_frst/conv1_weight', (32, 10, 1, 1)),
+ ('sub_g_1/update_att_mlp2d_scnd/conv1/bn_beta', (128,)),
+ ('sub_g_1/update_att_mlp2d_scnd/conv1/bn_gamma', (128,)),
+ ('sub_g_1/update_att_mlp2d_scnd/conv1_bias', (128,)),
+ ('sub_g_1/update_att_mlp2d_scnd/conv1_weight', (128, 32, 1, 1)),
+ ('sub_g_2/conv1/bn_beta', (128,)),
+ ('sub_g_2/conv1/bn_gamma', (128,)),
+ ('sub_g_2/conv1_bias', (128,)),
+ ('sub_g_2/conv1_weight', (128, 128, 1, 1)),
+ ('sub_g_2/conv2/bn_beta', (128,)),
+ ('sub_g_2/conv2/bn_gamma', (128,)),
+ ('sub_g_2/conv2_bias', (128,)),
+ ('sub_g_2/conv2_weight', (128, 128, 1, 1)),
+ ('sub_g_2/conv3/bn_beta', (256,)),
+ ('sub_g_2/conv3/bn_gamma', (256,)),
+ ('sub_g_2/conv3_bias', (256,)),
+ ('sub_g_2/conv3_weight', (256, 128, 1, 1)),
+ ('sub_g_2/update_att_mlp2d_frst/conv1/bn_beta', (64,)),
+ ('sub_g_2/update_att_mlp2d_frst/conv1/bn_gamma', (64,)),
+ ('sub_g_2/update_att_mlp2d_frst/conv1_bias', (64,)),
+ ('sub_g_2/update_att_mlp2d_frst/conv1_weight', (64, 10, 1, 1)),
+ ('sub_g_2/update_att_mlp2d_scnd/conv1/bn_beta', (256,)),
+ ('sub_g_2/update_att_mlp2d_scnd/conv1/bn_gamma', (256,)),
+ ('sub_g_2/update_att_mlp2d_scnd/conv1_bias', (256,)),
+ ('sub_g_2/update_att_mlp2d_scnd/conv1_weight', (256, 64, 1, 1)),
+ ('up_sub_g_0/center_update/cov1d/conv1/bn_beta', (128,)),
+ ('up_sub_g_0/center_update/cov1d/conv1/bn_gamma', (128,)),
+ ('up_sub_g_0/center_update/cov1d/conv1_bias', (128,)),
+ ('up_sub_g_0/center_update/cov1d/conv1_weight', (128, 256, 1)),
+ ('up_sub_g_0/centerfeats_conv1d/conv1/bn_beta', (128,)),
+ ('up_sub_g_0/centerfeats_conv1d/conv1/bn_gamma', (128,)),
+ ('up_sub_g_0/centerfeats_conv1d/conv1_bias', (128,)),
+ ('up_sub_g_0/centerfeats_conv1d/conv1_weight', (128, 132, 1)),
+ ('up_sub_g_0/conv1/bn_beta', (128,)),
+ ('up_sub_g_0/conv1/bn_gamma', (128,)),
+ ('up_sub_g_0/conv1_bias', (128,)),
+ ('up_sub_g_0/conv1_weight', (128, 256, 1, 1)),
+ ('up_sub_g_0/update_att_mlp2d_frst/conv1/bn_beta', (32,)),
+ ('up_sub_g_0/update_att_mlp2d_frst/conv1/bn_gamma', (32,)),
+ ('up_sub_g_0/update_att_mlp2d_frst/conv1_bias', (32,)),
+ ('up_sub_g_0/update_att_mlp2d_frst/conv1_weight', (32, 10, 1, 1)),
+ ('up_sub_g_0/update_att_mlp2d_scnd/conv1/bn_beta', (128,)),
+ ('up_sub_g_0/update_att_mlp2d_scnd/conv1/bn_gamma', (128,)),
+ ('up_sub_g_0/update_att_mlp2d_scnd/conv1_bias', (128,)),
+ ('up_sub_g_0/update_att_mlp2d_scnd/conv1_weight', (128, 32, 1, 1)),
+ ('up_sub_g_1/center_update/cov1d/conv1/bn_beta', (128,)),
+ ('up_sub_g_1/center_update/cov1d/conv1/bn_gamma', (128,)),
+ ('up_sub_g_1/center_update/cov1d/conv1_bias', (128,)),
+ ('up_sub_g_1/center_update/cov1d/conv1_weight', (128, 256, 1)),
+ ('up_sub_g_1/centerfeats_conv1d/conv1/bn_beta', (128,)),
+ ('up_sub_g_1/centerfeats_conv1d/conv1/bn_gamma', (128,)),
+ ('up_sub_g_1/centerfeats_conv1d/conv1_bias', (128,)),
+ ('up_sub_g_1/centerfeats_conv1d/conv1_weight', (128, 68, 1)),
+ ('up_sub_g_1/conv1/bn_beta', (128,)),
+ ('up_sub_g_1/conv1/bn_gamma', (128,)),
+ ('up_sub_g_1/conv1_bias', (128,)),
+ ('up_sub_g_1/conv1_weight', (128, 128, 1, 1)),
+ ('up_sub_g_1/update_att_mlp2d_frst/conv1/bn_beta', (32,)),
+ ('up_sub_g_1/update_att_mlp2d_frst/conv1/bn_gamma', (32,)),
+ ('up_sub_g_1/update_att_mlp2d_frst/conv1_bias', (32,)),
+ ('up_sub_g_1/update_att_mlp2d_frst/conv1_weight', (32, 10, 1, 1)),
+ ('up_sub_g_1/update_att_mlp2d_scnd/conv1/bn_beta', (128,)),
+ ('up_sub_g_1/update_att_mlp2d_scnd/conv1/bn_gamma', (128,)),
+ ('up_sub_g_1/update_att_mlp2d_scnd/conv1_bias', (128,)),
+ ('up_sub_g_1/update_att_mlp2d_scnd/conv1_weight', (128, 32, 1, 1)),
+ ('up_sub_g_2/center_update/cov1d/conv1/bn_beta', (128,)),
+ ('up_sub_g_2/center_update/cov1d/conv1/bn_gamma', (128,)),
+ ('up_sub_g_2/center_update/cov1d/conv1_bias', (128,)),
+ ('up_sub_g_2/center_update/cov1d/conv1_weight', (128, 256, 1)),
+ ('up_sub_g_2/centerfeats_conv1d/conv1/bn_beta', (128,)),
+ ('up_sub_g_2/centerfeats_conv1d/conv1/bn_gamma', (128,)),
+ ('up_sub_g_2/centerfeats_conv1d/conv1_bias', (128,)),
+ ('up_sub_g_2/centerfeats_conv1d/conv1_weight', (128, 4, 1)),
+ ('up_sub_g_2/conv1/bn_beta', (128,)),
+ ('up_sub_g_2/conv1/bn_gamma', (128,)),
+ ('up_sub_g_2/conv1_bias', (128,)),
+ ('up_sub_g_2/conv1_weight', (128, 128, 1, 1)),
+ ('up_sub_g_2/update_att_mlp2d_frst/conv1/bn_beta', (32,)),
+ ('up_sub_g_2/update_att_mlp2d_frst/conv1/bn_gamma', (32,)),
+ ('up_sub_g_2/update_att_mlp2d_frst/conv1_bias', (32,)),
+ ('up_sub_g_2/update_att_mlp2d_frst/conv1_weight', (32, 10, 1, 1)),
+ ('up_sub_g_2/update_att_mlp2d_scnd/conv1/bn_beta', (128,)),
+ ('up_sub_g_2/update_att_mlp2d_scnd/conv1/bn_gamma', (128,)),
+ ('up_sub_g_2/update_att_mlp2d_scnd/conv1_bias', (128,)),
+ ('up_sub_g_2/update_att_mlp2d_scnd/conv1_weight', (128, 32, 1, 1))]
+Total number of parameters: 338846
+[('fc1/bn_moving_mean', (128,)),
+ ('fc1/bn_moving_var', (128,)),
+ ('sub_g_0/conv1/bn_moving_mean', (32,)),
+ ('sub_g_0/conv1/bn_moving_var', (32,)),
+ ('sub_g_0/conv2/bn_moving_mean', (32,)),
+ ('sub_g_0/conv2/bn_moving_var', (32,)),
+ ('sub_g_0/conv3/bn_moving_mean', (64,)),
+ ('sub_g_0/conv3/bn_moving_var', (64,)),
+ ('sub_g_0/update_att_mlp2d_frst/conv1/bn_moving_mean', (16,)),
+ ('sub_g_0/update_att_mlp2d_frst/conv1/bn_moving_var', (16,)),
+ ('sub_g_0/update_att_mlp2d_scnd/conv1/bn_moving_mean', (64,)),
+ ('sub_g_0/update_att_mlp2d_scnd/conv1/bn_moving_var', (64,)),
+ ('sub_g_1/conv1/bn_moving_mean', (64,)),
+ ('sub_g_1/conv1/bn_moving_var', (64,)),
+ ('sub_g_1/conv2/bn_moving_mean', (64,)),
+ ('sub_g_1/conv2/bn_moving_var', (64,)),
+ ('sub_g_1/conv3/bn_moving_mean', (128,)),
+ ('sub_g_1/conv3/bn_moving_var', (128,)),
+ ('sub_g_1/update_att_mlp2d_frst/conv1/bn_moving_mean', (32,)),
+ ('sub_g_1/update_att_mlp2d_frst/conv1/bn_moving_var', (32,)),
+ ('sub_g_1/update_att_mlp2d_scnd/conv1/bn_moving_mean', (128,)),
+ ('sub_g_1/update_att_mlp2d_scnd/conv1/bn_moving_var', (128,)),
+ ('sub_g_2/conv1/bn_moving_mean', (128,)),
+ ('sub_g_2/conv1/bn_moving_var', (128,)),
+ ('sub_g_2/conv2/bn_moving_mean', (128,)),
+ ('sub_g_2/conv2/bn_moving_var', (128,)),
+ ('sub_g_2/conv3/bn_moving_mean', (256,)),
+ ('sub_g_2/conv3/bn_moving_var', (256,)),
+ ('sub_g_2/update_att_mlp2d_frst/conv1/bn_moving_mean', (64,)),
+ ('sub_g_2/update_att_mlp2d_frst/conv1/bn_moving_var', (64,)),
+ ('sub_g_2/update_att_mlp2d_scnd/conv1/bn_moving_mean', (256,)),
+ ('sub_g_2/update_att_mlp2d_scnd/conv1/bn_moving_var', (256,)),
+ ('up_sub_g_0/center_update/cov1d/conv1/bn_moving_mean', (128,)),
+ ('up_sub_g_0/center_update/cov1d/conv1/bn_moving_var', (128,)),
+ ('up_sub_g_0/centerfeats_conv1d/conv1/bn_moving_mean', (128,)),
+ ('up_sub_g_0/centerfeats_conv1d/conv1/bn_moving_var', (128,)),
+ ('up_sub_g_0/conv1/bn_moving_mean', (128,)),
+ ('up_sub_g_0/conv1/bn_moving_var', (128,)),
+ ('up_sub_g_0/update_att_mlp2d_frst/conv1/bn_moving_mean', (32,)),
+ ('up_sub_g_0/update_att_mlp2d_frst/conv1/bn_moving_var', (32,)),
+ ('up_sub_g_0/update_att_mlp2d_scnd/conv1/bn_moving_mean', (128,)),
+ ('up_sub_g_0/update_att_mlp2d_scnd/conv1/bn_moving_var', (128,)),
+ ('up_sub_g_1/center_update/cov1d/conv1/bn_moving_mean', (128,)),
+ ('up_sub_g_1/center_update/cov1d/conv1/bn_moving_var', (128,)),
+ ('up_sub_g_1/centerfeats_conv1d/conv1/bn_moving_mean', (128,)),
+ ('up_sub_g_1/centerfeats_conv1d/conv1/bn_moving_var', (128,)),
+ ('up_sub_g_1/conv1/bn_moving_mean', (128,)),
+ ('up_sub_g_1/conv1/bn_moving_var', (128,)),
+ ('up_sub_g_1/update_att_mlp2d_frst/conv1/bn_moving_mean', (32,)),
+ ('up_sub_g_1/update_att_mlp2d_frst/conv1/bn_moving_var', (32,)),
+ ('up_sub_g_1/update_att_mlp2d_scnd/conv1/bn_moving_mean', (128,)),
+ ('up_sub_g_1/update_att_mlp2d_scnd/conv1/bn_moving_var', (128,)),
+ ('up_sub_g_2/center_update/cov1d/conv1/bn_moving_mean', (128,)),
+ ('up_sub_g_2/center_update/cov1d/conv1/bn_moving_var', (128,)),
+ ('up_sub_g_2/centerfeats_conv1d/conv1/bn_moving_mean', (128,)),
+ ('up_sub_g_2/centerfeats_conv1d/conv1/bn_moving_var', (128,)),
+ ('up_sub_g_2/conv1/bn_moving_mean', (128,)),
+ ('up_sub_g_2/conv1/bn_moving_var', (128,)),
+ ('up_sub_g_2/update_att_mlp2d_frst/conv1/bn_moving_mean', (32,)),
+ ('up_sub_g_2/update_att_mlp2d_frst/conv1/bn_moving_var', (32,)),
+ ('up_sub_g_2/update_att_mlp2d_scnd/conv1/bn_moving_mean', (128,)),
+ ('up_sub_g_2/update_att_mlp2d_scnd/conv1/bn_moving_var', (128,))]
+{'loc_weight': True, 'grid_size_lst': [[40, 40, 40], [15, 15, 15], [5, 5, 5]], 'stride_lst': [1, 1, 1], 'up_max_p_grid_lst': [5, 5, 5], 'up_att_full': None, 'bn_decay': 0.9, 'fps': False, 'lr_policy': 'step', 'up_type': 'grid', 'up_grid_size_lst': [[5, 5, 5], [15, 15, 15], [40, 40, 40]], 'gpus': '2', 'load_model_prefix': None, 'manual_weights': None, 'load_model_epoch': 0, 'val_interval': 1, 'use_global_stats': False, 'agg': 'max_pooling', 'num_points': 2560, 'up_neigh_fetch': True, 'bn_decay_sample': 10000000, 'num_epochs': 200, 'bn_decay_factor': 0.5, 'up_voxel_size_lst': [[0.4, 0.4, 0.4], [0.133333, 0.133333, 0.133333], [0.05, 0.05, 0.05]], 'voxel_size_lst': [[0.05, 0.05, 0.05], [0.133333, 0.133333, 0.133333], [0.4, 0.4, 0.4]], 'indim': 6, 'up_kernel_size_lst': [3, 3, 3], 'normalize': 'ball', 'neigh_fetch': 0, 'up_pt_ele_dim': [[128], [128], [128]], 'up_stride_lst': [1, 1, 1], 'relu': False, 'kernel_size_lst': [3, 3, 3], 'up_max_o_grid_lst': [256, 512, 2560], 'point_set': 'partial', 'batch_size': 16, 'input_dropout_ratio': 0.125, 'pt_ele_dim': [[32, 32, 64], [64, 64, 128], [128, 128, 256]], 'task': 'seg', 'lr_factor': 0.8, 'loc_within': True, 'up_agg': 'max_pooling', 'up_attfdim': 10, 'kvstore': 'local', 'per_class_weights': 'none', 'lr': 0.001, 'up_center_inte': 'concat', 'lidar_coord': [1.0, 1.0, 1.0], 'up_cntxt_mlp_lst': None, 'cntxt_mlp_lst': None, 'weight_decay': 1e-08, 'checkpoint_interval': 10, 'att_full': None, 'momentum': 0.9, 'use_cpu': False, 'model_dir': 'output', 'up_gcn_outDim': [[128], [128], [128]], 'beta2': 0.999, 'save_model_prefix': 'indim6_2560_b16_0_10_10_near555_512_256_24_300epoch_aug5_ball_wd1e8_lrshell', 'localfdim': 0, 'display_interval': 20, 'num_channel': 3, 'elevation': [], 'timestamp': '2019_10_22_16:51:36', 'up_center_dim': [[128], [128], [128]], 'up_aggtype': 'gcn', 'hash': 'para', 'lr_factor_epochs': [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60], 'optimizer': 'adam', 'data_dir': '../data/3DIS', 'bn_decay_clip': 0.99, 'inputDim': [3, 64, 128], 'relutp': 'relu', 'aggtype': 'gcn', 'single_padding_lst': ['none', 'none', 'none'], 'up_inputDim': [256, 128, 128], 'use_bn': 't', 'gcn_outDim': [[], [], []], 'max_o_grid_lst': [512, 256, 24], 'beta1': 0.9, 'lr_factor_sample': 36000, 'max_p_grid_lst': [64, 32, 32], 'attfdim': 10, 'aug_lv': 5, 'use_normal': False}
+seg_list reordered!
+[16:54:33] src/operator/nn/./cudnn/./cudnn_algoreg-inl.h:97: Running performance tests to find the best convolution algorithm, this can take a while... (set the environment variable MXNET_CUDNN_AUTOTUNE_DEFAULT to 0 to disable)
+Epoch 1, Batch 20, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.351083984375, 0.28834615557150545, 2.269171675937556]), lr 0.001000
+Epoch 1, Batch 40, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.4529913330078125, 0.3936919474401054, 1.9215520084999553]), lr 0.001000
+Epoch 1, Batch 60, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.5147021484375, 0.45549955423699606, 1.725942720566063]), lr 0.001000
+Epoch 1, Batch 80, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.5567807006835938, 0.5011868043355018, 1.591047741489073]), lr 0.001000
+Epoch 1, Batch 100, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.582823486328125, 0.5320634729309244, 1.4957104781776225]), lr 0.001000
+Epoch 1, Batch 120, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6099420166015626, 0.5606700765545956, 1.4085264238807633]), lr 0.001000
+Epoch 1, Batch 140, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6201923479352679, 0.5716397995599785, 1.3826135900186562]), lr 0.001000
+Epoch 1, Batch 160, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6207075500488282, 0.5710145552265922, 1.3840293148879996]), lr 0.001000
+Epoch 1, Batch 180, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6236031087239583, 0.5744066425189877, 1.3705598199661209]), lr 0.001000
+Epoch 1, Batch 200, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.629602294921875, 0.5802964467642416, 1.347826591915372]), lr 0.001000
+Epoch 1, Batch 220, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6380839399857955, 0.5885953713622203, 1.3180069239609227]), lr 0.001000
+Epoch 1, Batch 240, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6441852823893229, 0.5950302410659706, 1.2973592918041807]), lr 0.001000
+Epoch 1, Batch 260, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6479956993689904, 0.5990996399858072, 1.2850991027838898]), lr 0.001000
+Epoch 1, Batch 280, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6531706891741071, 0.6045536040259714, 1.2636217332747264]), lr 0.001000
+Epoch 1, Batch 300, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6603130696614583, 0.6124356632689065, 1.2366761269376443]), lr 0.001000
+Epoch 1, Batch 320, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6677424621582031, 0.6202414101008221, 1.2107109481249987]), lr 0.001000
+Epoch 1, Batch 340, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6731364889705882, 0.6263808486512294, 1.1919559233795916]), lr 0.001000
+Epoch 1, Batch 360, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6740532090928819, 0.6272886805572957, 1.1874017988123657]), lr 0.001000
+Epoch 1, Batch 380, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.677545166015625, 0.6308348601071236, 1.173548244270709]), lr 0.001000
+Epoch 1, Batch 400, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.679776123046875, 0.6336843624261705, 1.1607467237527125]), lr 0.001000
+Epoch 1, Batch 420, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6809073311941964, 0.6351536038940487, 1.1540560306135517]), lr 0.001000
+Epoch 1, Batch 440, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6843106356534091, 0.63905817089428, 1.139868662730564]), lr 0.001000
+Epoch 1, Batch 460, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6811973505434783, 0.6359858235453992, 1.153827525867815]), lr 0.001000
+Epoch 1, Batch 480, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6803257242838542, 0.635057872245578, 1.1539496226452306]), lr 0.001000
+Epoch 1, Batch 500, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.68116533203125, 0.6362802983079833, 1.1480252716731465]), lr 0.001000
+Epoch 1, Batch 520, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6825443209134615, 0.63824575575984, 1.1415800496682482]), lr 0.001000
+Epoch 1, Batch 540, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6846659342447917, 0.6404198369395837, 1.1340099777728114]), lr 0.001000
+Epoch 1, Batch 560, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.685423845563616, 0.6410102280355483, 1.1301783960263316]), lr 0.001000
+Epoch 1, Batch 580, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6877536536907327, 0.6439520658260868, 1.118724515607008]), lr 0.001000
+Epoch 1, Batch 600, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6892366536458333, 0.645898450342824, 1.11234845024373]), lr 0.001000
+Epoch 1, Batch 620, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6922779501638104, 0.6491727357312469, 1.1017871949882985]), lr 0.001000
+Epoch 1, Batch 640, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6951258087158203, 0.6526296975550581, 1.0913921068940118]), lr 0.001000
+Epoch 1, Batch 660, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6952857924952651, 0.6525185701810126, 1.0919778797273099]), lr 0.001000
+Epoch 1, Batch 680, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6963685159122243, 0.6538994975354715, 1.0863781820338874]), lr 0.001000
+Epoch 1, Batch 700, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.698030517578125, 0.655722998635761, 1.0793318430379077]), lr 0.001000
+Epoch 1, Batch 720, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6981256442599827, 0.6559359776382624, 1.0797383814358004]), lr 0.001000
+Epoch 1, Batch 740, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.69839111328125, 0.6564106094534891, 1.078125278523923]), lr 0.001000
+Epoch 1, Batch 760, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.6996104029605263, 0.657841439617648, 1.07298055468808]), lr 0.001000
+Epoch 1, Batch 780, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7014587715344551, 0.6597804810044146, 1.0658080764246367]), lr 0.001000
+discard one scene, sample_num - pt_num > pt_num 2319 1102
+Epoch 1, Batch 800, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7033634948730468, 0.6619714051857633, 1.058231386721418]), lr 0.001000
+Epoch 1, Batch 820, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7044438357469512, 0.6632642265657208, 1.0546129818148087]), lr 0.001000
+Epoch 1, Batch 840, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7066759963262649, 0.6657195929626861, 1.0464977892087697]), lr 0.001000
+Epoch 1, Batch 860, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7090983262172965, 0.6685856706625013, 1.036797255100009]), lr 0.001000
+Epoch 1, Batch 880, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7095309170809659, 0.6691682868176632, 1.0359586310992368]), lr 0.001000
+Epoch 1, Batch 900, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7098510470920139, 0.6694548865080442, 1.034565479197892]), lr 0.001000
+Epoch 1, Batch 920, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7104392142917799, 0.6701730560773476, 1.0312775823547682]), lr 0.001000
+Epoch 1, Batch 940, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7108972947140958, 0.6707324014441748, 1.02859412187792]), lr 0.001000
+Epoch 1, Batch 960, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7124041493733724, 0.6723216296271645, 1.022584065184332]), lr 0.001000
+Epoch 1, Batch 980, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7136402363679847, 0.6738009330898421, 1.0173338881433518]), lr 0.001000
+discard one scene, sample_num - pt_num > pt_num 2121 1058
+Epoch 1, Batch 1000, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.715306396484375, 0.6759006521193326, 1.0099095603211343]), lr 0.001000
+Epoch 1, Batch 1020, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7170033892463236, 0.6779551820459765, 1.0027366345121764]), lr 0.001000
+Epoch 1, Batch 1040, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7181869506835937, 0.6793643870056181, 0.9977405035817856]), lr 0.001000
+Epoch 1, Batch 1060, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.718142780807783, 0.6792600083708387, 0.99785247512111]), lr 0.001000
+Epoch 1, Batch 1080, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7191999195240162, 0.6803994628003637, 0.993478320994326]), lr 0.001000
+Epoch 1, Batch 1100, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7203369362571023, 0.6816526466185737, 0.9904171262036385]), lr 0.001000
+Epoch 1, Batch 1120, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.721952122279576, 0.6835612496440419, 0.9844310198849998]), lr 0.001000
+Epoch 1, Batch 1140, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7241548879523027, 0.6860772149126805, 0.9764553186334778]), lr 0.001000
+Epoch 1, Batch 1160, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7261302027209052, 0.6882632589184291, 0.9700434069712691]), lr 0.001000
+Epoch 1, Batch 1180, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.727987846762447, 0.690271495806415, 0.9643253373006523]), lr 0.001000
+Epoch 1, Batch 1200, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7295373128255208, 0.692110957417576, 0.9588363772494417]), lr 0.001000
+Epoch 1, Batch 1220, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7302660132236168, 0.692947520715748, 0.9561425303630112]), lr 0.001000
+Epoch 1, Batch 1240, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7319869896673387, 0.6949018268153454, 0.9495271035108558]), lr 0.001000
+Epoch 1, Batch 1260, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7339517454117064, 0.6972771805386235, 0.9418202220843608]), lr 0.001000
+Epoch 1, Batch 1280, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7356767082214355, 0.6992335464402556, 0.9351971574339143]), lr 0.001000
+Epoch 1, Batch 1300, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7357695500300481, 0.6992943555144638, 0.9353753623411318]), lr 0.001000
+Epoch 1, Batch 1320, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7364570756392046, 0.7001365772257899, 0.9320476399430658]), lr 0.001000
+Epoch 1, Batch 1340, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7368262994111474, 0.700526611674469, 0.9310221748961003]), lr 0.001000
+Epoch 1, Batch 1360, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7378929048426011, 0.7017348766505416, 0.9268011561201849]), lr 0.001000
+Epoch 1, Batch 1380, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.73902099609375, 0.7029018503844366, 0.9223888411195234]), lr 0.001000
+Epoch 1, Batch 1400, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.739260759626116, 0.7031728564959007, 0.9215460444837428]), lr 0.001000
+Epoch 1, Batch 1420, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7396614869883362, 0.7035383599705728, 0.92043823836382]), lr 0.001000
+Epoch 1, Batch 1440, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7405332438151042, 0.7044424626802979, 0.9174425223942828]), lr 0.001000
+Epoch 1, Batch 1460, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7414504628638698, 0.7055502632313507, 0.9137387204568291]), lr 0.001000
+Epoch 1, Batch 1480, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.742563575538429, 0.7068982895215471, 0.9094170967158107]), lr 0.001000
+Epoch 1, Batch 1500, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.742982958984375, 0.7074106310143572, 0.9081569423133129]), lr 0.001000
+Epoch 1, Batch 1520, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7427539865594162, 0.7070925713428803, 0.9089827414937706]), lr 0.001000
+Epoch 1, Batch 1540, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7431280438311688, 0.7074721087242718, 0.907101270191307]), lr 0.001000
+Epoch 1, Batch 1560, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7438779077774439, 0.7082611234195558, 0.9041179036295351]), lr 0.001000
+Epoch 1, Batch 1580, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7442805732051029, 0.7087483463964068, 0.9021681844138789]), lr 0.001000
+Epoch 1, Batch 1600, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7444382019042969, 0.7090025312920063, 0.9010027582695237]), lr 0.001000
+Epoch 1, Batch 1620, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.744840977044753, 0.7095433056349978, 0.8986251510105314]), lr 0.001000
+Epoch 1, Batch 1640, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7454277522389482, 0.71016204596405, 0.8961618348180619]), lr 0.001000
+Epoch 1, Batch 1660, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7462528385024473, 0.7110295583558038, 0.8936797754783833]), lr 0.001000
+Epoch 1, Batch 1680, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7471985880533855, 0.712170197674281, 0.8899998408319366]), lr 0.001000
+Epoch 1, Batch 1700, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7477544950597427, 0.7129755579764248, 0.8873027641219982]), lr 0.001000
+Epoch 1, Batch 1720, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7478864377043968, 0.7131149368323537, 0.8862836289447815]), lr 0.001000
+Epoch 1, Batch 1740, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7482397040005387, 0.7134892159490751, 0.884265739790622]), lr 0.001000
+Epoch 1, Batch 1760, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7491124101118608, 0.7144236253372778, 0.8807785567261451]), lr 0.001000
+Epoch 1, Batch 1780, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7497641848446278, 0.7151823739492346, 0.8781768625744175]), lr 0.001000
+Epoch 1, Batch 1800, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7502806939019098, 0.7157905221663854, 0.8769840111953006]), lr 0.001000
+Epoch 1, Batch 1820, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7512979293655563, 0.7169353921567064, 0.8735625138640797]), lr 0.001000
+Epoch 1, Batch 1840, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.752422803795856, 0.7182382818798982, 0.8695706424577687]), lr 0.001000
+Epoch 1, Batch 1860, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7534082425025201, 0.7193506292182493, 0.866055360944169]), lr 0.001000
+Epoch 1, Batch 1880, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7542502155709774, 0.7202570466845263, 0.8630444328673641]), lr 0.001000
+Epoch 1, Batch 1900, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.755272306743421, 0.721366833845386, 0.859279012739798]), lr 0.001000
+Epoch 1, Batch 1920, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7559109878540039, 0.7220908796084492, 0.8572473799715599]), lr 0.001000
+Epoch 1, Batch 1940, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7564184066929768, 0.7226702744668798, 0.855287930113338]), lr 0.001000
+Epoch 1, Batch 1960, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7571323939732143, 0.7235137184918017, 0.8523586970684924]), lr 0.001000
+Epoch 1, Batch 1980, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7573167095762311, 0.7237252032311265, 0.8515697110957109]), lr 0.001000
+Epoch 1, Batch 2000, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7578800415039062, 0.7243571438381241, 0.849413712813188]), lr 0.001000
+Epoch 1, Batch 2020, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7584895672184406, 0.7250521589141969, 0.8469559878216895]), lr 0.001000
+Epoch 1, Batch 2040, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7592140227673101, 0.7258977567573928, 0.844131400072394]), lr 0.001000
+Epoch 1, Batch 2060, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7599360493780339, 0.7267301314840099, 0.8411551548640747]), lr 0.001000
+Epoch 1, Batch 2080, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7602941425030048, 0.7270819575098837, 0.8400668752323296]), lr 0.001000
+Epoch 1, Batch 2100, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7604905017671131, 0.7273016877159278, 0.8389629295790093]), lr 0.001000
+Epoch 1, Batch 2120, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7606489188716097, 0.7275635028184455, 0.8376469767028997]), lr 0.001000
+Epoch 1, Batch 2140, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7610917991566881, 0.7280596928824347, 0.8355388310535605]), lr 0.001000
+discard one scene, sample_num - pt_num > pt_num 2209 964
+Epoch 1, Batch 2160, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7614008246527778, 0.7284319992790963, 0.8342114890952534]), lr 0.001000
+Epoch 1, Batch 2180, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7617583388582282, 0.7288638184873075, 0.8327520569760727]), lr 0.001000
+Epoch 1, Batch 2200, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7622276500355114, 0.7294311934841387, 0.8306652207335034]), lr 0.001000
+Epoch 1, Batch 2220, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7627509369721284, 0.7300178978999734, 0.8284113664854793]), lr 0.001000
+Epoch 1, Batch 2240, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7631046186174665, 0.7304678193745752, 0.8270034541524799]), lr 0.001000
+Epoch 1, Batch 2260, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7636221394496682, 0.7310822672650272, 0.8249833608666564]), lr 0.001000
+Epoch 1, Batch 2280, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7640476266961349, 0.7315018160712892, 0.8234590979177618]), lr 0.001000
+Epoch 1, Batch 2300, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7647109056555706, 0.7322390972480127, 0.8208661386493431]), lr 0.001000
+Epoch 1, Batch 2320, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7653874785324623, 0.7330634230369332, 0.8182221476882529]), lr 0.001000
+Epoch 1, Batch 2340, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7661114867120726, 0.7339207297728295, 0.8156330139834247]), lr 0.001000
+Epoch 1, Batch 2360, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7670333707130561, 0.7349771536979548, 0.8121754177619893]), lr 0.001000
+Epoch 1, Batch 2380, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7680554609539129, 0.7361224793762098, 0.8085050207190293]), lr 0.001000
+Epoch 1, Batch 2400, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.768990987141927, 0.7372814962693984, 0.8049283939651288]), lr 0.001000
+Epoch 1, Batch 2420, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7691542040612087, 0.7374951282614991, 0.8044307016859541]), lr 0.001000
+Epoch 1, Batch 2440, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7697603419569672, 0.7381384127594077, 0.8022510290481719]), lr 0.001000
+Epoch 1, Batch 2460, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7700754454077744, 0.7384921888634381, 0.8009018262228677]), lr 0.001000
+Epoch 1, Batch 2480, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7700972624747984, 0.7384716392793468, 0.8010144012447551]), lr 0.001000
+Epoch 1, Batch 2500, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.770354306640625, 0.7388117418995568, 0.7998506582910762]), lr 0.001000
+Epoch 1, Batch 2520, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7706911117311508, 0.739200104694371, 0.7983930848115289]), lr 0.001000
+Epoch 1, Batch 2540, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7710491895300197, 0.7395904931448503, 0.7970592355619819]), lr 0.001000
+Epoch 1, Batch 2560, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7714526462554931, 0.7400600254317882, 0.7954852417656579]), lr 0.001000
+Epoch 1, Batch 2580, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7718357482437016, 0.7404511928338016, 0.7940762449430373]), lr 0.001000
+Epoch 1, Batch 2600, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7722540752704327, 0.7409450330707905, 0.7922788162870319]), lr 0.001000
+Epoch 1, Batch 2620, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7728396350190839, 0.7415917050229366, 0.7900894305186129]), lr 0.001000
+Epoch 1, Batch 2640, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7731010113340435, 0.7418909136556423, 0.7895072785768401]), lr 0.001000
+Epoch 1, Batch 2660, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7734166470864662, 0.7422650061802727, 0.7883022242224786]), lr 0.001000
+Epoch 1, Batch 2680, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.773965818490555, 0.7428289722770952, 0.7863981931794164]), lr 0.001000
+Epoch 1, Batch 2700, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7745935601128472, 0.7435618508570988, 0.7840320437985415]), lr 0.001000
+Epoch 1, Batch 2720, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7752508455164292, 0.7442851876823856, 0.7816358360731123]), lr 0.001000
+Epoch 1, Batch 2740, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7748524909471943, 0.7437787289558253, 0.7837872667474111]), lr 0.001000
+Epoch 1, Batch 2760, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7748229361271513, 0.7437054419441455, 0.7837296647615376]), lr 0.001000
+Epoch 1, Batch 2780, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7748687963691546, 0.7437826639737489, 0.7833151270574846]), lr 0.001000
+Epoch 1, Batch 2800, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7750911952427455, 0.7440191681888351, 0.7822911016394721]), lr 0.001000
+Epoch 1, Batch 2820, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7753512768035239, 0.7442951099037124, 0.7810958252051767]), lr 0.001000
+Epoch 1, Batch 2840, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7756095091054137, 0.7445971151108621, 0.779800516377686]), lr 0.001000
+Epoch 1, Batch 2860, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7757390973284528, 0.7447279758377652, 0.7794636905067921]), lr 0.001000
+Epoch 1, Batch 2880, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7760718705919054, 0.745103499713335, 0.7784032757625261]), lr 0.001000
+Epoch 1, Batch 2900, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7763971999595906, 0.7454780387481406, 0.7773558882589496]), lr 0.001000
+Epoch 1, Batch 2920, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7765355609214469, 0.7456506979814559, 0.7766776779680973]), lr 0.001000
+Epoch 1, Batch 2940, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7770061965215774, 0.7461188441491782, 0.7751521206839809]), lr 0.001000
+Epoch 1, Batch 2960, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7774588755014781, 0.746653213103255, 0.7733789950746197]), lr 0.001000
+Epoch 1, Batch 2980, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7776830726981963, 0.7468951141258827, 0.7727385221709393]), lr 0.001000
+Epoch 1, Batch 3000, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7779475260416666, 0.7471991586519159, 0.7716161385163887]), lr 0.001000
+Epoch 1, Batch 3020, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7783894317829056, 0.7476639839023238, 0.7699535983771731]), lr 0.001000
+Epoch 1, Batch 3040, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7786939681203742, 0.7480123374987742, 0.7684706343796674]), lr 0.001000
+Epoch 1, Batch 3060, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7788139073988971, 0.7481647690599488, 0.7685930767871152]), lr 0.001000
+Epoch 1, Batch 3080, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7792424744445008, 0.7486460351324997, 0.767166719215366]), lr 0.001000
+Epoch 1, Batch 3100, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.779913826234879, 0.7493922628323777, 0.7648917408074835]), lr 0.001000
+Epoch 1, Batch 3120, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7805185875525842, 0.7500789793998778, 0.7626742341184694]), lr 0.001000
+Epoch 1, Batch 3140, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7812489581259953, 0.7508951276925264, 0.7600941086746497]), lr 0.001000
+Epoch 1, Batch 3160, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.781986083984375, 0.751761240274789, 0.7573623993862164]), lr 0.001000
+Epoch 1, Batch 3180, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7826532865320361, 0.7525411259168302, 0.7550375586660124]), lr 0.001000
+Epoch 1, Batch 3200, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7828616256713867, 0.7527649718379176, 0.7544824998780079]), lr 0.001000
+Epoch 1, Batch 3220, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7833350140115489, 0.7532913926549053, 0.7528465258940792]), lr 0.001000
+Epoch 1, Batch 3240, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7830348186728395, 0.7529449045956323, 0.7543150810552705]), lr 0.001000
+Epoch 1, Batch 3260, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7831010502540261, 0.7529978323395459, 0.7539839191866038]), lr 0.001000
+Epoch 1, Batch 3280, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7833092442954459, 0.7532072729214375, 0.7531796175702979]), lr 0.001000
+Epoch 1, Batch 3300, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7833948271780303, 0.7533214779026868, 0.7527487281074707]), lr 0.001000
+Epoch 1, Batch 3320, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7837908053110881, 0.75376169479182, 0.7513461511919395]), lr 0.001000
+Epoch 1, Batch 3340, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7839796310698914, 0.7539919891671778, 0.7505314692222024]), lr 0.001000
+Epoch 1, Batch 3360, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7841798037574405, 0.7542017281826732, 0.7496582461394871]), lr 0.001000
+Epoch 1, Batch 3380, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.784511632072855, 0.7545791909931, 0.7483146264608964]), lr 0.001000
+Epoch 1, Batch 3400, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7849340748506434, 0.7550391748337282, 0.7467052580179139]), lr 0.001000
+Epoch 1, Batch 3420, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7850520976105628, 0.7551823024507675, 0.7466456417546473]), lr 0.001000
+Epoch 1, Batch 3440, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7853727118913517, 0.7555680042671347, 0.7455226383260195]), lr 0.001000
+discard one scene, sample_num - pt_num > pt_num 2256 895
+Epoch 1, Batch 3460, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7856768128499819, 0.7559394806885249, 0.7445793198191055]), lr 0.001000
+Epoch 1, Batch 3480, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7857529563465337, 0.7560097040123575, 0.7443123477162013]), lr 0.001000
+Epoch 1, Batch 3500, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7861342006138393, 0.7564472840023434, 0.7428841246831421]), lr 0.001000
+Epoch 1, Batch 3520, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7861577952991833, 0.7564342299237949, 0.7431382100061632]), lr 0.001000
+Epoch 1, Batch 3540, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.786116708874029, 0.75639887875992, 0.7431454312920611]), lr 0.001000
+Epoch 1, Batch 3560, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7862149013562149, 0.756518449520374, 0.7426263216239744]), lr 0.001000
+Epoch 1, Batch 3580, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7864020627836942, 0.7567446512829049, 0.7417430519289695]), lr 0.001000
+Epoch 1, Batch 3600, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7867113444010416, 0.7571050879129064, 0.7406130273834878]), lr 0.001000
+Epoch 1, Batch 3620, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7867888628712016, 0.7572063625931843, 0.7401095954662682]), lr 0.001000
+Epoch 1, Batch 3640, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7868853625622424, 0.7573458471354769, 0.739458043963321]), lr 0.001000
+Epoch 1, Batch 3660, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7872490421149249, 0.7577263975465813, 0.7380819491807362]), lr 0.001000
+Epoch 1, Batch 3680, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7876435520337975, 0.7581614607752784, 0.7365186065356578]), lr 0.001000
+Epoch 1, Batch 3700, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7878330144108953, 0.758368352624113, 0.7358580739831153]), lr 0.001000
+Epoch 1, Batch 3720, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7880968319472447, 0.7586374806527825, 0.7350195841758772]), lr 0.001000
+Epoch 1, Batch 3740, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7884592507102273, 0.7590517885311436, 0.7336634203882633]), lr 0.001000
+Epoch 1, Batch 3760, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7887640186066324, 0.7593877834239701, 0.7328331252649675]), lr 0.001000
+Epoch 1, Batch 3780, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.788987468739666, 0.7596555257157209, 0.73226535393677]), lr 0.001000
+Epoch 1, Batch 3800, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7893349545127467, 0.7600594481077807, 0.7311925095018558]), lr 0.001000
+Epoch 1, Batch 3820, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7897905311784195, 0.7605655302722575, 0.7296627792214109]), lr 0.001000
+Epoch 1, Batch 3840, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7902468172709147, 0.7611004695847229, 0.7281354187740485]), lr 0.001000
+Epoch 1, Batch 3860, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.790750030359456, 0.7616628066817095, 0.7264355972979822]), lr 0.001000
+Epoch 1, Batch 3880, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.790750310838837, 0.7616713837990097, 0.7266840349138479]), lr 0.001000
+Epoch 1, Batch 3900, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7908408954326923, 0.7617697007833452, 0.7262443250750622]), lr 0.001000
+Epoch 1, Batch 3920, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7911105471241231, 0.7620460908828578, 0.7252979876085588]), lr 0.001000
+Epoch 1, Batch 3940, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7912625540331536, 0.7622330103213005, 0.7246674388936354]), lr 0.001000
+Epoch 1, Batch 3960, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7910623384726168, 0.7620189040702157, 0.725125447986488]), lr 0.001000
+Epoch 1, Batch 3980, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7910194834033448, 0.7619716012603976, 0.7249070452850052]), lr 0.001000
+Epoch 1, Batch 4000, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7910371704101562, 0.7619974876172367, 0.7244584834246622]), lr 0.001000
+Epoch 1, Batch 4020, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7911373734355566, 0.762134060926899, 0.7239610161733482]), lr 0.001000
+Epoch 1, Batch 4040, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7914916206586479, 0.7625410248783394, 0.7228481619396504]), lr 0.001000
+Epoch 1, Batch 4060, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.791862955328279, 0.7630034101137572, 0.7214373238474232]), lr 0.001000
+Epoch 1, Batch 4080, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7921624277152267, 0.7633585213462153, 0.7203023037451083]), lr 0.001000
+Epoch 1, Batch 4100, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7925111709222561, 0.7637458213917115, 0.7190532386129991]), lr 0.001000
+seg_list reordered!
+Epoch 1, Batch 4120, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.792934878451153, 0.764226381494917, 0.7174792841910217]), lr 0.001000
+Epoch 1, Batch 4140, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7926757399701841, 0.763929275115123, 0.718308212007082]), lr 0.001000
+Epoch 1, Batch 4160, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.792666989839994, 0.763903685158502, 0.7181844220884334]), lr 0.001000
+Epoch 1, Batch 4180, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7927047335245963, 0.7639524917649316, 0.7178571360173824]), lr 0.001000
+Speed: data 0.0512, train 1.1110
+Epoch 2, Batch 20, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8439954255756579, 0.8210968461030383, 0.5946867525813759]), lr 0.001000
+Epoch 2, Batch 40, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8573004306891026, 0.8368667605859648, 0.5154747739194449]), lr 0.001000
+Epoch 2, Batch 60, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8632630429025424, 0.8433999309816532, 0.4841392242869329]), lr 0.001000
+Epoch 2, Batch 80, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8698038221914557, 0.8509789297299133, 0.45407730385261197]), lr 0.001000
+Epoch 2, Batch 100, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8704328440656566, 0.8523621117677217, 0.44506545493888333]), lr 0.001000
+Epoch 2, Batch 120, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8737171333377101, 0.8565933968564277, 0.4301819568586058]), lr 0.001000
+Epoch 2, Batch 140, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8676863196942446, 0.8496072773359586, 0.4577994735102053]), lr 0.001000
+Epoch 2, Batch 160, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8589852962853773, 0.8401412297128589, 0.4890226722507739]), lr 0.001000
+Epoch 2, Batch 180, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8556590160178073, 0.8362903615233558, 0.5001809866448762]), lr 0.001000
+Epoch 2, Batch 200, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8548887013190954, 0.8351510020323979, 0.502738905710323]), lr 0.001000
+Epoch 2, Batch 220, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8543989904394977, 0.8345435632060378, 0.5028307584223661]), lr 0.001000
+Epoch 2, Batch 240, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8549128448614016, 0.8349192757702661, 0.4997046856883479]), lr 0.001000
+Epoch 2, Batch 260, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.854342592452944, 0.8342543072736481, 0.5012053285153768]), lr 0.001000
+Epoch 2, Batch 280, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8490470640120967, 0.8282709424125481, 0.5159392169010257]), lr 0.001000
+Epoch 2, Batch 300, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8462213726745401, 0.8250648005593115, 0.5220072832408362]), lr 0.001000
+Epoch 2, Batch 320, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8438933465174373, 0.8223305770424568, 0.5265133711032998]), lr 0.001000
+Epoch 2, Batch 340, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8429670935886799, 0.8211633517055127, 0.5283257585914631]), lr 0.001000
+Epoch 2, Batch 360, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8438744505135793, 0.8220189165928772, 0.5265905079493393]), lr 0.001000
+Epoch 2, Batch 380, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8457854499917546, 0.8240778969535242, 0.5209226277867802]), lr 0.001000
+Epoch 2, Batch 400, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.846539566690163, 0.8248513929861631, 0.5194608012828603]), lr 0.001000
+Epoch 2, Batch 420, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.847736251211963, 0.8261767925706891, 0.5162716384574069]), lr 0.001000
+Epoch 2, Batch 440, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8485113539293849, 0.8271350200179179, 0.5140814284402472]), lr 0.001000
+Epoch 2, Batch 460, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8475154569206155, 0.8258382888754123, 0.5181598905048638]), lr 0.001000
+Epoch 2, Batch 480, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8479639487376044, 0.8262291853161442, 0.5159001043589682]), lr 0.001000
+Epoch 2, Batch 500, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8488000414892285, 0.8271711172421456, 0.5118149159558568]), lr 0.001000
+Epoch 2, Batch 520, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8479928253703035, 0.8262288989138105, 0.5142796062581712]), lr 0.001000
+Epoch 2, Batch 540, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.847719753739564, 0.82593613421888, 0.5146229563551847]), lr 0.001000
+Epoch 2, Batch 560, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8473070284548301, 0.8255400316726382, 0.5151527195210734]), lr 0.001000
+Epoch 2, Batch 580, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8476519069111614, 0.8259399401438832, 0.5131812305096959]), lr 0.001000
+Epoch 2, Batch 600, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8471635261242696, 0.825443325344616, 0.514020314620418]), lr 0.001000
+Epoch 2, Batch 620, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8476591292028474, 0.8260073179126685, 0.5118569031677348]), lr 0.001000
+Epoch 2, Batch 640, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8483436262103873, 0.8267961218321516, 0.509093044924454]), lr 0.001000
+Epoch 2, Batch 660, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.848530228980937, 0.8270064262708855, 0.5094338249469829]), lr 0.001000
+Epoch 2, Batch 680, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8498047594118189, 0.8284663369372001, 0.5052632534056457]), lr 0.001000
+Epoch 2, Batch 700, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8511100190562411, 0.8299359857655249, 0.5005647762270293]), lr 0.001000
+Epoch 2, Batch 720, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8504486550873609, 0.8292116805099119, 0.5062817145715399]), lr 0.001000
+Epoch 2, Batch 740, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8501401413438768, 0.8289040519766802, 0.5077765608500958]), lr 0.001000
+Epoch 2, Batch 760, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8506861027050395, 0.8294984971493501, 0.5062446163775431]), lr 0.001000
+Epoch 2, Batch 780, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8514284577081996, 0.8304863729746514, 0.5034735021290896]), lr 0.001000
+Epoch 2, Batch 800, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8522499132216051, 0.8314403670775155, 0.500162716130763]), lr 0.001000
+Epoch 2, Batch 820, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8533348297752594, 0.8327228862209106, 0.49631014431047527]), lr 0.001000
+Epoch 2, Batch 840, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8545168634535161, 0.8341846873701516, 0.4919967317571397]), lr 0.001000
+Epoch 2, Batch 860, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8521662861976135, 0.8314937541130628, 0.5025990968388082]), lr 0.001000
+Epoch 2, Batch 880, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8511437391122725, 0.8303143499584326, 0.5056163798656088]), lr 0.001000
+Epoch 2, Batch 900, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8513222699701056, 0.8304618631938695, 0.5050595558624011]), lr 0.001000
+discard one scene, sample_num - pt_num > pt_num 2404 895
+Epoch 2, Batch 920, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8507367255508705, 0.8299256772616042, 0.5062200657600203]), lr 0.001000
+Epoch 2, Batch 940, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8489067232012114, 0.8277180926578832, 0.5137850111341291]), lr 0.001000
+Epoch 2, Batch 960, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8482384961141163, 0.8268369904329511, 0.5162460414788513]), lr 0.001000
+Epoch 2, Batch 980, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8480041067495531, 0.82653415471207, 0.5173417004260937]), lr 0.001000
+Epoch 2, Batch 1000, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8479804755927802, 0.8264625961999478, 0.5174853467810125]), lr 0.001000
+Epoch 2, Batch 1020, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8480682223304097, 0.8265837051663273, 0.5169924792878436]), lr 0.001000
+Epoch 2, Batch 1040, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8480337398114173, 0.8264665733190744, 0.5171072819237812]), lr 0.001000
+Epoch 2, Batch 1060, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8477412496680241, 0.8261911630795072, 0.5178932590479796]), lr 0.001000
+Epoch 2, Batch 1080, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8479698768028846, 0.8264356229851969, 0.5168752330574836]), lr 0.001000
+Epoch 2, Batch 1100, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8484417208115332, 0.8270171818276812, 0.514790159574877]), lr 0.001000
+Epoch 2, Batch 1120, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8488216014926832, 0.8275290678517889, 0.5128955960300091]), lr 0.001000
+Epoch 2, Batch 1140, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8487592340457638, 0.8274378687160143, 0.513769727461072]), lr 0.001000
+Epoch 2, Batch 1160, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8486981975301985, 0.8273075928576897, 0.5151293851397204]), lr 0.001000
+Epoch 2, Batch 1180, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8494171271999575, 0.8281780062237661, 0.513123029400377]), lr 0.001000
+Epoch 2, Batch 1200, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8492215395967995, 0.8279280720727563, 0.5148983569823294]), lr 0.001000
+Epoch 2, Batch 1220, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8494008640855721, 0.8280819664790062, 0.5143570502922615]), lr 0.001000
+Epoch 2, Batch 1240, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8497025582942394, 0.8284426799204162, 0.5130128661410291]), lr 0.001000
+Epoch 2, Batch 1260, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8489461424617752, 0.8275834662768271, 0.5156373247472866]), lr 0.001000
+Epoch 2, Batch 1280, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8485818273858972, 0.8271936044006152, 0.5161806673905488]), lr 0.001000
+Epoch 2, Batch 1300, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8482996423029734, 0.8268917116887573, 0.5164368642049874]), lr 0.001000
+Epoch 2, Batch 1320, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8474004298651915, 0.8257952681480657, 0.5199051880102673]), lr 0.001000
+Epoch 2, Batch 1340, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8470819816560866, 0.8254644969622577, 0.5204122405830977]), lr 0.001000
+Epoch 2, Batch 1360, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8470283648650202, 0.8254687968338117, 0.5201320827321894]), lr 0.001000
+Epoch 2, Batch 1380, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8463504605919144, 0.8246928936377855, 0.522539361852311]), lr 0.001000
+Epoch 2, Batch 1400, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8464084453460061, 0.8247059681823625, 0.5221079221218083]), lr 0.001000
+Epoch 2, Batch 1420, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8466248719939218, 0.8249850415153486, 0.5209363221843613]), lr 0.001000
+Epoch 2, Batch 1440, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8462570816050643, 0.8245903952666778, 0.522416939083226]), lr 0.001000
+Epoch 2, Batch 1460, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8460115721652245, 0.8243080616549717, 0.5234412867662415]), lr 0.001000
+Epoch 2, Batch 1480, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8460656548449121, 0.8244202527410626, 0.5231075823238677]), lr 0.001000
+Epoch 2, Batch 1500, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8462188985365243, 0.8246374950629307, 0.5222994490866076]), lr 0.001000
+Epoch 2, Batch 1520, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8448220007509052, 0.8230592646963717, 0.5278665153190919]), lr 0.001000
+Epoch 2, Batch 1540, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8443971709511046, 0.822539820873916, 0.5297064985243899]), lr 0.001000
+Epoch 2, Batch 1560, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8440346845684333, 0.8221810655678675, 0.5308592493645995]), lr 0.001000
+Epoch 2, Batch 1580, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8439183781764567, 0.82203182653716, 0.5314228458385595]), lr 0.001000
+Epoch 2, Batch 1600, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.843965940016221, 0.8220988620319654, 0.5313048559218753]), lr 0.001000
+Epoch 2, Batch 1620, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8432900535390287, 0.8212641008148718, 0.5341438044006871]), lr 0.001000
+Epoch 2, Batch 1640, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8431465600451876, 0.8210732975830626, 0.5348722550775817]), lr 0.001000
+Epoch 2, Batch 1660, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8431801619480862, 0.8211469818480187, 0.5345583501286906]), lr 0.001000
+Epoch 2, Batch 1680, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8431811625223348, 0.8212163605914469, 0.5344384624027926]), lr 0.001000
+Epoch 2, Batch 1700, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8432418455019497, 0.8212493953201868, 0.534461936391908]), lr 0.001000
+Epoch 2, Batch 1720, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8429317525405395, 0.8209334586747769, 0.5351526297342943]), lr 0.001000
+Epoch 2, Batch 1740, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8431810217797585, 0.8212019153616887, 0.5340020782997688]), lr 0.001000
+discard one scene, sample_num - pt_num > pt_num 2144 964
+Epoch 2, Batch 1760, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8432716009629051, 0.8213545653967946, 0.5331892733872087]), lr 0.001000
+Epoch 2, Batch 1780, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8431398680131043, 0.821161591101486, 0.5343250599718952]), lr 0.001000
+Epoch 2, Batch 1800, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8433739094418774, 0.8214435087648412, 0.5335319551009771]), lr 0.001000
+Epoch 2, Batch 1820, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8432449282100398, 0.8212559093780021, 0.533726151910138]), lr 0.001000
+Epoch 2, Batch 1840, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8435054876546356, 0.8215178246145913, 0.5325942920974411]), lr 0.001000
+Epoch 2, Batch 1860, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8438103062802582, 0.8218145880402035, 0.531246568236859]), lr 0.001000
+Epoch 2, Batch 1880, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8435788417002063, 0.8215446238746753, 0.5326928883149298]), lr 0.001000
+Epoch 2, Batch 1900, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.843356353775836, 0.821326507758815, 0.5331775298793834]), lr 0.001000
+Epoch 2, Batch 1920, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8435574355132882, 0.8215101555269367, 0.5324820897797978]), lr 0.001000
+Epoch 2, Batch 1940, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8438598443946622, 0.8218708975261325, 0.5312878782912266]), lr 0.001000
+Epoch 2, Batch 1960, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8436115040956802, 0.8215869426277694, 0.532106822102332]), lr 0.001000
+Epoch 2, Batch 1980, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.843820700855072, 0.8218246633888758, 0.5313567013355185]), lr 0.001000
+Epoch 2, Batch 2000, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8441506275598737, 0.8222106623956413, 0.5301268708615849]), lr 0.001000
+Epoch 2, Batch 2020, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8443814523743189, 0.8224388133196888, 0.529520870854456]), lr 0.001000
+Epoch 2, Batch 2040, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8447793179484429, 0.8228923986825085, 0.5282466488564634]), lr 0.001000
+Epoch 2, Batch 2060, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.845300832473288, 0.8235278110963088, 0.5263588335033308]), lr 0.001000
+Epoch 2, Batch 2080, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8453680921942641, 0.8235753726708391, 0.5268810689024885]), lr 0.001000
+Epoch 2, Batch 2100, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.845692598689108, 0.8239810230464045, 0.5258402242529072]), lr 0.001000
+Epoch 2, Batch 2120, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8461731792340137, 0.8245355691043537, 0.5241461770115059]), lr 0.001000
+Epoch 2, Batch 2140, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8468290938011337, 0.8252698772066728, 0.5218962909642024]), lr 0.001000
+Epoch 2, Batch 2160, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8474483629573877, 0.8259624317514854, 0.5197119171398956]), lr 0.001000
+Epoch 2, Batch 2180, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8481204197022717, 0.8267284927462462, 0.5173534904263218]), lr 0.001000
+Epoch 2, Batch 2200, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8485401412040985, 0.8272037666627788, 0.5160390832973301]), lr 0.001000
+Epoch 2, Batch 2220, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8483569853044728, 0.8270056585793549, 0.5169161257270608]), lr 0.001000
+Epoch 2, Batch 2240, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8485324956732917, 0.8271916379862375, 0.5162635912029718]), lr 0.001000
+Epoch 2, Batch 2260, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8484420391351262, 0.8270945404862553, 0.5164250143388441]), lr 0.001000
+Epoch 2, Batch 2280, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8483427040197181, 0.8270050225750345, 0.5164958361470646]), lr 0.001000
+Epoch 2, Batch 2300, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8482297840093519, 0.8268574023262308, 0.5172856087355548]), lr 0.001000
+Epoch 2, Batch 2320, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8481933172636373, 0.8268114811160626, 0.5173441860955063]), lr 0.001000
+Epoch 2, Batch 2340, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8485423061571451, 0.8272213452087617, 0.5161768690229281]), lr 0.001000
+Epoch 2, Batch 2360, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8489321460861329, 0.8276837897297369, 0.514670769488013]), lr 0.001000
+Epoch 2, Batch 2380, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8493468545574558, 0.828171687370729, 0.5131444595149497]), lr 0.001000
+Epoch 2, Batch 2400, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8494101342681847, 0.8282282963188421, 0.513023413452789]), lr 0.001000
+Epoch 2, Batch 2420, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8496914280500724, 0.8285838207119728, 0.5118751429319118]), lr 0.001000
+Epoch 2, Batch 2440, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8496033790904315, 0.8284552975107052, 0.5127501927352407]), lr 0.001000
+Epoch 2, Batch 2460, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8492414762257269, 0.8280348838554374, 0.5143934382557759]), lr 0.001000
+Epoch 2, Batch 2480, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8492513874357099, 0.8280711276539373, 0.5143912651920086]), lr 0.001000
+Epoch 2, Batch 2500, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8494014793417367, 0.8282515725942475, 0.5139882629149922]), lr 0.001000
+Epoch 2, Batch 2520, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8496024743201668, 0.8284651405489304, 0.5133260991590156]), lr 0.001000
+discard one scene, sample_num - pt_num > pt_num 2251 1064
+Epoch 2, Batch 2540, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8497940045447272, 0.8286864670292107, 0.5128936451905608]), lr 0.001000
+Epoch 2, Batch 2560, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8497743106438062, 0.828671877747883, 0.5130819836896616]), lr 0.001000
+Epoch 2, Batch 2580, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.849814674640728, 0.8287302248167968, 0.5129810891132413]), lr 0.001000
+Epoch 2, Batch 2600, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8494620264103983, 0.8283572991970917, 0.5141885610779635]), lr 0.001000
+Epoch 2, Batch 2620, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8494735548813955, 0.8283815629587469, 0.5139528377798321]), lr 0.001000
+Epoch 2, Batch 2640, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8496784356201449, 0.8285971840119749, 0.5132261091849321]), lr 0.001000
+Epoch 2, Batch 2660, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8498260165211311, 0.8288047825455752, 0.5125396562227587]), lr 0.001000
+Epoch 2, Batch 2680, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.85006152270845, 0.8290552230615139, 0.5117020310894467]), lr 0.001000
+Epoch 2, Batch 2700, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8500806595758846, 0.8290879733262754, 0.5116317882551514]), lr 0.001000
+Epoch 2, Batch 2720, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8503868268578751, 0.829388175578751, 0.5106624556313811]), lr 0.001000
+Epoch 2, Batch 2740, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8504688141771632, 0.8294996067759213, 0.5104556581013956]), lr 0.001000
+Epoch 2, Batch 2760, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8505207123986273, 0.8295556342535151, 0.5101297228041579]), lr 0.001000
+Epoch 2, Batch 2780, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8507658231940446, 0.8297878680855932, 0.5093443273528676]), lr 0.001000
+Epoch 2, Batch 2800, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8511629868507726, 0.83019822494927, 0.5080007572782334]), lr 0.001000
+Epoch 2, Batch 2820, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8515679648007938, 0.8306728390786321, 0.506441344739019]), lr 0.001000
+Epoch 2, Batch 2840, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8514521250467815, 0.8305747688782642, 0.5067447632914595]), lr 0.001000
+Epoch 2, Batch 2860, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8515150723318905, 0.8306695376872847, 0.5062006178693111]), lr 0.001000
+Epoch 2, Batch 2880, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8515686904361324, 0.8307299676189815, 0.505819716431885]), lr 0.001000
+Epoch 2, Batch 2900, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8517409525644619, 0.8309339571910367, 0.5051958915237295]), lr 0.001000
+Epoch 2, Batch 2920, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8519810267857143, 0.8312034730453945, 0.5042039801542887]), lr 0.001000
+Epoch 2, Batch 2940, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8520294490579279, 0.831256664744088, 0.5040150188400326]), lr 0.001000
+Epoch 2, Batch 2960, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.852157282337783, 0.8313896781374915, 0.5035192726840365]), lr 0.001000
+Epoch 2, Batch 2980, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8523284328187941, 0.8315955683100938, 0.5027409149079138]), lr 0.001000
+Epoch 2, Batch 3000, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8525607412757378, 0.8318358980652992, 0.5019802467443482]), lr 0.001000
+Epoch 2, Batch 3020, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8526061506293474, 0.8318536470483507, 0.5023119443245674]), lr 0.001000
+Epoch 2, Batch 3040, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8528280224914652, 0.8321303027328051, 0.5015061425989182]), lr 0.001000
+Epoch 2, Batch 3060, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8531705638714654, 0.8325131193113319, 0.5004416744196983]), lr 0.001000
+Epoch 2, Batch 3080, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8535479127760637, 0.8329403883758336, 0.4992426894269354]), lr 0.001000
+discard one scene, sample_num - pt_num > pt_num 2279 1058
+Epoch 2, Batch 3100, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.853928631526803, 0.833389459270885, 0.49814952663067225]), lr 0.001000
+Epoch 2, Batch 3120, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8537433043318171, 0.8331915013142046, 0.4992844081098171]), lr 0.001000
+Epoch 2, Batch 3140, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8535010418948112, 0.8329198594169439, 0.5000117706150564]), lr 0.001000
+Epoch 2, Batch 3160, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.853371605989336, 0.8328128154493953, 0.5002989150988161]), lr 0.001000
+Epoch 2, Batch 3180, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8532943240798994, 0.8326932809346912, 0.5006531262445396]), lr 0.001000
+Epoch 2, Batch 3200, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8534379563804119, 0.8328242214002095, 0.5002001586340881]), lr 0.001000
+Epoch 2, Batch 3220, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8529900059340051, 0.8323110299998262, 0.5018188703156966]), lr 0.001000
+Epoch 2, Batch 3240, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8526138121936747, 0.8318637920875566, 0.5028701379548937]), lr 0.001000
+Epoch 2, Batch 3260, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8524063545781874, 0.8316141759274769, 0.50342821204467]), lr 0.001000
+Epoch 2, Batch 3280, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8523083462588632, 0.831493633766533, 0.5038085835204297]), lr 0.001000
+Epoch 2, Batch 3300, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8523986982916225, 0.8315751731432475, 0.5033683469213186]), lr 0.001000
+Epoch 2, Batch 3320, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.852351561911532, 0.8315141434954298, 0.503702606948751]), lr 0.001000
+Epoch 2, Batch 3340, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8521285933054432, 0.8312643922795192, 0.5042545835487808]), lr 0.001000
+Epoch 2, Batch 3360, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8520942235993786, 0.8312358761215906, 0.504206409428284]), lr 0.001000
+Epoch 2, Batch 3380, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8520671608533404, 0.8311764242984192, 0.5041926787275084]), lr 0.001000
+Epoch 2, Batch 3400, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8521305525292365, 0.8312534934400282, 0.5038834897245749]), lr 0.001000
+Epoch 2, Batch 3420, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.852250435297236, 0.8313829262248481, 0.5037613635188747]), lr 0.001000
+Epoch 2, Batch 3440, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8526148816879907, 0.831782428771266, 0.5026095286681169]), lr 0.001000
+Epoch 2, Batch 3460, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8526417653110545, 0.8318001594654653, 0.5027589083612269]), lr 0.001000
+discard one scene, sample_num - pt_num > pt_num 2363 1102
+Epoch 2, Batch 3480, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8528397575744646, 0.8320284654918142, 0.5020415219017366]), lr 0.001000
+Epoch 2, Batch 3500, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8527687458693556, 0.8319287901285382, 0.5025670774753036]), lr 0.001000
+Epoch 2, Batch 3520, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8527283876922599, 0.8318761097819632, 0.5026571312835905]), lr 0.001000
+Epoch 2, Batch 3540, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8528173579776244, 0.8319977282376266, 0.5021218348925519]), lr 0.001000
+Epoch 2, Batch 3560, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.852827812467073, 0.8320083995153332, 0.5021153433446438]), lr 0.001000
+Epoch 2, Batch 3580, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.852715111151858, 0.831880311866412, 0.5025351907997263]), lr 0.001000
+Epoch 2, Batch 3600, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8527086177909663, 0.8318858208179809, 0.5024021959174538]), lr 0.001000
+Epoch 2, Batch 3620, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8527119307927777, 0.8318993351444368, 0.5021775917070621]), lr 0.001000
+Epoch 2, Batch 3640, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8527258277299739, 0.8319120235129842, 0.5021238344993604]), lr 0.001000
+Epoch 2, Batch 3660, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8522238748847021, 0.8313370786150976, 0.5040376607925255]), lr 0.001000
+Epoch 2, Batch 3680, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8521444824086029, 0.8312319488289686, 0.5043342445490795]), lr 0.001000
+Epoch 2, Batch 3700, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8521202415348743, 0.8312117647077462, 0.5043032712132905]), lr 0.001000
+Epoch 2, Batch 3720, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8520500525699953, 0.8311278449240513, 0.5044831967347304]), lr 0.001000
+Epoch 2, Batch 3740, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8521017510739837, 0.8311796276677181, 0.5041825650971841]), lr 0.001000
+Epoch 2, Batch 3760, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8521193926243682, 0.8312068830627137, 0.5038957007288712]), lr 0.001000
+Epoch 2, Batch 3780, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.851641304639951, 0.8306736292629469, 0.5057465292518731]), lr 0.001000
+Epoch 2, Batch 3800, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8515233693796888, 0.8305528010304933, 0.5061260124293947]), lr 0.001000
+Epoch 2, Batch 3820, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8513878426023664, 0.830404457022863, 0.5066384683170693]), lr 0.001000
+Epoch 2, Batch 3840, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8513006100526667, 0.8303315261669756, 0.5068139654393626]), lr 0.001000
+Epoch 2, Batch 3860, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8513945560499806, 0.8304374056052687, 0.506388649797917]), lr 0.001000
+Epoch 2, Batch 3880, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8515398734068864, 0.830600164459946, 0.5058243748246986]), lr 0.001000
+Epoch 2, Batch 3900, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8517777369798346, 0.8308657207242334, 0.5049915577230202]), lr 0.001000
+Epoch 2, Batch 3920, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8518549890656896, 0.8309499940700216, 0.5047953659210636]), lr 0.001000
+discard one scene, sample_num - pt_num > pt_num 2297 1087
+Epoch 2, Batch 3940, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8519568624155084, 0.8310747815993975, 0.5043756020517893]), lr 0.001000
+Epoch 2, Batch 3960, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8521817809796508, 0.8313205351638905, 0.5036025385307646]), lr 0.001000
+Epoch 2, Batch 3980, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8522219312523561, 0.8313694151019426, 0.5034264998413651]), lr 0.001000
+Epoch 2, Batch 4000, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8523231271685109, 0.8314983927111678, 0.5029565121578328]), lr 0.001000
+Epoch 2, Batch 4020, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8524792756865824, 0.8316849414726243, 0.5023272278915527]), lr 0.001000
+Epoch 2, Batch 4040, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8525349340512038, 0.831733227074608, 0.5022182401386287]), lr 0.001000
+Epoch 2, Batch 4060, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8523047680982847, 0.8314649940233184, 0.5030140740465768]), lr 0.001000
+discard one scene, sample_num - pt_num > pt_num 2413 1198
+Epoch 2, Batch 4080, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8522871230214973, 0.8314511346925765, 0.5029688245313335]), lr 0.001000
+Epoch 2, Batch 4100, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8522819554407325, 0.8314420494774726, 0.5028761859912625]), lr 0.001000
+seg_list reordered!
+Epoch 2, Batch 4120, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8523151039295794, 0.8314717545135585, 0.5028352869068315]), lr 0.001000
+Epoch 2, Batch 4140, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.852551260683438, 0.8317493896921531, 0.5019851828964531]), lr 0.001000
+Epoch 2, Batch 4160, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.852865432552146, 0.8321197148769008, 0.500829108236679]), lr 0.001000
+Epoch 2, Batch 4180, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.853187375914169, 0.8324925443229719, 0.4996598887390349]), lr 0.001000
+Speed: data 0.0035, train 0.9490
+Running evaluation...
+discard one scene, sample_num - pt_num > pt_num 2240 1083
+discard one scene, sample_num - pt_num > pt_num 2240 1104
+val total batch_counter:  809
+Per Class Accuracy/IoU:
+    ceiling       0.37043   0.25704  3761080
+     floor        0.95670   0.86020  4280519
+     wall         0.96742   0.85770  4428494
+     beam         0.90824   0.59096  7442631
+    column        0.08911   0.08900  1448773
+    window        0.00000   0.00000   853499
+     door         0.49223   0.45103  1574757
+     table        0.52285   0.50105   965162
+     chair        0.76231   0.54646  1275800
+     sofa         0.74161   0.47786  1065057
+   bookcase       0.03071   0.03005   130295
+     board        0.44910   0.30334  1243001
+    clutter       0.23904   0.23188   521012
+Epoch 0, Val (point: 0.7404344858138906 ; iou_avg: 0.3997356923076923 ; macc: 0.5022878461538461)
+iouavg:  0.3997356923076923
+new best val overall acc: 0.7404344858138906
+new best iou_avg: 0.3997356923076923
+new best macc: 0.5022878461538461
+Epoch 3, Batch 20, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.7894068667763158, 0.7593183156654888, 0.7816133971377172]), lr 0.001000
+Epoch 3, Batch 40, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8182723607772436, 0.7907962956547846, 0.6496890332756333]), lr 0.001000
+Epoch 3, Batch 60, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8347701767743644, 0.809401711035337, 0.5774146990410846]), lr 0.001000
+discard one scene, sample_num - pt_num > pt_num 2336 895
+Epoch 3, Batch 80, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8414714571795886, 0.8168148924368402, 0.5449356565465975]), lr 0.001000
+Epoch 3, Batch 100, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8360630228061868, 0.8102910389087984, 0.5811928945985123]), lr 0.001000
+Epoch 3, Batch 120, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8361420447085084, 0.8102891780754176, 0.5764371304183296]), lr 0.001000
+Epoch 3, Batch 140, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.836251896919964, 0.8110051710369991, 0.5690622362464653]), lr 0.001000
+Epoch 3, Batch 160, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8407300265330189, 0.8172165550801053, 0.5498240544179532]), lr 0.001000
+Epoch 3, Batch 180, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8442538298708101, 0.8213309445821418, 0.5355476786291239]), lr 0.001000
+Epoch 3, Batch 200, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8439851847126256, 0.8208289887062264, 0.5383722503163167]), lr 0.001000
+Epoch 3, Batch 220, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8431059815567923, 0.8202693476126182, 0.5382364004851606]), lr 0.001000
+Epoch 3, Batch 240, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8439418393697699, 0.8217007306366335, 0.5336348234709861]), lr 0.001000
+Epoch 3, Batch 260, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8475636839406371, 0.8256474231754438, 0.521899085856305]), lr 0.001000
+Epoch 3, Batch 280, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8519684384800628, 0.830750344589938, 0.5062246031514547]), lr 0.001000
+Epoch 3, Batch 300, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.85190152069398, 0.8307010192593213, 0.5071699987081211]), lr 0.001000
+Epoch 3, Batch 320, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8524552587431427, 0.8312931016357596, 0.5039392052457653]), lr 0.001000
+Epoch 3, Batch 340, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8532014829922566, 0.8322057373245156, 0.49956685492428826]), lr 0.001000
+Epoch 3, Batch 360, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8533101116382312, 0.8323009677367138, 0.5001326970556845]), lr 0.001000
+Epoch 3, Batch 380, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8549435577795185, 0.8343195192190993, 0.4939015969425269]), lr 0.001000
+Epoch 3, Batch 400, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8577117843436717, 0.8373814555489106, 0.4844438969065903]), lr 0.001000
+Epoch 3, Batch 420, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8597084646293258, 0.8394572483461565, 0.4783734980536951]), lr 0.001000
+Epoch 3, Batch 440, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8588431182374715, 0.8386247195394081, 0.48174349921327536]), lr 0.001000
+Epoch 3, Batch 460, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.858956929125817, 0.8387893381117706, 0.48071532912463]), lr 0.001000
+Epoch 3, Batch 480, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8586037908566023, 0.8381495861002967, 0.4830513599323163]), lr 0.001000
+Epoch 3, Batch 500, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.858371919620491, 0.8379910657058106, 0.4828279484301608]), lr 0.001000
+Epoch 3, Batch 520, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8586310531822013, 0.8384520263114846, 0.4807432840013877]), lr 0.001000
+Epoch 3, Batch 540, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8582029438195733, 0.8379839154202257, 0.4828670649546349]), lr 0.001000
+Epoch 3, Batch 560, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8583706604986583, 0.8381508496120684, 0.48204032440898553]), lr 0.001000
+Epoch 3, Batch 580, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.85881187425788, 0.8387254769601074, 0.47989610250115206]), lr 0.001000
+Epoch 3, Batch 600, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.859939987870409, 0.8400940056272942, 0.4755077919149789]), lr 0.001000
+Epoch 3, Batch 620, Train (['accuracy', 'Accuracy', 'CrossEntropy'], [0.8590990698202746, 0.8392788688104293, 0.47997922284869315]), lr 0.001000

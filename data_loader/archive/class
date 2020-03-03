@@ -1,0 +1,22 @@
+scannet :
+ ['wall', 'floor', 'cabinet', 'bed', 'chair', 'sofa', 'table', 'door', 'window', 'bookshelf', 'picture', 'counter', 'desk', 'curtain', 'refrigerator', 'shower curtain', 'toilet', 'sink', 'bathtub', 'otherfurniture']
+ [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 24, 28, 33, 34, 36, 39]
+
+
+pnt++:
+['unannotated', 'wall', 'floor', 'chair', 'table', 'desk', 'bed', 'bookshelf', 'sofa', 'sink', 'bathtub', 'toilet', 'curtain', 'counter', 'door', 'window', 'shower curtain', 'refridgerator', 'picture', 'cabinet', 'otherfurniture']
+[0.388,0.357,0.038,0.033,0.017,0.02,0.016,0.025,0.002,0.002,0.002,0.007,0.006,0.022,0.004,0.0004,0.003,0.002,0.024,0.029]
+
+pnt++mxn:
+{1: 'wall', 2: 'floor', 3: 'chair', 4: 'table', 5: 'desk', 6: 'bed', 7: 'bookshelf', 8: 'sofa', 9: 'sink', 10: 'bathtub', 11: 'toilet', 12: 'curtain', 13: 'counter', 14: 'door', 15: 'window', 16: 'shower_curtain', 17: 'refrigerator', 18: 'picture', 19: 'cabinet', 20: 'other'}
+[0.388,0.357,0.038,0.033,0.017,0.02,0.016,0.025,0.002,0.002,0.002,0.007,0.006,0.022,0.004,0.0004,0.003,0.002,0.024,0.029]
+
+
+
+train stats  1201 scenes
+{1: 40731193, 2: 27553618, 3: 5092007, 4: 2804133, 5: 1840108, 6: 2856101, 7: 2253046, 8: 2870653, 9: 371321, 10: 373781, 11: 299650, 12: 1633348, 13: 691135, 14: 2578736, 15: 1041261, 16: 203352, 17: 470840, 18: 410013, 19: 2869757, 20: 2719255}, 99663308)
+
+
+test stats  312 scenes
+({1: 11391136, 2: 7617351, 3: 1673166, 4: 905863, 5: 515329, 6: 668411, 7: 671992, 8: 761661, 9: 102735, 10: 68360, 11: 82687, 12: 307112, 13: 204566, 14: 672461, 15: 205592, 16: 30394, 17: 106736, 18: 53703, 19: 758166, 20: 1009730}, 27807151)
+

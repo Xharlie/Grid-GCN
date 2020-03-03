@@ -1,0 +1,209 @@
+nohup: ignoring input
+Namespace(datafolder='../data/3DIS/prepare_label_rgb/Area_5/')
+../data/3DIS/prepare_label_rgb/Area_5/office_25/zero_0_pred.h5
+test/s3dis_merge.py:37: H5pyDeprecationWarning: The default file mode will change to 'r' (read-only) in h5py 3.0. To suppress this warning, pass the mode you need to h5py.File(), or set the global default h5.get_config().default_file_mode, or set the environment variable H5PY_DEFAULT_READONLY=1. Available modes are: 'r', 'r+', 'w', 'w-'/'x', 'a'. See the docs for details.
+  data = h5py.File(os.path.join(args.datafolder,category, pred_file))
+../data/3DIS/prepare_label_rgb/Area_5/office_25/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_25/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_34/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_34/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_34/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/conferenceRoom_2/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/conferenceRoom_2/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/conferenceRoom_2/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_26/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_26/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_26/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_15/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_15/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_15/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/hallway_3/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/hallway_3/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/hallway_3/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_30/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_30/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_30/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_6/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_6/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_6/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/conferenceRoom_3/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/conferenceRoom_3/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/conferenceRoom_3/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_31/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_31/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_31/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/hallway_13/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/hallway_13/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/hallway_13/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_5/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_5/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_5/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/storage_3/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/storage_3/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/storage_3/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_10/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_10/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_10/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/hallway_1/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/hallway_1/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/hallway_1/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_3/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_3/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_3/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_38/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_38/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_38/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_11/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_11/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_11/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_9/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_9/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_9/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/storage_4/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/storage_4/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/storage_4/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_21/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_21/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_21/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/hallway_15/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/hallway_15/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/hallway_15/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/hallway_7/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/hallway_7/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/hallway_7/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_13/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_13/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_13/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_40/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_40/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_40/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_41/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_41/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_41/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_42/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_42/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_42/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_33/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_33/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_33/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/hallway_6/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/hallway_6/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/hallway_6/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/hallway_5/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/hallway_5/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/hallway_5/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/WC_2/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/WC_2/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/WC_2/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/WC_1/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/WC_1/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/WC_1/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/hallway_9/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/hallway_9/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/hallway_9/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_2/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_2/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_2/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/hallway_8/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/hallway_8/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/hallway_8/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_29/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_29/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_29/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_28/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_28/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_28/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_1/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_1/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_1/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_27/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_27/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_27/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/storage_2/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/storage_2/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/storage_2/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/hallway_2/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/hallway_2/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/hallway_2/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_17/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_17/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_17/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_19/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_19/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_19/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/hallway_10/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/hallway_10/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/hallway_10/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_24/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_24/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_24/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_32/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_32/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_32/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_12/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_12/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_12/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_39/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_39/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_39/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_20/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_20/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_20/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/hallway_4/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/hallway_4/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/hallway_4/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/storage_1/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/storage_1/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/storage_1/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/hallway_11/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/hallway_11/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/hallway_11/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_37/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_37/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_37/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_14/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_14/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_14/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_7/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_7/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_7/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/conferenceRoom_1/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/conferenceRoom_1/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/conferenceRoom_1/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/pantry_1/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/pantry_1/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/pantry_1/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/lobby_1/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/lobby_1/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/lobby_1/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_36/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_36/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_36/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/hallway_12/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/hallway_12/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/hallway_12/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_23/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_23/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_23/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_16/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_16/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_16/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/hallway_14/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/hallway_14/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/hallway_14/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_4/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_4/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_4/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_18/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_18/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_18/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_35/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_35/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_35/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_8/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_8/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_8/pred.npy
+../data/3DIS/prepare_label_rgb/Area_5/office_22/zero_0_pred.h5
+../data/3DIS/prepare_label_rgb/Area_5/office_22/half_0_pred.h5
+saved to  ../data/3DIS/prepare_label_rgb/Area_5/office_22/pred.npy
+finish all!

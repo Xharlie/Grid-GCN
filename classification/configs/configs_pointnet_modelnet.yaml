@@ -1,0 +1,44 @@
+# env
+use_cpu: False
+gpus: "0"
+kvstore: local
+
+# task is either [cls_ssg, cls_msg]
+task: cls_ssg
+model_dir: output
+save_model_prefix: ModelNet40_again
+# this is for both loading pretrained model in training and loading final model for testing
+# set load_model_epoch to 0 to disable loading pretrained model
+load_model_prefix: output/ModelNet40_Saved/4_best_again/ModelNet40
+load_model_epoch: 0
+
+# train
+num_epochs: 90
+display_interval: 1
+checkpoint_interval: 1
+val_interval: 1
+optimizer: adam
+momentum: 0.9
+lr: 0.001
+lr_policy: step
+lr_factor: 0.75
+lr_factor_sample: 200000
+lr_factor_epochs: [200]
+bn_decay: 0.9
+bn_decay_factor: 0.5
+bn_decay_clip: 0.99
+bn_decay_sample: 1000000
+use_global_stats: False
+beta1: 0.9
+beta2: 0.999
+weight_decay: 0
+# per_class_weights: none, auto, manual
+per_class_weights: none
+
+# data
+data_dir: ../data/modelnet40_normal_resampled
+batch_size: 32
+num_points: 1024
+point_set: partial
+use_normal: False
+input_dropout_ratio: 0

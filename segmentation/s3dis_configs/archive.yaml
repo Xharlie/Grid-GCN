@@ -1,0 +1,2876 @@
+# env
+use_cpu: False
+kvstore: local
+
+# task is either [cls_ssg, cls_msg, seg]
+task: seg
+model_dir: output
+# this is for both loading pretrained model in training and loading final model for testing
+# set load_model_epoch to 0 to disable loading pretrained model
+load_model_prefix: output/indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug11_dp0.5_featxyz/2019_10_25_16:44:16/indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug11_dp0.5_featxyz
+
+load_model_epoch: 41
+hash: para
+# train
+num_epochs: 200
+display_interval: 20
+checkpoint_interval: 10
+momentum: 0.9
+lr_policy: step
+lr_factor: 0.8
+lr_factor_sample: 36000
+
+#small lr_factor_epochs: [50, 150,  250,  450,  650, 850]
+#lr_factor_epochs: [220,  510,  600, 700, 800, 900, 1000, 1100, 1200]
+bn_decay_factor: 0.5
+bn_decay_clip: 0.99
+bn_decay_sample: 10000000
+use_global_stats: False
+beta1: 0.9
+beta2: 0.999
+#weight_decay: 0.00005
+# per_class_weights: none, auto, manual
+manual_weights:
+
+# data
+data_dir: ../data/3DIS
+use_normal: False
+
+
+
+### aggregation # tucs    s3_logs/indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug0_ball_wd1e8_lrshell
+###
+###8192
+###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+###
+###64   cluster, interp , mlp_list=[256,256]
+###256  cluster, interp , mlp_list=[256,256]
+###1024 cluster, interp , mlp_list=[256,128]
+###8192 cluster, interp , mlp_list=[128,128,128]
+#use_bn: t
+#aug_lv: 0
+#indim: 4
+#normalize: ball
+#relutp: relu
+#bn_decay: 0.9
+#per_class_weights: none
+#val_interval: 1
+#aggtype: gcn
+#optimizer: adam
+#weight_decay: 0.00000001
+#agg: max_pooling
+#fps: False
+#lr: 0.001
+#localfdim: 0
+#attfdim: 10
+#gpus: "2"
+#save_model_prefix: indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug0_ball_wd1e8_lrshell
+#voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+#grid_size_lst: [[40, 40, 40], [15, 15, 15], [5, 5, 5]]
+#lidar_coord: [1.0, 1.0, 1.0]
+#max_p_grid_lst: [64, 32, 32]
+#max_o_grid_lst: [512, 256, 24]
+#kernel_size_lst: [3, 3, 3]
+#stride_lst: [1, 1, 1]
+#single_padding_lst: [none, none, none]
+#inputDim: [4, 64, 128]
+#elevation: []
+#pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+#cntxt_mlp_lst:
+#gcn_outDim: [[],[],[]]
+#relu: False
+#point_set: partial
+#batch_size: 16
+#loc_weight: True
+#loc_within: True
+#neigh_fetch: 0
+#att_full:
+#
+#
+#up_neigh_fetch: True
+#up_agg: max_pooling
+#up_aggtype: gcn
+#up_att_full:
+#up_type: grid
+#up_attfdim: 10
+#up_inputDim: [256, 128, 128]
+#up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+#up_grid_size_lst : [[5, 5, 5], [15, 15, 15], [40, 40, 40]]
+#up_max_p_grid_lst: [5, 5, 5]
+#up_max_o_grid_lst: [256, 512, 2560]
+#up_kernel_size_lst: [3, 3, 3]
+#up_stride_lst: [1, 1, 1]
+## add, concat
+#up_center_inte: concat
+#up_center_dim: [[128], [128], [128]]
+#up_pt_ele_dim: [[128], [128], [128]]
+#up_gcn_outDim: [[128], [128], [128]]
+#up_cntxt_mlp_lst:
+#num_points: 2560
+#input_dropout_ratio: 0.125
+
+
+#
+### aggregation # tucs    s3_logs/indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug1_ball_wd1e8_lrshell
+###
+###8192
+###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+###
+###64   cluster, interp , mlp_list=[256,256]
+###256  cluster, interp , mlp_list=[256,256]
+###1024 cluster, interp , mlp_list=[256,128]
+###8192 cluster, interp , mlp_list=[128,128,128]
+#use_bn: t
+#aug_lv: 1
+#indim: 4
+#normalize: ball
+#relutp: relu
+#bn_decay: 0.9
+#per_class_weights: none
+#val_interval: 1
+#aggtype: gcn
+#optimizer: adam
+#weight_decay: 0.00000001
+#agg: max_pooling
+#fps: False
+#lr: 0.001
+#localfdim: 0
+#attfdim: 10
+#gpus: "3"
+#save_model_prefix: indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug1_ball_wd1e8_lrshell
+#voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+#grid_size_lst: [[40, 40, 40], [15, 15, 15], [5, 5, 5]]
+#lidar_coord: [1.0, 1.0, 1.0]
+#max_p_grid_lst: [64, 32, 32]
+#max_o_grid_lst: [512, 256, 24]
+#kernel_size_lst: [3, 3, 3]
+#stride_lst: [1, 1, 1]
+#single_padding_lst: [none, none, none]
+#inputDim: [4, 64, 128]
+#elevation: []
+#pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+#cntxt_mlp_lst:
+#gcn_outDim: [[],[],[]]
+#relu: False
+#point_set: partial
+#batch_size: 16
+#loc_weight: True
+#loc_within: True
+#neigh_fetch: 0
+#att_full:
+#
+#
+#up_neigh_fetch: True
+#up_agg: max_pooling
+#up_aggtype: gcn
+#up_att_full:
+#up_type: grid
+#up_attfdim: 10
+#up_inputDim: [256, 128, 128]
+#up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+#up_grid_size_lst : [[5, 5, 5], [15, 15, 15], [40, 40, 40]]
+#up_max_p_grid_lst: [5, 5, 5]
+#up_max_o_grid_lst: [256, 512, 2560]
+#up_kernel_size_lst: [3, 3, 3]
+#up_stride_lst: [1, 1, 1]
+## add, concat
+#up_center_inte: concat
+#up_center_dim: [[128], [128], [128]]
+#up_pt_ele_dim: [[128], [128], [128]]
+#up_gcn_outDim: [[128], [128], [128]]
+#up_cntxt_mlp_lst:
+#num_points: 2560
+#input_dropout_ratio: 0.125
+
+
+
+
+#### aggregation # tucs    s3_logs/indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug2_ball_wd1e8_lrshell
+####
+####8192
+####1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+####256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+####64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+####16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+####
+####64   cluster, interp , mlp_list=[256,256]
+####256  cluster, interp , mlp_list=[256,256]
+####1024 cluster, interp , mlp_list=[256,128]
+####8192 cluster, interp , mlp_list=[128,128,128]
+#use_bn: t
+#aug_lv: 2
+#indim: 4
+#normalize: ball
+#relutp: relu
+#bn_decay: 0.9
+#per_class_weights: none
+#val_interval: 1
+#aggtype: gcn
+#optimizer: adam
+#weight_decay: 0.00000001
+#agg: max_pooling
+#fps: False
+#lr: 0.001
+#localfdim: 0
+#attfdim: 10
+#gpus: "4"
+#save_model_prefix: indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug2_ball_wd1e8_lrshell
+#voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+#grid_size_lst: [[40, 40, 40], [15, 15, 15], [5, 5, 5]]
+#lidar_coord: [1.0, 1.0, 1.0]
+#max_p_grid_lst: [64, 32, 32]
+#max_o_grid_lst: [512, 256, 24]
+#kernel_size_lst: [3, 3, 3]
+#stride_lst: [1, 1, 1]
+#single_padding_lst: [none, none, none]
+#inputDim: [4, 64, 128]
+#elevation: []
+#pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+#cntxt_mlp_lst:
+#gcn_outDim: [[],[],[]]
+#relu: False
+#point_set: partial
+#batch_size: 16
+#loc_weight: True
+#loc_within: True
+#neigh_fetch: 0
+#att_full:
+#
+#
+#up_neigh_fetch: True
+#up_agg: max_pooling
+#up_aggtype: gcn
+#up_att_full:
+#up_type: grid
+#up_attfdim: 10
+#up_inputDim: [256, 128, 128]
+#up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+#up_grid_size_lst : [[5, 5, 5], [15, 15, 15], [40, 40, 40]]
+#up_max_p_grid_lst: [5, 5, 5]
+#up_max_o_grid_lst: [256, 512, 2560]
+#up_kernel_size_lst: [3, 3, 3]
+#up_stride_lst: [1, 1, 1]
+## add, concat
+#up_center_inte: concat
+#up_center_dim: [[128], [128], [128]]
+#up_pt_ele_dim: [[128], [128], [128]]
+#up_gcn_outDim: [[128], [128], [128]]
+#up_cntxt_mlp_lst:
+#num_points: 2560
+#input_dropout_ratio: 0.125
+
+
+
+#### aggregation # tucs    s3_logs/indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug3_ball_wd1e8_lrshell
+####
+####8192
+####1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+####256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+####64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+####16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+####
+####64   cluster, interp , mlp_list=[256,256]
+####256  cluster, interp , mlp_list=[256,256]
+####1024 cluster, interp , mlp_list=[256,128]
+####8192 cluster, interp , mlp_list=[128,128,128]
+#use_bn: t
+#aug_lv: 3
+#indim: 4
+#normalize: ball
+#relutp: relu
+#bn_decay: 0.9
+#per_class_weights: none
+#val_interval: 1
+#aggtype: gcn
+#optimizer: adam
+#weight_decay: 0.00000001
+#agg: max_pooling
+#fps: False
+#lr: 0.001
+#localfdim: 0
+#attfdim: 10
+#gpus: "5"
+#save_model_prefix: indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug3_ball_wd1e8_lrshell
+#voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+#grid_size_lst: [[40, 40, 40], [15, 15, 15], [5, 5, 5]]
+#lidar_coord: [1.0, 1.0, 1.0]
+#max_p_grid_lst: [64, 32, 32]
+#max_o_grid_lst: [512, 256, 24]
+#kernel_size_lst: [3, 3, 3]
+#stride_lst: [1, 1, 1]
+#single_padding_lst: [none, none, none]
+#inputDim: [4, 64, 128]
+#elevation: []
+#pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+#cntxt_mlp_lst:
+#gcn_outDim: [[],[],[]]
+#relu: False
+#point_set: partial
+#batch_size: 16
+#loc_weight: True
+#loc_within: True
+#neigh_fetch: 0
+#att_full:
+#
+#
+#up_neigh_fetch: True
+#up_agg: max_pooling
+#up_aggtype: gcn
+#up_att_full:
+#up_type: grid
+#up_attfdim: 10
+#up_inputDim: [256, 128, 128]
+#up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+#up_grid_size_lst : [[5, 5, 5], [15, 15, 15], [40, 40, 40]]
+#up_max_p_grid_lst: [5, 5, 5]
+#up_max_o_grid_lst: [256, 512, 2560]
+#up_kernel_size_lst: [3, 3, 3]
+#up_stride_lst: [1, 1, 1]
+## add, concat
+#up_center_inte: concat
+#up_center_dim: [[128], [128], [128]]
+#up_pt_ele_dim: [[128], [128], [128]]
+#up_gcn_outDim: [[128], [128], [128]]
+#up_cntxt_mlp_lst:
+#num_points: 2560
+#input_dropout_ratio: 0.125
+
+
+#### aggregation # tucs    s3_logs/indim6_2560_b16_0_10_10_near555_512_256_24_300epoch_aug4_ball_wd1e8_lrshell
+####
+####8192
+####1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+####256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+####64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+####16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+####
+####64   cluster, interp , mlp_list=[256,256]
+####256  cluster, interp , mlp_list=[256,256]
+####1024 cluster, interp , mlp_list=[256,128]
+####8192 cluster, interp , mlp_list=[128,128,128]
+#use_bn: t
+#aug_lv: 4
+#indim: 4
+#normalize: ball
+#relutp: relu
+#bn_decay: 0.9
+#per_class_weights: none
+#val_interval: 1
+#aggtype: gcn
+#optimizer: adam
+#weight_decay: 0.00000001
+#agg: max_pooling
+#fps: False
+#lr: 0.001
+#localfdim: 0
+#attfdim: 10
+#gpus: "6"
+#save_model_prefix: indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug4_ball_wd1e8_lrshell
+#voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+#grid_size_lst: [[40, 40, 40], [15, 15, 15], [5, 5, 5]]
+#lidar_coord: [1.0, 1.0, 1.0]
+#max_p_grid_lst: [64, 32, 32]
+#max_o_grid_lst: [512, 256, 24]
+#kernel_size_lst: [3, 3, 3]
+#stride_lst: [1, 1, 1]
+#single_padding_lst: [none, none, none]
+#inputDim: [4, 64, 128]
+#elevation: []
+#pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+#cntxt_mlp_lst:
+#gcn_outDim: [[],[],[]]
+#relu: False
+#point_set: partial
+#batch_size: 16
+#loc_weight: True
+#loc_within: True
+#neigh_fetch: 0
+#att_full:
+#
+#
+#up_neigh_fetch: True
+#up_agg: max_pooling
+#up_aggtype: gcn
+#up_att_full:
+#up_type: grid
+#up_attfdim: 10
+#up_inputDim: [256, 128, 128]
+#up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+#up_grid_size_lst : [[5, 5, 5], [15, 15, 15], [40, 40, 40]]
+#up_max_p_grid_lst: [5, 5, 5]
+#up_max_o_grid_lst: [256, 512, 2560]
+#up_kernel_size_lst: [3, 3, 3]
+#up_stride_lst: [1, 1, 1]
+## add, concat
+#up_center_inte: concat
+#up_center_dim: [[128], [128], [128]]
+#up_pt_ele_dim: [[128], [128], [128]]
+#up_gcn_outDim: [[128], [128], [128]]
+#up_cntxt_mlp_lst:
+#num_points: 2560
+#input_dropout_ratio: 0.125
+
+
+#
+#### aggregation # tucs    s3_logs/indim6_2560_b16_0_10_10_near555_512_256_24_300epoch_aug5_ball_wd1e8_lrshell
+####
+####8192
+####1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+####256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+####64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+####16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+####
+####64   cluster, interp , mlp_list=[256,256]
+####256  cluster, interp , mlp_list=[256,256]
+####1024 cluster, interp , mlp_list=[256,128]
+####8192 cluster, interp , mlp_list=[128,128,128]
+#use_bn: t
+#aug_lv: 5
+#indim: 4
+#normalize: ball
+#relutp: relu
+#bn_decay: 0.9
+#per_class_weights: none
+#val_interval: 1
+#aggtype: gcn
+#optimizer: adam
+#weight_decay: 0.00000001
+#agg: max_pooling
+#fps: False
+#lr: 0.001
+#localfdim: 0
+#attfdim: 10
+#gpus: "7"
+#save_model_prefix: indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug5_ball_wd1e8_lrshell
+#voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+#grid_size_lst: [[40, 40, 40], [15, 15, 15], [5, 5, 5]]
+#lidar_coord: [1.0, 1.0, 1.0]
+#max_p_grid_lst: [64, 32, 32]
+#max_o_grid_lst: [512, 256, 24]
+#kernel_size_lst: [3, 3, 3]
+#stride_lst: [1, 1, 1]
+#single_padding_lst: [none, none, none]
+#inputDim: [4, 64, 128]
+#elevation: []
+#pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+#cntxt_mlp_lst:
+#gcn_outDim: [[],[],[]]
+#relu: False
+#point_set: partial
+#batch_size: 16
+#loc_weight: True
+#loc_within: True
+#neigh_fetch: 0
+#att_full:
+#
+#
+#up_neigh_fetch: True
+#up_agg: max_pooling
+#up_aggtype: gcn
+#up_att_full:
+#up_type: grid
+#up_attfdim: 10
+#up_inputDim: [256, 128, 128]
+#up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+#up_grid_size_lst : [[5, 5, 5], [15, 15, 15], [40, 40, 40]]
+#up_max_p_grid_lst: [5, 5, 5]
+#up_max_o_grid_lst: [256, 512, 2560]
+#up_kernel_size_lst: [3, 3, 3]
+#up_stride_lst: [1, 1, 1]
+## add, concat
+#up_center_inte: concat
+#up_center_dim: [[128], [128], [128]]
+#up_pt_ele_dim: [[128], [128], [128]]
+#up_gcn_outDim: [[128], [128], [128]]
+#up_cntxt_mlp_lst:
+#num_points: 2560
+#input_dropout_ratio: 0.125
+
+
+#### aggregation # tucs    s3_logs/indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug6_ball_wd1e8_lrshell
+####
+####8192
+####1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+####256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+####64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+####16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+####
+####64   cluster, interp , mlp_list=[256,256]
+####256  cluster, interp , mlp_list=[256,256]
+####1024 cluster, interp , mlp_list=[256,128]
+####8192 cluster, interp , mlp_list=[128,128,128]
+#use_bn: t
+#aug_lv: 6
+#indim: 4
+#normalize: ball
+#relutp: relu
+#bn_decay: 0.9
+#per_class_weights: none
+#val_interval: 1
+#aggtype: gcn
+#optimizer: adam
+#weight_decay: 0.00000001
+#agg: max_pooling
+#fps: False
+#lr: 0.001
+#localfdim: 0
+#attfdim: 10
+#gpus: "1"
+#save_model_prefix: indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug6_ball_wd1e8_lrshell
+#voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+#grid_size_lst: [[40, 40, 40], [15, 15, 15], [5, 5, 5]]
+#lidar_coord: [1.0, 1.0, 1.0]
+#max_p_grid_lst: [64, 32, 32]
+#max_o_grid_lst: [512, 256, 24]
+#kernel_size_lst: [3, 3, 3]
+#stride_lst: [1, 1, 1]
+#single_padding_lst: [none, none, none]
+#inputDim: [4, 64, 128]
+#elevation: []
+#pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+#cntxt_mlp_lst:
+#gcn_outDim: [[],[],[]]
+#relu: False
+#point_set: partial
+#batch_size: 16
+#loc_weight: True
+#loc_within: True
+#neigh_fetch: 0
+#att_full:
+#
+#
+#up_neigh_fetch: True
+#up_agg: max_pooling
+#up_aggtype: gcn
+#up_att_full:
+#up_type: grid
+#up_attfdim: 10
+#up_inputDim: [256, 128, 128]
+#up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+#up_grid_size_lst : [[5, 5, 5], [15, 15, 15], [40, 40, 40]]
+#up_max_p_grid_lst: [5, 5, 5]
+#up_max_o_grid_lst: [256, 512, 2560]
+#up_kernel_size_lst: [3, 3, 3]
+#up_stride_lst: [1, 1, 1]
+## add, concat
+#up_center_inte: concat
+#up_center_dim: [[128], [128], [128]]
+#up_pt_ele_dim: [[128], [128], [128]]
+#up_gcn_outDim: [[128], [128], [128]]
+#up_cntxt_mlp_lst:
+#num_points: 2560
+#input_dropout_ratio: 0.125
+
+#
+#
+#### aggregation # tucs    s3_logs/indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug7_ball_wd1e8_lrshell
+####
+####8192
+####1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+####256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+####64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+####16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+####
+####64   cluster, interp , mlp_list=[256,256]
+####256  cluster, interp , mlp_list=[256,256]
+####1024 cluster, interp , mlp_list=[256,128]
+####8192 cluster, interp , mlp_list=[128,128,128]
+#use_bn: t
+#aug_lv: 7
+#indim: 4
+#normalize: ball
+#relutp: relu
+#bn_decay: 0.9
+#per_class_weights: none
+#val_interval: 1
+#aggtype: gcn
+#optimizer: adam
+#weight_decay: 0.00000001
+#agg: max_pooling
+#fps: False
+#lr: 0.001
+#localfdim: 0
+#attfdim: 10
+#gpus: "2"
+#save_model_prefix: indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug7_ball_wd1e8_lrshell
+#voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+#grid_size_lst: [[40, 40, 40], [15, 15, 15], [5, 5, 5]]
+#lidar_coord: [1.0, 1.0, 1.0]
+#max_p_grid_lst: [64, 32, 32]
+#max_o_grid_lst: [512, 256, 24]
+#kernel_size_lst: [3, 3, 3]
+#stride_lst: [1, 1, 1]
+#single_padding_lst: [none, none, none]
+#inputDim: [4, 64, 128]
+#elevation: []
+#pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+#cntxt_mlp_lst:
+#gcn_outDim: [[],[],[]]
+#relu: False
+#point_set: partial
+#batch_size: 16
+#loc_weight: True
+#loc_within: True
+#neigh_fetch: 0
+#att_full:
+#
+#
+#up_neigh_fetch: True
+#up_agg: max_pooling
+#up_aggtype: gcn
+#up_att_full:
+#up_type: grid
+#up_attfdim: 10
+#up_inputDim: [256, 128, 128]
+#up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+#up_grid_size_lst : [[5, 5, 5], [15, 15, 15], [40, 40, 40]]
+#up_max_p_grid_lst: [5, 5, 5]
+#up_max_o_grid_lst: [256, 512, 2560]
+#up_kernel_size_lst: [3, 3, 3]
+#up_stride_lst: [1, 1, 1]
+## add, concat
+#up_center_inte: concat
+#up_center_dim: [[128], [128], [128]]
+#up_pt_ele_dim: [[128], [128], [128]]
+#up_gcn_outDim: [[128], [128], [128]]
+#up_cntxt_mlp_lst:
+#num_points: 2560
+#input_dropout_ratio: 0.125
+
+
+#
+### aggregation # tucs    s3_logs/indim6_2560_b16_0_10_10_near555_512_256_24_300epoch_aug6_ballnoy_wd1e8_lrshell
+###
+###8192
+###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+###
+###64   cluster, interp , mlp_list=[256,256]
+###256  cluster, interp , mlp_list=[256,256]
+###1024 cluster, interp , mlp_list=[256,128]
+###8192 cluster, interp , mlp_list=[128,128,128]
+#use_bn: t
+#aug_lv: 6
+#indim: 4
+#normalize: ballnoy
+#relutp: relu
+#bn_decay: 0.9
+#per_class_weights: none
+#val_interval: 1
+#aggtype: gcn
+#optimizer: adam
+#weight_decay: 0.00000001
+#agg: max_pooling
+#fps: False
+#lr: 0.001
+#localfdim: 0
+#attfdim: 10
+#gpus: "0"
+#save_model_prefix: indim6_2560_b16_0_10_10_near555_512_256_24_300epoch_aug6_ballnoy_wd1e8_lrshell
+#voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+#grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+#lidar_coord: [1.0, 2.0, 1.0]
+#max_p_grid_lst: [64, 32, 32]
+#max_o_grid_lst: [512, 256, 24]
+#kernel_size_lst: [3, 3, 3]
+#stride_lst: [1, 1, 1]
+#single_padding_lst: [none, none, none]
+#inputDim: [4, 64, 128]
+#elevation: []
+#pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+#cntxt_mlp_lst:
+#gcn_outDim: [[],[],[]]
+#relu: False
+#point_set: partial
+#batch_size: 16
+#loc_weight: True
+#loc_within: True
+#neigh_fetch: 0
+#att_full:
+#
+#
+#up_neigh_fetch: True
+#up_agg: max_pooling
+#up_aggtype: gcn
+#up_att_full:
+#up_type: grid
+#up_attfdim: 10
+#up_inputDim: [256, 128, 128]
+#up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+#up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+#up_max_p_grid_lst: [5, 5, 5]
+#up_max_o_grid_lst: [256, 512, 2560]
+#up_kernel_size_lst: [3, 3, 3]
+#up_stride_lst: [1, 1, 1]
+## add, concat
+#up_center_inte: concat
+#up_center_dim: [[128], [128], [128]]
+#up_pt_ele_dim: [[128], [128], [128]]
+#up_gcn_outDim: [[128], [128], [128]]
+#up_cntxt_mlp_lst:
+#num_points: 2560
+#input_dropout_ratio: 0.125
+
+
+
+### aggregation # tucs    s3_logs/indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug0_square_wd1e8_lrshell
+###
+###8192
+###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+###
+###64   cluster, interp , mlp_list=[256,256]
+###256  cluster, interp , mlp_list=[256,256]
+###1024 cluster, interp , mlp_list=[256,128]
+###8192 cluster, interp , mlp_list=[128,128,128]
+#use_bn: t
+#aug_lv: 0
+#indim: 4
+#normalize: square
+#relutp: relu
+#bn_decay: 0.9
+#per_class_weights: none
+#val_interval: 1
+#aggtype: gcn
+#optimizer: adam
+#weight_decay: 0.00000001
+#agg: max_pooling
+#fps: False
+#lr: 0.001
+#localfdim: 0
+#attfdim: 10
+#gpus: "0"
+#save_model_prefix: indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug0_square_wd1e8_lrshell
+#voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+#grid_size_lst: [[40, 40, 40], [15, 15, 15], [5, 5, 5]]
+#lidar_coord: [1.0, 1.0, 1.0]
+#max_p_grid_lst: [64, 32, 32]
+#max_o_grid_lst: [512, 256, 24]
+#kernel_size_lst: [3, 3, 3]
+#stride_lst: [1, 1, 1]
+#single_padding_lst: [none, none, none]
+#inputDim: [4, 64, 128]
+#elevation: []
+#pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+#cntxt_mlp_lst:
+#gcn_outDim: [[],[],[]]
+#relu: False
+#point_set: partial
+#batch_size: 16
+#loc_weight: True
+#loc_within: True
+#neigh_fetch: 0
+#att_full:
+#
+#
+#up_neigh_fetch: True
+#up_agg: max_pooling
+#up_aggtype: gcn
+#up_att_full:
+#up_type: grid
+#up_attfdim: 10
+#up_inputDim: [256, 128, 128]
+#up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+#up_grid_size_lst : [[5, 5, 5], [15, 15, 15], [40, 40, 40]]
+#up_max_p_grid_lst: [5, 5, 5]
+#up_max_o_grid_lst: [256, 512, 2560]
+#up_kernel_size_lst: [3, 3, 3]
+#up_stride_lst: [1, 1, 1]
+## add, concat
+#up_center_inte: concat
+#up_center_dim: [[128], [128], [128]]
+#up_pt_ele_dim: [[128], [128], [128]]
+#up_gcn_outDim: [[128], [128], [128]]
+#up_cntxt_mlp_lst:
+#num_points: 2560
+#input_dropout_ratio: 0.125
+
+
+### aggregation # tucs    s3_logs/indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug0_squarenoy_wd1e8_lrshell
+###
+###8192
+###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+###
+###64   cluster, interp , mlp_list=[256,256]
+###256  cluster, interp , mlp_list=[256,256]
+###1024 cluster, interp , mlp_list=[256,128]
+###8192 cluster, interp , mlp_list=[128,128,128]
+#use_bn: t
+#aug_lv: 0
+#indim: 4
+#normalize: squarenoy
+#relutp: relu
+#bn_decay: 0.9
+#per_class_weights: none
+#val_interval: 1
+#aggtype: gcn
+#optimizer: adam
+#weight_decay: 0.00000001
+#agg: max_pooling
+#fps: False
+#lr: 0.001
+#localfdim: 0
+#attfdim: 10
+#gpus: "3"
+#save_model_prefix: indim4_2560_b16_0_10_10_near555_512_256_24_300epoch_aug0_squarenoy_wd1e8_lrshell
+#voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+#grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+#lidar_coord: [1.0, 2.0, 1.0]
+#max_p_grid_lst: [64, 32, 32]
+#max_o_grid_lst: [512, 256, 24]
+#kernel_size_lst: [3, 3, 3]
+#stride_lst: [1, 1, 1]
+#single_padding_lst: [none, none, none]
+#inputDim: [4, 64, 128]
+#elevation: []
+#pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+#cntxt_mlp_lst:
+#gcn_outDim: [[],[],[]]
+#relu: False
+#point_set: partial
+#batch_size: 16
+#loc_weight: True
+#loc_within: True
+#neigh_fetch: 0
+#att_full:
+#
+#up_neigh_fetch: True
+#up_agg: max_pooling
+#up_aggtype: gcn
+#up_att_full:
+#up_type: grid
+#up_attfdim: 10
+#up_inputDim: [256, 128, 128]
+#up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+#up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+#up_max_p_grid_lst: [5, 5, 5]
+#up_max_o_grid_lst: [256, 512, 2560]
+#up_kernel_size_lst: [3, 3, 3]
+#up_stride_lst: [1, 1, 1]
+## add, concat
+#up_center_inte: concat
+#up_center_dim: [[128], [128], [128]]
+#up_pt_ele_dim: [[128], [128], [128]]
+#up_gcn_outDim: [[128], [128], [128]]
+#up_cntxt_mlp_lst:
+#num_points: 2560
+#input_dropout_ratio: 0.125
+
+
+
+
+# ## aggregation # tucs    s3_logs/indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug6_ball_wd1e8_lrshell
+# ###
+# ###8192
+# ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# ###
+# ###64   cluster, interp , mlp_list=[256,256]
+# ###256  cluster, interp , mlp_list=[256,256]
+# ###1024 cluster, interp , mlp_list=[256,128]
+# ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 6
+# indim: 4
+# normalize: ball
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "4"
+# save_model_prefix: indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug6_ball_wd1e8_lrshell
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 40, 40], [15, 15, 15], [5, 5, 5]]
+# lidar_coord: [1.0, 1.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 5, 5], [15, 15, 15], [40, 40, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 2048]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 2048
+# input_dropout_ratio: 0
+
+
+
+# # ## aggregation # tucs    s3_logs/indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug0_ballnoy_wd1e8_lrshell
+# # ###
+# # ###8192
+# # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # ###
+# # ###64   cluster, interp , mlp_list=[256,256]
+# # ###256  cluster, interp , mlp_list=[256,256]
+# # ###1024 cluster, interp , mlp_list=[256,128]
+# # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 0
+# indim: 4
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "0"
+# save_model_prefix: indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug0_ballnoy_wd1e8_lrshell
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 2048]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 2048
+# input_dropout_ratio: 0
+
+# # ## aggregation # tucs    s3_logs/indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug1_ballnoy_wd1e8_lrshell
+# # ###
+# # ###8192
+# # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # ###
+# # ###64   cluster, interp , mlp_list=[256,256]
+# # ###256  cluster, interp , mlp_list=[256,256]
+# # ###1024 cluster, interp , mlp_list=[256,128]
+# # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 1
+# indim: 4
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "1"
+# save_model_prefix: indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug1_ballnoy_wd1e8_lrshell
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 2048]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 2048
+# input_dropout_ratio: 0
+
+
+# # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &> s3_logs/indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug4_ballnoy_wd1e8_lrshell &
+# # ###
+# # ###8192
+# # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # ###
+# # ###64   cluster, interp , mlp_list=[256,256]
+# # ###256  cluster, interp , mlp_list=[256,256]
+# # ###1024 cluster, interp , mlp_list=[256,128]
+# # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 4
+# indim: 4
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "2"
+# save_model_prefix: indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug4_ballnoy_wd1e8_lrshell
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 2048]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 2048
+# input_dropout_ratio: 0
+
+
+
+# # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &> s3_logs/indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug6_ballnoy_wd1e8_lrshell &
+# # ###
+# # ###8192
+# # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # ###
+# # ###64   cluster, interp , mlp_list=[256,256]
+# # ###256  cluster, interp , mlp_list=[256,256]
+# # ###1024 cluster, interp , mlp_list=[256,128]
+# # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 6
+# indim: 4
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "3"
+# save_model_prefix: indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug6_ballnoy_wd1e8_lrshell
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 2048]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 2048
+# input_dropout_ratio: 0
+
+
+# # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &> s3_logs/indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug5_ballnoy_wd1e8_lrshell &# ###
+# # ###8192
+# # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # ###
+# # ###64   cluster, interp , mlp_list=[256,256]
+# # ###256  cluster, interp , mlp_list=[256,256]
+# # ###1024 cluster, interp , mlp_list=[256,128]
+# # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 5
+# indim: 4
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "0"
+# save_model_prefix: indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug5_ballnoy_wd1e8_lrshell
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 2048]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 2048
+# input_dropout_ratio: 0
+
+
+# # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &> s3_logs/indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug8_ballnoy_wd1e8_lrshell &
+# ###8192
+# ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# ###
+# ###64   cluster, interp , mlp_list=[256,256]
+# ###256  cluster, interp , mlp_list=[256,256]
+# ###1024 cluster, interp , mlp_list=[256,128]
+# ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 8
+# indim: 4
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "1"
+# save_model_prefix: indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug8_ballnoy_wd1e8_lrshell
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 2048]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 2048
+# input_dropout_ratio: 0
+
+
+# # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>   s3_logs/indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug9_ballnoy_wd1e8_lrshell &
+# # ###
+# # ###8192
+# # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # ###
+# # ###64   cluster, interp , mlp_list=[256,256]
+# # ###256  cluster, interp , mlp_list=[256,256]
+# # ###1024 cluster, interp , mlp_list=[256,128]
+# # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 9
+# indim: 4
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "2"
+# save_model_prefix: indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug9_ballnoy_wd1e8_lrshell
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 2048]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 2048
+# input_dropout_ratio: 0
+
+
+# # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug10_ballnoy_wd1e8_lrshell &   
+# # ###8192
+# # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # ###
+# # ###64   cluster, interp , mlp_list=[256,256]
+# # ###256  cluster, interp , mlp_list=[256,256]
+# # ###1024 cluster, interp , mlp_list=[256,128]
+# # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 10
+# indim: 4
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "3"
+# save_model_prefix: indim4_2048nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug10_ballnoy_wd1e8_lrshell
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 2048]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 2048
+# input_dropout_ratio: 0
+
+
+
+# # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_2048nodrop_b16_0_10_10_near555_1024_256_24_300epoch_aug9_ballnoy_wd1e8_lrshell &   
+# # ###8192
+# # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # ###
+# # ###64   cluster, interp , mlp_list=[256,256]
+# # ###256  cluster, interp , mlp_list=[256,256]
+# # ###1024 cluster, interp , mlp_list=[256,128]
+# # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 9
+# indim: 4
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "1"
+# save_model_prefix: indim4_2048nodrop_b16_0_10_10_near1024_512_256_24_300epoch_aug11_ballnoy_wd1e8_lrshell
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [1024, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 1024, 2048]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 2048
+# input_dropout_ratio: 0
+
+
+
+# # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_2048nodrop_b16_0_10_10_near335_1024_256_24_300epoch_aug9_ballnoy_wd1e8_lrshell &   
+# # ###8192
+# # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # ###
+# # ###64   cluster, interp , mlp_list=[256,256]
+# # ###256  cluster, interp , mlp_list=[256,256]
+# # ###1024 cluster, interp , mlp_list=[256,128]
+# # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 9
+# indim: 4
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "2"
+# save_model_prefix: indim4_2048nodrop_b16_0_10_10_near335_1024_256_24_300epoch_aug9_ballnoy_wd1e8_lrshell
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [32, 16, 16]
+# max_o_grid_lst: [1024, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [3, 3, 5]
+# up_max_o_grid_lst: [256, 1024, 2048]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 2048
+# input_dropout_ratio: 0
+
+
+# # # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_8192nodrop_b16_0_10_10_near555_1024_256_24_300epoch_aug9_ballnoy_wd1e8_lrshell &   
+# # # ###8192
+# # # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # # ###
+# # # ###64   cluster, interp , mlp_list=[256,256]
+# # # ###256  cluster, interp , mlp_list=[256,256]
+# # # ###1024 cluster, interp , mlp_list=[256,128]
+# # # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 9
+# indim: 4
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "3"
+# save_model_prefix: indim4_8192nodrop_b16_0_10_10_near555_1024_256_24_300epoch_aug9_ballnoy_wd1e8_lrshell
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [1024, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 1024, 8192]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 8192
+# input_dropout_ratio: 0
+
+
+# # # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_4096nodrop_b16_0_10_10_near555_1024_256_24_300epoch_aug9_ballnoy_wd1e8_lrshell &   
+# # # ###8192
+# # # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # # ###
+# # # ###64   cluster, interp , mlp_list=[256,256]
+# # # ###256  cluster, interp , mlp_list=[256,256]
+# # # ###1024 cluster, interp , mlp_list=[256,128]
+# # # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 9
+# indim: 4
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "0"
+# save_model_prefix: indim4_4096nodrop_b16_0_10_10_near555_1024_256_24_300epoch_aug9_ballnoy_wd1e8_lrshell
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [1024, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 1024, 4096]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 4096
+# input_dropout_ratio: 0
+
+
+# # # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_4096nodrop_b16_0_10_10_near555_1024_256_24_300epoch_aug9_ballnoy_wd1e8_lrslow &   
+# # # ###8192
+# # # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # # ###
+# # # ###64   cluster, interp , mlp_list=[256,256]
+# # # ###256  cluster, interp , mlp_list=[256,256]
+# # # ###1024 cluster, interp , mlp_list=[256,128]
+# # # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 9
+# indim: 4
+# # lr_factor_epochs: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60]
+# lr_factor_epochs: [4, 8, 16, 24, 32, 40, 48, 56, 64, 72]
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "1"
+# save_model_prefix: indim4_4096nodrop_b16_0_10_10_near555_1024_256_24_300epoch_aug9_ballnoy_wd1e8_lrslow
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [1024, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 1024, 4096]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 4096
+# input_dropout_ratio: 0
+
+
+
+
+# # # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_4096nodrop_b16_0_10_10_near555_1024_256_24_300epoch_aug9_ballnoy_wd1e8_lrslow &   
+# # # ###8192
+# # # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # # ###
+# # # ###64   cluster, interp , mlp_list=[256,256]
+# # # ###256  cluster, interp , mlp_list=[256,256]
+# # # ###1024 cluster, interp , mlp_list=[256,128]
+# # # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 9
+# indim: 4
+# # lr_factor_epochs: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60]
+# lr_factor_epochs: [4, 8, 16, 24, 32, 40, 48, 56, 64, 72]
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "1"
+# save_model_prefix: indim4_4096nodrop_b16_0_10_10_near555_1024_256_24_300epoch_aug9_ballnoy_wd1e8_lrslow
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [1024, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 1024, 4096]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 4096
+# input_dropout_ratio: 0
+
+
+
+# # # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug10_dp0.5_featxyz &   
+# # # ###8192
+# # # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # # ###
+# # # ###64   cluster, interp , mlp_list=[256,256]
+# # # ###256  cluster, interp , mlp_list=[256,256]
+# # # ###1024 cluster, interp , mlp_list=[256,128]
+# # # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 10
+# indim: 4
+# direct_raw_feat: featxyz
+# dropout_final: 0.5
+# lr_factor_epochs: [4, 8, 16, 24, 32, 40, 48, 56, 64, 72]
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "0"
+# save_model_prefix: indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug10_dp0.5_featxyz
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 4096]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 4096
+# input_dropout_ratio: 0
+
+
+
+
+# # # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug11_dp0.5_featxyz &   
+# # # ###8192
+# # # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # # ###
+# # # ###64   cluster, interp , mlp_list=[256,256]
+# # # ###256  cluster, interp , mlp_list=[256,256]
+# # # ###1024 cluster, interp , mlp_list=[256,128]
+# # # ###8192 cluster, interp , mlp_list=[128,128,128]
+use_bn: t
+aug_lv: 11
+indim: 4
+direct_raw_feat: featxyz
+dropout_final: 0.5
+lr_factor_epochs: [4, 8, 16, 24, 32, 40, 48, 56, 64, 72]
+normalize: ballnoy
+postnorm: False
+relutp: relu
+bn_decay: 0.9
+per_class_weights: none
+val_interval: 1
+aggtype: gcn
+optimizer: adam
+weight_decay: 0.00000001
+agg: max_pooling
+fps: False
+lr: 0.001
+localfdim: 0
+attfdim: 10
+gpus: "0"
+save_model_prefix: indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug11_dp0.5_featxyz
+voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+lidar_coord: [1.0, 2.0, 1.0]
+max_p_grid_lst: [64, 32, 32]
+max_o_grid_lst: [512, 256, 24]
+kernel_size_lst: [3, 3, 3]
+stride_lst: [1, 1, 1]
+single_padding_lst: [none, none, none]
+inputDim: [4, 64, 128]
+elevation: []
+pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+cntxt_mlp_lst:
+gcn_outDim: [[],[],[]]
+relu: False
+point_set: partial
+batch_size: 8
+loc_weight: True
+loc_within: True
+neigh_fetch: 0
+att_full:
+
+
+up_neigh_fetch: True
+up_agg: max_pooling
+up_aggtype: gcn
+up_att_full:
+up_type: grid
+up_attfdim: 10
+up_inputDim: [256, 128, 128]
+up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+up_max_p_grid_lst: [5, 5, 5]
+up_max_o_grid_lst: [256, 512, 4096]
+up_kernel_size_lst: [3, 3, 3]
+up_stride_lst: [1, 1, 1]
+# add, concat
+up_center_inte: concat
+up_center_dim: [[128], [128], [128]]
+up_pt_ele_dim: [[128], [128], [128]]
+up_gcn_outDim: [[128], [128], [128]]
+up_cntxt_mlp_lst:
+num_points: 4096
+input_dropout_ratio: 0
+
+
+# # # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug12_dp0.5_featxyz &   
+# # # ###8192
+# # # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # # ###
+# # # ###64   cluster, interp , mlp_list=[256,256]
+# # # ###256  cluster, interp , mlp_list=[256,256]
+# # # ###1024 cluster, interp , mlp_list=[256,128]
+# # # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 12
+# indim: 4
+# direct_raw_feat: featxyz
+# dropout_final: 0.5
+# lr_factor_epochs: [4, 8, 16, 24, 32, 40, 48, 56, 64, 72]
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "2"
+# save_model_prefix: indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug12_dp0.5_featxyz
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 4096]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 4096
+# input_dropout_ratio: 0
+
+
+# # # # # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim3_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug11_dp0.5_featxyz &   
+# # # # # ###8192
+# # # # # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # # # # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # # # # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # # # # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # # # # ###
+# # # # # ###64   cluster, interp , mlp_list=[256,256]
+# # # # # ###256  cluster, interp , mlp_list=[256,256]
+# # # # # ###1024 cluster, interp , mlp_list=[256,128]
+# # # # # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 11
+# indim: 3
+# direct_raw_feat: featxyz
+# dropout_final: 0.5
+# lr_factor_epochs: [4, 8, 16, 24, 32, 40, 48, 56, 64, 72]
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "0"
+# save_model_prefix: indim3_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug11_dp0.5_featxyz
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [3, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 4096]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 4096
+# input_dropout_ratio: 0
+
+
+# # # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug11_dp0.5_feat &   
+# # # ###8192
+# # # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # # ###
+# # # ###64   cluster, interp , mlp_list=[256,256]
+# # # ###256  cluster, interp , mlp_list=[256,256]
+# # # ###1024 cluster, interp , mlp_list=[256,128]
+# # # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 11
+# indim: 4
+# direct_raw_feat: feat
+# dropout_final: 0.5
+# lr_factor_epochs: [4, 8, 16, 24, 32, 40, 48, 56, 64, 72]
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "1"
+# save_model_prefix: indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug11_dp0.5_feat
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 4096]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 4096
+# input_dropout_ratio: 0
+
+
+# # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug11_dp0.2_featxyz &   
+# # ###8192
+# # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # ###
+# # ###64   cluster, interp , mlp_list=[256,256]
+# # ###256  cluster, interp , mlp_list=[256,256]
+# # ###1024 cluster, interp , mlp_list=[256,128]
+# # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 11
+# indim: 4
+# direct_raw_feat: featxyz
+# dropout_final: 0.2
+# lr_factor_epochs: [4, 8, 16, 24, 32, 40, 48, 56, 64, 72]
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "2"
+# save_model_prefix: indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug11_dp0.2_featxyz
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 4096]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 4096
+# input_dropout_ratio: 0
+
+
+
+# # # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_4096nodrop_b16_3_10_10_near555_512_256_24_300epoch_aug11_dp0.5_featxyz &   
+# # # ###8192
+# # # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # # ###
+# # # ###64   cluster, interp , mlp_list=[256,256]
+# # # ###256  cluster, interp , mlp_list=[256,256]
+# # # ###1024 cluster, interp , mlp_list=[256,128]
+# # # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 11
+# indim: 4
+# direct_raw_feat: featxyz
+# dropout_final: 0.5
+# lr_factor_epochs: [4, 8, 16, 24, 32, 40, 48, 56, 64, 72]
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 3
+# attfdim: 10
+# gpus: "3"
+# save_model_prefix: indim4_4096nodrop_b16_3_10_10_near555_512_256_24_300epoch_aug11_dp0.5_featxyz
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 4096]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 4096
+# input_dropout_ratio: 0
+
+
+
+# # # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_4096nodrop_b16_0_10_10_near555_512_256_32_300epoch_aug11_dp0.5_featxyz &   
+# # # ###8192
+# # # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # # ###
+# # # ###64   cluster, interp , mlp_list=[256,256]
+# # # ###256  cluster, interp , mlp_list=[256,256]
+# # # ###1024 cluster, interp , mlp_list=[256,128]
+# # # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 11
+# indim: 4
+# direct_raw_feat: featxyz
+# dropout_final: 0.5
+# lr_factor_epochs: [4, 8, 16, 24, 32, 40, 48, 56, 64, 72]
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "0"
+# save_model_prefix: indim4_4096nodrop_b16_0_10_10_near555_512_256_32_300epoch_aug11_dp0.5_featxyz
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 32]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 4096]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 4096
+# input_dropout_ratio: 0
+
+
+
+# # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug11_dp0.5_featxyz_bndecay &   
+# # # ###8192
+# # # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # # ###
+# # # ###64   cluster, interp , mlp_list=[256,256]
+# # # ###256  cluster, interp , mlp_list=[256,256]
+# # # ###1024 cluster, interp , mlp_list=[256,128]
+# # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 11
+# indim: 4
+# direct_raw_feat: featxyz
+# dropout_final: 0.5
+# lr_factor_epochs: [4, 8, 16, 24, 32, 40, 48, 56, 64, 72]
+# bn_decay_epochs: [4, 8, 16, 24, 32, 40, 48, 56, 64, 72]
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.5
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "1"
+# save_model_prefix: indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug11_dp0.5_featxyz_bndecay
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 4096]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 4096
+# input_dropout_ratio: 0
+
+
+
+# # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug11_ball_dp0.5_featxyz &   
+# # # # ###8192
+# # # # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # # # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # # # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # # # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # # # ###
+# # # # ###64   cluster, interp , mlp_list=[256,256]
+# # # # ###256  cluster, interp , mlp_list=[256,256]
+# # # # ###1024 cluster, interp , mlp_list=[256,128]
+# # # # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: t
+# aug_lv: 11
+# indim: 4
+# direct_raw_feat: featxyz
+# dropout_final: 0.5
+# lr_factor_epochs: [4, 8, 16, 24, 32, 40, 48, 56, 64, 72]
+# normalize: ball
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 0
+# attfdim: 10
+# gpus: "2"
+# save_model_prefix: indim4_4096nodrop_b16_0_10_10_near555_512_256_24_300epoch_aug11_ball_dp0.5_featxyz
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 40, 40], [15, 15, 15], [5, 5, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+
+# up_neigh_fetch: True
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 5, 5], [15, 15, 15], [40, 40, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 4096]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 4096
+# input_dropout_ratio: 0
+
+
+
+# # # # ## nohup python3 -u train/train_s3dis_gpu_ggcn.py &>  s3_logs/indim4_4096nodrop_b16_3_10_10_near555_512_256_24_300epoch_aug11_dp0.5_featxyz &   
+# # # ###8192
+# # # ###1024 cluster, 32pt / r 0.1, xyz_mlp=[32,32], mlp_list=[32,32,64]
+# # # ###256  cluster, 32pt / r 0.2, xyz_mlp=[32,32], mlp_list=[64,64,128]
+# # # ###64   cluster, 32pt / r 0.4, xyz_mlp=[32,32], mlp_list=[128,128,256]
+# # # ###16   cluster, 32pt / r 0.8, xyz_mlp=[32,32], mlp_list=[256,256,512]
+# # # ###
+# # # ###64   cluster, interp , mlp_list=[256,256]
+# # # ###256  cluster, interp , mlp_list=[256,256]
+# # # ###1024 cluster, interp , mlp_list=[256,128]
+# # # ###8192 cluster, interp , mlp_list=[128,128,128]
+# use_bn: f
+# aug_lv: 11
+# indim: 4
+# direct_raw_feat: featxyz
+# dropout_final: 0.5
+# lr_factor_epochs: [4, 8, 16, 24, 32, 40, 48, 56, 64, 72]
+# normalize: ballnoy
+# postnorm: False
+# relutp: relu
+# bn_decay: 0.9
+# per_class_weights: none
+# val_interval: 1
+# aggtype: gcn
+# optimizer: adam
+# weight_decay: 0.00000001
+# agg: max_pooling
+# fps: False
+# lr: 0.001
+# localfdim: 3
+# attfdim: 10
+# gpus: "0"
+# save_model_prefix: indim4_4096nodrop_b16_3_10_10_near555_512_256_24_300epoch_aug11_dp0.5_featxyz
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.133333,0.133333,0.133333], [0.4, 0.4, 0.4]]
+# grid_size_lst: [[40, 80, 40], [15, 30, 15], [5, 10, 5]]
+# lidar_coord: [1.0, 2.0, 1.0]
+# max_p_grid_lst: [64, 32, 32]
+# max_o_grid_lst: [512, 256, 24]
+# kernel_size_lst: [3, 3, 3]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# inputDim: [4, 64, 128]
+# elevation: []
+# pt_ele_dim: [[32,32,64], [64,64,128], [128,128,256]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: False
+# point_set: partial
+# batch_size: 4
+# loc_weight: True
+# loc_within: True
+# neigh_fetch: 0
+# att_full:
+
+# up_neigh_fetch: False
+# up_agg: max_pooling
+# up_aggtype: gcn
+# up_att_full:
+# up_type: grid
+# up_attfdim: 10
+# up_inputDim: [256, 128, 128]
+# up_voxel_size_lst: [[0.4, 0.4, 0.4], [0.133333,0.133333,0.133333], [0.05, 0.05, 0.05]]
+# up_grid_size_lst : [[5, 10, 5], [15, 30, 15], [40, 80, 40]]
+# up_max_p_grid_lst: [5, 5, 5]
+# up_max_o_grid_lst: [256, 512, 4096]
+# up_kernel_size_lst: [3, 3, 3]
+# up_stride_lst: [1, 1, 1]
+# # add, concat
+# up_center_inte: concat
+# up_center_dim: [[128], [128], [128]]
+# up_pt_ele_dim: [[128], [128], [128]]
+# up_gcn_outDim: [[128], [128], [128]]
+# up_cntxt_mlp_lst:
+# num_points: 8192
+# input_dropout_ratio: 0

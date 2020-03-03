@@ -1,0 +1,386 @@
+# env
+use_cpu: False
+kvstore: local
+
+# task is either [cls_ssg, cls_msg]
+task: cls
+model_dir: output
+# this is for both loading pretrained model in training and loading final model for testing
+# set load_model_epoch to 0 to disable loading pretrained model
+load_model_prefix: output/ggcn_731_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu/2019_10_19_15:26:21/ggcn_731_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu
+#load_model_prefix: output/ModelNet40_Saved/4_best/ModelNet40
+load_model_epoch: 0
+
+# train
+num_epochs: 330
+#num_epochs: 1000
+#num_epochs: 90
+display_interval: 20
+checkpoint_interval: 30
+val_interval: 1
+optimizer: adam
+momentum: 0.9
+lr_policy: step
+lr_factor: 0.7
+#lr_factor: 0.9
+#lr_factor_epochs: [200, 400, 800]
+#lr_factor_epochs: [60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300]
+#lr_factor_epochs: [200]
+bn_decay_factor: 0.5
+bn_decay_clip: 0.99
+use_global_stats: False
+beta1: 0.9
+beta2: 0.999
+#beta2: 0.95
+weight_decay: 0
+#weight_decay: 0.000005
+# per_class_weights: none, auto, manual
+per_class_weights: none
+
+# data
+data_dir: ../data/modelnet40_normal_resampled
+num_points: 2048
+#num_points: 1024
+use_normal: False
+input_dropout_ratio: 0
+hash: para
+relutp: relu
+
+######## GGCN 3 layers logs/ggcn_731_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu_continue
+# group_all: False
+# ##bn_decay_epochs: [60, 120, 200, 270]
+# lr_factor_epochs: [200, 270]
+# new: True
+# bn_decay: 0.9
+# postnorm: False
+# normalize: ball
+# augment_level: 6
+# use_bn: f
+# att_full: next
+# inputDim: [0, 128, 256]
+# gpus: "0"
+# save_model_prefix: ggcn_731_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu_continue
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.25, 0.25, 0.25], [2.0, 2.0, 2.0]]
+# grid_size_lst: [[40, 40, 40], [8, 8, 8], [1, 1, 1]]
+# lidar_coord: [1.0, 1.0, 1.0]
+# max_p_grid_lst: [64, 64, 128]
+# max_o_grid_lst: [1024, 128, 1]
+# kernel_size_lst: [7, 3, 1]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# reverse_index: False
+# fps: False
+# aggtype: gcn
+# localfdim: 3
+# attfdim: 4
+# elevation: []
+# pt_ele_dim: [[64, 64, 128], [128, 128, 256], [256, 256, 512]]
+# att_ele_dim: [[64, 128, 128], [128, 256, 256], [256, 512, 512]]
+# cntxt_mlp_lst: [[],[],[]]
+# gcn_outDim: [[],[],[]]
+# relu: True
+# agg: max_pooling
+# point_set: full
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# lr: 0.000490
+
+
+
+#
+# ######### GGCN 3 layers 10_logs/ggcn_731_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu
+# group_all: False
+# ##bn_decay_epochs: [60, 120, 200, 270]
+# lr_factor_epochs: [60, 120, 200, 270]
+# new: False
+# bn_decay: 0.9
+# normalize: ball
+# postnorm: False
+# augment_level: 6
+# use_bn: t
+# att_full: next
+# inputDim: [0, 128, 256]
+# gpus: "1"
+# save_model_prefix: ggcn_731_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.25, 0.25, 0.25], [2.0, 2.0, 2.0]]
+# grid_size_lst: [[40, 40, 40], [8, 8, 8], [1, 1, 1]]
+# lidar_coord: [1.0, 1.0, 1.0]
+# max_p_grid_lst: [64, 64, 128]
+# max_o_grid_lst: [1024, 128, 1]
+# kernel_size_lst: [7, 3, 1]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# reverse_index: False
+# fps: False
+# aggtype: gcn
+# localfdim: 3
+# attfdim: 4
+# elevation: []
+# pt_ele_dim: [[64, 64, 128], [128, 128, 256], [256, 256, 512]]
+# att_ele_dim: [[64, 128, 128], [128, 256, 256], [256, 512, 512]]
+# cntxt_mlp_lst: [[],[],[]]
+# gcn_outDim: [[],[],[]]
+# relu: True
+# agg: max_pooling
+# point_set: full
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# lr: 0.001
+
+
+######### GGCN 3 layers 10_logs/ggcn_731_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu_new
+#group_all: False
+###bn_decay_epochs: [60, 120, 200, 270]
+#lr_factor_epochs: [60, 120, 200, 270]
+#new: True
+#bn_decay: 0.9
+#normalize: ball
+#postnorm: False
+#augment_level: 6
+#use_bn: t
+#att_full: next
+#inputDim: [0, 128, 256]
+#gpus: "3"
+#save_model_prefix: ggcn_731_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu_new
+#voxel_size_lst: [[0.05, 0.05, 0.05], [0.25, 0.25, 0.25], [2.0, 2.0, 2.0]]
+#grid_size_lst: [[40, 40, 40], [8, 8, 8], [1, 1, 1]]
+#lidar_coord: [1.0, 1.0, 1.0]
+#max_p_grid_lst: [64, 64, 128]
+#max_o_grid_lst: [1024, 128, 1]
+#kernel_size_lst: [7, 3, 1]
+#stride_lst: [1, 1, 1]
+#single_padding_lst: [none, none, none]
+#reverse_index: False
+#fps: False
+#aggtype: gcn
+#localfdim: 3
+#attfdim: 4
+#elevation: []
+#pt_ele_dim: [[64, 64, 128], [128, 128, 256], [256, 256, 512]]
+#att_ele_dim: [[64, 128, 128], [128, 256, 256], [256, 512, 512]]
+#cntxt_mlp_lst: [[],[],[]]
+#gcn_outDim: [[],[],[]]
+#relu: True
+#agg: max_pooling
+#point_set: full
+#batch_size: 16
+#loc_weight: True
+#loc_within: True
+#lr: 0.001
+
+
+######### GGCN 3 layers 10_logs/ggcn_731_maxpooling_3_4_b16_330_1024_nopost_aug9_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu_new
+#group_all: False
+###bn_decay_epochs: [60, 120, 200, 270]
+#lr_factor_epochs: [60, 120, 200, 270]
+#new: True
+#bn_decay: 0.9
+#normalize: ball
+#postnorm: False
+#augment_level: 9
+#use_bn: t
+#att_full: next
+#inputDim: [0, 128, 256]
+#gpus: "0"
+#save_model_prefix: ggcn_731_maxpooling_3_4_b16_330_1024_nopost_aug9_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu_new
+#voxel_size_lst: [[0.05, 0.05, 0.05], [0.25, 0.25, 0.25], [2.0, 2.0, 2.0]]
+#grid_size_lst: [[40, 40, 40], [8, 8, 8], [1, 1, 1]]
+#lidar_coord: [1.0, 1.0, 1.0]
+#max_p_grid_lst: [64, 64, 128]
+#max_o_grid_lst: [1024, 128, 1]
+#kernel_size_lst: [7, 3, 1]
+#stride_lst: [1, 1, 1]
+#single_padding_lst: [none, none, none]
+#reverse_index: False
+#fps: False
+#aggtype: gcn
+#localfdim: 3
+#attfdim: 4
+#elevation: []
+#pt_ele_dim: [[64, 64, 128], [128, 128, 256], [256, 256, 512]]
+#att_ele_dim: [[64, 128, 128], [128, 256, 256], [256, 512, 512]]
+#cntxt_mlp_lst: [[],[],[]]
+#gcn_outDim: [[],[],[]]
+#relu: True
+#agg: max_pooling
+#point_set: full
+#batch_size: 16
+#loc_weight: True
+#loc_within: True
+#lr: 0.001
+
+
+# ######### GGCN 3 layers 10_logs/ggcn_331_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu
+# group_all: False
+# ##bn_decay_epochs: [60, 120, 200, 270]
+# lr_factor_epochs: [60, 120, 200, 270]
+# new: True
+# bn_decay: 0.9
+# normalize: ball
+# postnorm: False
+# augment_level: 6
+# use_bn: t
+# att_full: next
+# inputDim: [0, 128, 256]
+# gpus: "0"
+# save_model_prefix: ggcn_331_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu
+# # voxel_size_lst: [[0.05, 0.05, 0.05], [0.25, 0.25, 0.25], [2.0, 2.0, 2.0]]
+# # grid_size_lst: [[40, 40, 40], [8, 8, 8], [1, 1, 1]]
+# voxel_size_lst: [[0.133333,0.133333,0.133333], [0.25, 0.25, 0.25], [2.0, 2.0, 2.0]]
+# grid_size_lst: [[15, 15, 15], [8, 8, 8], [1, 1, 1]]
+# lidar_coord: [1.0, 1.0, 1.0]
+# max_p_grid_lst: [8, 16, 128]
+# max_o_grid_lst: [1024, 128, 1]
+# kernel_size_lst: [3, 3, 1]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# reverse_index: False
+# fps: False
+# aggtype: gcn
+# localfdim: 3
+# attfdim: 4
+# elevation: []
+# pt_ele_dim: [[64, 64, 128], [128, 128, 256], [256, 256, 512]]
+# att_ele_dim: [[64, 128, 128], [128, 256, 256], [256, 512, 512]]
+# cntxt_mlp_lst: [[],[],[]]
+# gcn_outDim: [[],[],[]]
+# relu: True
+# agg: max_pooling
+# point_set: full
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# lr: 0.001
+
+
+
+# ######### GGCN 3 layers 10_logs/ggcn_331_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_relu
+# group_all: False
+# ##bn_decay_epochs: [60, 120, 200, 270]
+# lr_factor_epochs: [60, 120, 200, 270]
+# new: True
+# bn_decay: 0.9
+# normalize: ball
+# postnorm: False
+# augment_level: 6
+# use_bn: t
+# att_full:
+# inputDim: [0, 128, 256]
+# gpus: "1"
+# save_model_prefix: ggcn_331_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_relu
+# # voxel_size_lst: [[0.05, 0.05, 0.05], [0.25, 0.25, 0.25], [2.0, 2.0, 2.0]]
+# # grid_size_lst: [[40, 40, 40], [8, 8, 8], [1, 1, 1]]
+# voxel_size_lst: [[0.133333,0.133333,0.133333], [0.25, 0.25, 0.25], [2.0, 2.0, 2.0]]
+# grid_size_lst: [[15, 15, 15], [8, 8, 8], [1, 1, 1]]
+# lidar_coord: [1.0, 1.0, 1.0]
+# max_p_grid_lst: [8, 16, 128]
+# max_o_grid_lst: [1024, 128, 1]
+# kernel_size_lst: [3, 3, 1]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# reverse_index: False
+# fps: False
+# aggtype: gcn
+# localfdim: 3
+# attfdim: 4
+# elevation: []
+# pt_ele_dim: [[64, 64, 128], [128, 128, 256], [256, 256, 512]]
+# att_ele_dim: [[64, 128, 128], [128, 256, 256], [256, 512, 512]]
+# cntxt_mlp_lst:
+# gcn_outDim: [[],[],[]]
+# relu: True
+# agg: max_pooling
+# point_set: full
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# lr: 0.001
+
+
+
+# ######### GGCN 3 layers 10_logs/ggcn_331_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu
+# group_all: False
+# ##bn_decay_epochs: [60, 120, 200, 270]
+# lr_factor_epochs: [60, 120, 200, 270]
+# new: True
+# bn_decay: 0.9
+# normalize: ball
+# postnorm: False
+# augment_level: 6
+# use_bn: f
+# att_full: next
+# inputDim: [0, 128, 256]
+# gpus: "0"
+# save_model_prefix: ggcn_331_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.25, 0.25, 0.25], [2.0, 2.0, 2.0]]
+# grid_size_lst: [[40, 40, 40], [8, 8, 8], [1, 1, 1]]
+# # voxel_size_lst: [[0.08,.08,.08], [0.25, 0.25, 0.25], [2.0, 2.0, 2.0]]
+# # grid_size_lst: [[25, 25, 25], [8, 8, 8], [1, 1, 1]]
+# lidar_coord: [1.0, 1.0, 1.0]
+# max_p_grid_lst: [16, 32, 128]
+# max_o_grid_lst: [1024, 128, 1]
+# kernel_size_lst: [7, 3, 1]
+# stride_lst: [1, 1, 1]
+# single_padding_lst: [none, none, none]
+# reverse_index: False
+# fps: False
+# aggtype: gcn
+# localfdim: 3
+# attfdim: 4
+# elevation: []
+# pt_ele_dim: [[64, 128], [128, 256], [256, 256, 512]]
+# att_ele_dim: [[64, 128, 128], [128, 256, 256], [256, 512, 512]]
+# cntxt_mlp_lst: [[],[],[]]
+# gcn_outDim: [[],[],[]]
+# relu: True
+# agg: max_pooling
+# point_set: full
+# batch_size: 16
+# loc_weight: True
+# loc_within: True
+# lr: 0.001
+
+
+# # ######### GGCN 3 layers logs/ggcn_331_1632128_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu_40
+group_all: False
+##bn_decay_epochs: [60, 120, 200, 270]
+lr_factor_epochs: [60, 120, 200, 270]
+new: True
+bn_decay: 0.9
+normalize: ball
+postnorm: False
+augment_level: 6
+use_bn: f
+att_full: next
+inputDim: [0, 128, 256]
+gpus: "3"
+save_model_prefix: ggcn_331_1632128_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu_40
+# voxel_size_lst: [[0.05, 0.05, 0.05], [0.25, 0.25, 0.25], [2.0, 2.0, 2.0]]
+# grid_size_lst: [[40, 40, 40], [8, 8, 8], [1, 1, 1]]
+voxel_size_lst: [[0.133333,0.133333,0.133333], [0.25, 0.25, 0.25], [2.0, 2.0, 2.0]]
+grid_size_lst: [[15, 15, 15], [8, 8, 8], [1, 1, 1]]
+lidar_coord: [1.0, 1.0, 1.0]
+max_p_grid_lst: [16, 32, 128]
+max_o_grid_lst: [1024, 128, 1]
+kernel_size_lst: [3, 3, 1]
+stride_lst: [1, 1, 1]
+single_padding_lst: [none, none, none]
+reverse_index: False
+fps: False
+aggtype: gcn
+localfdim: 3
+attfdim: 4
+elevation: []
+pt_ele_dim: [[64, 64, 128], [128, 128, 256], [256, 256, 512]]
+att_ele_dim: [[64, 128, 128], [128, 256, 256], [256, 512, 512]]
+cntxt_mlp_lst: [[],[],[]]
+gcn_outDim: [[],[],[]]
+relu: True
+agg: max_pooling
+point_set: full
+batch_size: 48
+loc_weight: True
+loc_within: True
+lr: 0.001

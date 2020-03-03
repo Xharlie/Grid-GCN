@@ -1,0 +1,313 @@
+nohup: ignoring input
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/hallway_3/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/office_6/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/office_5/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/office_10/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/hallway_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/office_3/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/office_9/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/hallway_6/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/hallway_5/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/WC_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/WC_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/office_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/lounge_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/office_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/storage_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/hallway_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/hallway_4/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/storage_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/office_7/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/conferenceRoom_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/lounge_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/office_4/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_3/office_8/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/conferenceRoom_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_15/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/hallway_3/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_6/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/conferenceRoom_3/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/hallway_13/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_5/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/storage_3/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_10/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/hallway_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_3/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_11/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_9/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/storage_4/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_21/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/hallway_7/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_13/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/hallway_6/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/hallway_5/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/WC_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/WC_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/hallway_9/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/hallway_8/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/WC_4/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/WC_3/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/storage_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/hallway_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_17/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_19/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/hallway_10/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_12/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_20/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/hallway_4/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/storage_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/hallway_11/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_14/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/lobby_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_7/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/conferenceRoom_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/lobby_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/hallway_12/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_16/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/hallway_14/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_4/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_18/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_8/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_4/office_22/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/hallway_3/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/office_6/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/office_5/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/storage_3/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/office_10/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/auditorium_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/hallway_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/office_3/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/storage_7/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/office_11/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/office_9/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/storage_4/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/hallway_7/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/office_13/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/hallway_6/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/hallway_5/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/WC_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/WC_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/hallway_9/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/office_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/storage_5/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/hallway_8/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/office_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/storage_9/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/storage_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/hallway_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/hallway_10/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/office_12/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/hallway_4/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/storage_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/hallway_11/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/office_14/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/auditorium_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/office_7/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/conferenceRoom_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/storage_8/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/hallway_12/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/office_4/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/storage_6/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_2/office_8/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_25/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_34/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_26/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_15/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/hallway_3/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_30/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_6/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_31/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_5/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_10/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/hallway_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_3/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_11/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_9/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_21/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_13/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_33/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/hallway_6/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/hallway_5/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_29/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_28/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_27/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/openspace_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/hallway_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_17/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_19/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_24/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_32/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_12/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_20/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/copyRoom_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/hallway_4/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_37/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_14/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_7/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/conferenceRoom_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/pantry_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_36/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/lounge_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_23/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_16/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_4/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_18/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_35/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_8/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_6/office_22/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_25/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/conferenceRoom_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_26/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_15/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/hallway_3/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_30/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_6/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_31/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_5/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_10/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/hallway_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_3/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_11/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_9/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_21/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/hallway_7/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_13/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/hallway_6/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/hallway_5/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/WC_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/hallway_8/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_29/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_28/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_27/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/hallway_2/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_17/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_19/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_24/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_12/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_20/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/copyRoom_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/hallway_4/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_14/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_7/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/conferenceRoom_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/pantry_1/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_23/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_16/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_4/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_18/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_8/pred.npy does not exist, skipping
+pred label: ../data/3DIS/prepare_label_rgb/Area_1/office_22/pred.npy does not exist, skipping
+Found 68 predictions
+Evaluating predictions:
+  ../data/3DIS/prepare_label_rgb/Area_5/office_25/pred.npy (1/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_34/pred.npy (2/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/conferenceRoom_2/pred.npy (3/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_26/pred.npy (4/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_15/pred.npy (5/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/hallway_3/pred.npy (6/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_30/pred.npy (7/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_6/pred.npy (8/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/conferenceRoom_3/pred.npy (9/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_31/pred.npy (10/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/hallway_13/pred.npy (11/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_5/pred.npy (12/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/storage_3/pred.npy (13/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_10/pred.npy (14/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/hallway_1/pred.npy (15/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_3/pred.npy (16/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_38/pred.npy (17/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_11/pred.npy (18/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_9/pred.npy (19/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/storage_4/pred.npy (20/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_21/pred.npy (21/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/hallway_15/pred.npy (22/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/hallway_7/pred.npy (23/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_13/pred.npy (24/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_40/pred.npy (25/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_41/pred.npy (26/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_42/pred.npy (27/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_33/pred.npy (28/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/hallway_6/pred.npy (29/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/hallway_5/pred.npy (30/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/WC_2/pred.npy (31/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/WC_1/pred.npy (32/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/hallway_9/pred.npy (33/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_2/pred.npy (34/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/hallway_8/pred.npy (35/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_29/pred.npy (36/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_28/pred.npy (37/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_1/pred.npy (38/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_27/pred.npy (39/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/storage_2/pred.npy (40/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/hallway_2/pred.npy (41/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_17/pred.npy (42/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_19/pred.npy (43/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/hallway_10/pred.npy (44/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_24/pred.npy (45/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_32/pred.npy (46/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_12/pred.npy (47/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_39/pred.npy (48/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_20/pred.npy (49/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/hallway_4/pred.npy (50/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/storage_1/pred.npy (51/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/hallway_11/pred.npy (52/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_37/pred.npy (53/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_14/pred.npy (54/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_7/pred.npy (55/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/conferenceRoom_1/pred.npy (56/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/pantry_1/pred.npy (57/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/lobby_1/pred.npy (58/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_36/pred.npy (59/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/hallway_12/pred.npy (60/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_23/pred.npy (61/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_16/pred.npy (62/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/hallway_14/pred.npy (63/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_4/pred.npy (64/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_18/pred.npy (65/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_35/pred.npy (66/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_8/pred.npy (67/68)
+  ../data/3DIS/prepare_label_rgb/Area_5/office_22/pred.npy (68/68)
+Classes:	7012581	15193941	13000896	22950648	22424	1383387	2384459	2764012	2948921	1465826	212002	8131641	933756	0
+Positive:	7148538	15064566	12838711	27444855	252890	323513	225472	1816868	2771058	1548505	375875	7672635	920724	284
+True positive:	4748983	14670691	12741827	22029393	0	243214	116077	1691416	2397315	1351915	157058	6438426	727430	0
+Overall accuracy: 0.8585444732287922
+Class IoU:
+  0: 0.5045595388761913
+  1: 0.9411639834599023
+  2: 0.9728234097686783
+  3: 0.7766095879907396
+  4: 0.0
+  5: 0.16616542072548346
+  6: 0.046545226785529546
+  7: 0.58537361946714
+  8: 0.7215038896499917
+  9: 0.8132230440515491
+  10: 0.3645568092400753
+  11: 0.6874363779048351
+  12: 0.6454283305975778
+Average IoU: 0.5557991721936687
+real Classes:	7012581	15193929	13000878	22950545	22424	1383387	2384380	2764012	2948921	1465826	211983	8131588	933756
+real Positive:	7148538	15064566	12838711	27444855	252890	323513	225472	1816868	2771058	1548505	375875	7672635	920724
+real True positive:	4748983	14670691	12741827	22029393	0	243214	116077	1691416	2397315	1351915	157058	6438426	727430
+real Overall accuracy: 0.8585475830953465
+real Class IoU:
+  0: 0.5045595388761913
+  1: 0.9411647079986379
+  2: 0.9728247467010013
+  3: 0.7766124079430707
+  4: 0.0
+  5: 0.16616542072548346
+  6: 0.04654670128620265
+  7: 0.58537361946714
+  8: 0.7215038896499917
+  9: 0.8132230440515491
+  10: 0.3645728876508821
+  11: 0.6874402680305798
+  12: 0.6454283305975778
+real Average IoU: 0.5558011971521775

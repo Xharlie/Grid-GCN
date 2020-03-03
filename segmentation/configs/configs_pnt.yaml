@@ -1,0 +1,47 @@
+# env
+use_cpu: False
+kvstore: local
+
+# task is either [cls_ssg, cls_msg, seg]
+task: seg
+model_dir: output
+save_model_prefix: ScanNet
+# this is for both loading pretrained model in training and loading final model for testing
+# set load_model_epoch to 0 to disable loading pretrained model
+load_model_prefix: output/ScanNet/2019_07_23_15:18:02/ScanNet
+load_model_epoch: 0
+
+# train
+num_epochs: 200
+display_interval: 20
+checkpoint_interval: 1
+val_interval: 1
+optimizer: adam
+momentum: 0.9
+lr: 0.001
+lr_policy: step
+lr_factor: 0.7
+lr_factor_sample: 36000
+lr_factor_epochs: [50, 100, 150]
+bn_decay: 0.9
+bn_decay_factor: 0.5
+bn_decay_clip: 0.99
+bn_decay_sample: 1000000
+use_global_stats: False
+beta1: 0.9
+beta2: 0.999
+weight_decay: 0.00001
+# per_class_weights: none, auto, manual
+per_class_weights: none
+manual_weights:
+gpus: "1"
+
+# data
+data_dir: ../data/scannet
+batch_size: 3
+num_points: 81920
+pf_names: pnt_40960_8
+use_normal: False
+input_dropout_ratio: 0
+profiling: False
+agg: max_pooling

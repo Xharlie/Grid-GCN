@@ -1,0 +1,2952 @@
+nohup: ignoring input
+/mnt/truenas/scratch/qiangeng/dev/GGCN/segmentation/test/../../gridifyop/additional.so
+pid: 22793
+take_up_shapes [[8, 256, 5, 24, 256], [8, 512, 5, 256, 128], [8, 4096, 5, 512, 128]]
+pt_mlp_lst: [32, 32, 64]
+pt_mlp_lst: [64, 64, 128]
+pt_mlp_lst: [128, 128, 256]
+uplayer 0, take_up_shapes: [8, 256, 5, 24, 260]
+pt_mlp_lst: [128]
+uplayer 1, take_up_shapes: [8, 512, 5, 256, 132]
+pt_mlp_lst: [128]
+uplayer 2, take_up_shapes: [8, 4096, 5, 512, 132]
+pt_mlp_lst: [128]
+done prepared data
+model loaded!!
+2019-11-01 03:30:14.127764-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_25/zero_0.h5...
+2019-11-01 03:30:15.166095-96 testing batches. 1/136 rooms
+2019-11-01 03:30:15.166175-Processing 0 of 96 batches.
+[03:30:15] src/operator/nn/./cudnn/./cudnn_algoreg-inl.h:97: Running performance tests to find the best convolution algorithm, this can take a while... (set the environment variable MXNET_CUDNN_AUTOTUNE_DEFAULT to 0 to disable)
+2019-11-01 03:30:23.328824-Processing 10 of 96 batches.
+2019-11-01 03:30:28.581980-Processing 20 of 96 batches.
+2019-11-01 03:30:33.877362-Processing 30 of 96 batches.
+2019-11-01 03:30:39.117389-Processing 40 of 96 batches.
+2019-11-01 03:30:44.349367-Processing 50 of 96 batches.
+2019-11-01 03:30:49.609445-Processing 60 of 96 batches.
+2019-11-01 03:30:54.872250-Processing 70 of 96 batches.
+2019-11-01 03:31:00.165187-Processing 80 of 96 batches.
+2019-11-01 03:31:05.467065-Processing 90 of 96 batches.
+corr_vote: 661095, all pt num 786432, true all pt num 752041, acc0.8406257629394531, true acc0.8790677635926765
+2019-11-01 03:31:08.602599-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_25/zero_0_pred.h5...
+2019-11-01 03:31:08.722501-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_25/half_0.h5...
+2019-11-01 03:31:09.109554-97 testing batches. 2/136 rooms
+2019-11-01 03:31:09.109640-Processing 0 of 97 batches.
+2019-11-01 03:31:14.430082-Processing 10 of 97 batches.
+2019-11-01 03:31:19.641386-Processing 20 of 97 batches.
+2019-11-01 03:31:24.910688-Processing 30 of 97 batches.
+2019-11-01 03:31:30.237216-Processing 40 of 97 batches.
+2019-11-01 03:31:35.471300-Processing 50 of 97 batches.
+2019-11-01 03:31:40.674443-Processing 60 of 97 batches.
+2019-11-01 03:31:45.866753-Processing 70 of 97 batches.
+2019-11-01 03:31:51.101495-Processing 80 of 97 batches.
+2019-11-01 03:31:56.389651-Processing 90 of 97 batches.
+corr_vote: 646705, all pt num 794624, true all pt num 744820, acc0.8138503241784794, true acc0.8682701860852287
+2019-11-01 03:32:00.117756-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_25/half_0_pred.h5...
+2019-11-01 03:32:00.275659-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_34/zero_0.h5...
+2019-11-01 03:32:01.280249-131 testing batches. 3/136 rooms
+2019-11-01 03:32:01.280327-Processing 0 of 131 batches.
+2019-11-01 03:32:06.534908-Processing 10 of 131 batches.
+2019-11-01 03:32:11.844172-Processing 20 of 131 batches.
+2019-11-01 03:32:17.632764-Processing 30 of 131 batches.
+2019-11-01 03:32:22.895623-Processing 40 of 131 batches.
+2019-11-01 03:32:28.170070-Processing 50 of 131 batches.
+2019-11-01 03:32:33.498948-Processing 60 of 131 batches.
+2019-11-01 03:32:38.725267-Processing 70 of 131 batches.
+2019-11-01 03:32:43.984457-Processing 80 of 131 batches.
+2019-11-01 03:32:49.245779-Processing 90 of 131 batches.
+2019-11-01 03:32:54.535949-Processing 100 of 131 batches.
+2019-11-01 03:32:59.848825-Processing 110 of 131 batches.
+2019-11-01 03:33:05.129120-Processing 120 of 131 batches.
+2019-11-01 03:33:10.376230-Processing 130 of 131 batches.
+corr_vote: 826136, all pt num 1073152, true all pt num 1026109, acc0.7698219823473282, true acc0.8051152460411126
+2019-11-01 03:33:10.898467-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_34/zero_0_pred.h5...
+2019-11-01 03:33:11.076966-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_34/half_0.h5...
+2019-11-01 03:33:11.603880-133 testing batches. 4/136 rooms
+2019-11-01 03:33:11.603966-Processing 0 of 133 batches.
+2019-11-01 03:33:17.246447-Processing 10 of 133 batches.
+2019-11-01 03:33:22.518316-Processing 20 of 133 batches.
+2019-11-01 03:33:27.762829-Processing 30 of 133 batches.
+2019-11-01 03:33:33.036559-Processing 40 of 133 batches.
+2019-11-01 03:33:38.346986-Processing 50 of 133 batches.
+2019-11-01 03:33:43.602743-Processing 60 of 133 batches.
+2019-11-01 03:33:48.809396-Processing 70 of 133 batches.
+2019-11-01 03:33:54.095243-Processing 80 of 133 batches.
+2019-11-01 03:33:59.267970-Processing 90 of 133 batches.
+2019-11-01 03:34:04.440093-Processing 100 of 133 batches.
+2019-11-01 03:34:09.614777-Processing 110 of 133 batches.
+2019-11-01 03:34:14.800988-Processing 120 of 133 batches.
+2019-11-01 03:34:20.018785-Processing 130 of 133 batches.
+corr_vote: 836844, all pt num 1089536, true all pt num 1028677, acc0.768073748825188, true acc0.8135148350745667
+2019-11-01 03:34:21.594772-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_34/half_0_pred.h5...
+2019-11-01 03:34:21.786317-Reading ../data/3DIS/prepare_label_rgb/./Area_5/conferenceRoom_2/zero_0.h5...
+2019-11-01 03:34:22.853069-283 testing batches. 5/136 rooms
+2019-11-01 03:34:22.853155-Processing 0 of 283 batches.
+2019-11-01 03:34:28.138489-Processing 10 of 283 batches.
+2019-11-01 03:34:33.420749-Processing 20 of 283 batches.
+2019-11-01 03:34:38.639383-Processing 30 of 283 batches.
+2019-11-01 03:34:43.829171-Processing 40 of 283 batches.
+2019-11-01 03:34:49.120969-Processing 50 of 283 batches.
+2019-11-01 03:34:54.410616-Processing 60 of 283 batches.
+2019-11-01 03:34:59.690411-Processing 70 of 283 batches.
+2019-11-01 03:35:04.974424-Processing 80 of 283 batches.
+2019-11-01 03:35:10.211807-Processing 90 of 283 batches.
+2019-11-01 03:35:15.537876-Processing 100 of 283 batches.
+2019-11-01 03:35:20.775809-Processing 110 of 283 batches.
+2019-11-01 03:35:26.061306-Processing 120 of 283 batches.
+2019-11-01 03:35:31.251970-Processing 130 of 283 batches.
+2019-11-01 03:35:36.477946-Processing 140 of 283 batches.
+2019-11-01 03:35:41.682213-Processing 150 of 283 batches.
+2019-11-01 03:35:46.917586-Processing 160 of 283 batches.
+2019-11-01 03:35:52.164917-Processing 170 of 283 batches.
+2019-11-01 03:35:57.350899-Processing 180 of 283 batches.
+2019-11-01 03:36:02.638380-Processing 190 of 283 batches.
+2019-11-01 03:36:07.838104-Processing 200 of 283 batches.
+2019-11-01 03:36:13.071139-Processing 210 of 283 batches.
+2019-11-01 03:36:18.281060-Processing 220 of 283 batches.
+2019-11-01 03:36:23.500844-Processing 230 of 283 batches.
+2019-11-01 03:36:28.780529-Processing 240 of 283 batches.
+2019-11-01 03:36:34.038646-Processing 250 of 283 batches.
+2019-11-01 03:36:39.295940-Processing 260 of 283 batches.
+2019-11-01 03:36:44.543934-Processing 270 of 283 batches.
+2019-11-01 03:36:49.672245-Processing 280 of 283 batches.
+corr_vote: 1899140, all pt num 2318336, true all pt num 2192216, acc0.819182379085689, true acc0.8663106190265922
+2019-11-01 03:36:51.267169-Saving ../data/3DIS/prepare_label_rgb/./Area_5/conferenceRoom_2/zero_0_pred.h5...
+2019-11-01 03:36:51.612854-Reading ../data/3DIS/prepare_label_rgb/./Area_5/conferenceRoom_2/half_0.h5...
+2019-11-01 03:36:52.751628-285 testing batches. 6/136 rooms
+2019-11-01 03:36:52.751719-Processing 0 of 285 batches.
+2019-11-01 03:36:58.103650-Processing 10 of 285 batches.
+2019-11-01 03:37:03.390434-Processing 20 of 285 batches.
+2019-11-01 03:37:08.663167-Processing 30 of 285 batches.
+point_num <= sample_num * tolerance 1433 4096 0.7
+2019-11-01 03:37:13.373119-Processing 40 of 285 batches.
+2019-11-01 03:37:18.592965-Processing 50 of 285 batches.
+2019-11-01 03:37:23.853885-Processing 60 of 285 batches.
+2019-11-01 03:37:29.091149-Processing 70 of 285 batches.
+2019-11-01 03:37:34.332046-Processing 80 of 285 batches.
+2019-11-01 03:37:39.515701-Processing 90 of 285 batches.
+2019-11-01 03:37:44.694168-Processing 100 of 285 batches.
+2019-11-01 03:37:49.889116-Processing 110 of 285 batches.
+2019-11-01 03:37:55.133812-Processing 120 of 285 batches.
+2019-11-01 03:38:00.364354-Processing 130 of 285 batches.
+2019-11-01 03:38:05.600128-Processing 140 of 285 batches.
+2019-11-01 03:38:10.837228-Processing 150 of 285 batches.
+2019-11-01 03:38:16.035974-Processing 160 of 285 batches.
+2019-11-01 03:38:21.245699-Processing 170 of 285 batches.
+2019-11-01 03:38:26.407212-Processing 180 of 285 batches.
+2019-11-01 03:38:31.640292-Processing 190 of 285 batches.
+2019-11-01 03:38:36.826818-Processing 200 of 285 batches.
+2019-11-01 03:38:41.962732-Processing 210 of 285 batches.
+2019-11-01 03:38:47.186072-Processing 220 of 285 batches.
+2019-11-01 03:38:52.416756-Processing 230 of 285 batches.
+2019-11-01 03:38:57.589224-Processing 240 of 285 batches.
+2019-11-01 03:39:02.791300-Processing 250 of 285 batches.
+2019-11-01 03:39:07.982960-Processing 260 of 285 batches.
+2019-11-01 03:39:13.205227-Processing 270 of 285 batches.
+2019-11-01 03:39:18.382441-Processing 280 of 285 batches.
+corr_vote: 1871969, all pt num 2334720, true all pt num 2185481, acc0.8017959327028509, true acc0.8565478263137497
+2019-11-01 03:39:20.979520-Saving ../data/3DIS/prepare_label_rgb/./Area_5/conferenceRoom_2/half_0_pred.h5...
+2019-11-01 03:39:21.580628-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_26/zero_0.h5...
+2019-11-01 03:39:22.741346-111 testing batches. 7/136 rooms
+2019-11-01 03:39:22.741430-Processing 0 of 111 batches.
+2019-11-01 03:39:28.645575-Processing 10 of 111 batches.
+2019-11-01 03:39:34.148325-Processing 20 of 111 batches.
+2019-11-01 03:39:39.374808-Processing 30 of 111 batches.
+2019-11-01 03:39:44.585544-Processing 40 of 111 batches.
+2019-11-01 03:39:49.764567-Processing 50 of 111 batches.
+2019-11-01 03:39:55.013056-Processing 60 of 111 batches.
+2019-11-01 03:40:00.237350-Processing 70 of 111 batches.
+2019-11-01 03:40:05.463833-Processing 80 of 111 batches.
+2019-11-01 03:40:10.695332-Processing 90 of 111 batches.
+2019-11-01 03:40:15.911392-Processing 100 of 111 batches.
+2019-11-01 03:40:21.069847-Processing 110 of 111 batches.
+corr_vote: 699717, all pt num 909312, true all pt num 865326, acc0.7695015572212838, true acc0.8086166369668772
+2019-11-01 03:40:21.583523-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_26/zero_0_pred.h5...
+2019-11-01 03:40:22.187150-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_26/half_0.h5...
+2019-11-01 03:40:23.897810-113 testing batches. 8/136 rooms
+2019-11-01 03:40:23.897902-Processing 0 of 113 batches.
+2019-11-01 03:40:29.210566-Processing 10 of 113 batches.
+2019-11-01 03:40:34.467509-Processing 20 of 113 batches.
+2019-11-01 03:40:39.705383-Processing 30 of 113 batches.
+2019-11-01 03:40:44.858542-Processing 40 of 113 batches.
+2019-11-01 03:40:50.050744-Processing 50 of 113 batches.
+2019-11-01 03:40:55.254383-Processing 60 of 113 batches.
+2019-11-01 03:41:00.515413-Processing 70 of 113 batches.
+2019-11-01 03:41:05.750298-Processing 80 of 113 batches.
+2019-11-01 03:41:10.903758-Processing 90 of 113 batches.
+2019-11-01 03:41:16.131157-Processing 100 of 113 batches.
+2019-11-01 03:41:21.319182-Processing 110 of 113 batches.
+point_num <= sample_num * tolerance 1747 4096 0.7
+point_num <= sample_num * tolerance 1645 4096 0.7
+corr_vote: 681657, all pt num 925696, true all pt num 852208, acc0.7363724159983407, true acc0.7998716275838762
+2019-11-01 03:41:21.848263-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_26/half_0_pred.h5...
+2019-11-01 03:41:21.986852-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_15/zero_0.h5...
+2019-11-01 03:41:22.758514-195 testing batches. 9/136 rooms
+2019-11-01 03:41:22.758591-Processing 0 of 195 batches.
+2019-11-01 03:41:28.058104-Processing 10 of 195 batches.
+2019-11-01 03:41:33.335803-Processing 20 of 195 batches.
+2019-11-01 03:41:38.541236-Processing 30 of 195 batches.
+2019-11-01 03:41:43.732685-Processing 40 of 195 batches.
+2019-11-01 03:41:48.954418-Processing 50 of 195 batches.
+2019-11-01 03:41:54.254720-Processing 60 of 195 batches.
+2019-11-01 03:41:59.526988-Processing 70 of 195 batches.
+2019-11-01 03:42:04.828482-Processing 80 of 195 batches.
+2019-11-01 03:42:10.013026-Processing 90 of 195 batches.
+2019-11-01 03:42:15.234858-Processing 100 of 195 batches.
+2019-11-01 03:42:20.428227-Processing 110 of 195 batches.
+2019-11-01 03:42:25.627320-Processing 120 of 195 batches.
+2019-11-01 03:42:30.897729-Processing 130 of 195 batches.
+2019-11-01 03:42:36.115618-Processing 140 of 195 batches.
+2019-11-01 03:42:41.375605-Processing 150 of 195 batches.
+2019-11-01 03:42:46.608631-Processing 160 of 195 batches.
+2019-11-01 03:42:51.838867-Processing 170 of 195 batches.
+2019-11-01 03:42:57.092482-Processing 180 of 195 batches.
+2019-11-01 03:43:02.269611-Processing 190 of 195 batches.
+corr_vote: 1294173, all pt num 1597440, true all pt num 1503466, acc0.8101543719951924, true acc0.860792994321122
+2019-11-01 03:43:04.880328-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_15/zero_0_pred.h5...
+2019-11-01 03:43:05.223623-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_15/half_0.h5...
+2019-11-01 03:43:06.291697-192 testing batches. 10/136 rooms
+2019-11-01 03:43:06.291786-Processing 0 of 192 batches.
+2019-11-01 03:43:11.690351-Processing 10 of 192 batches.
+2019-11-01 03:43:16.900298-Processing 20 of 192 batches.
+2019-11-01 03:43:22.139076-Processing 30 of 192 batches.
+2019-11-01 03:43:27.407555-Processing 40 of 192 batches.
+2019-11-01 03:43:32.669576-Processing 50 of 192 batches.
+2019-11-01 03:43:37.800831-Processing 60 of 192 batches.
+2019-11-01 03:43:42.949664-Processing 70 of 192 batches.
+2019-11-01 03:43:48.160591-Processing 80 of 192 batches.
+2019-11-01 03:43:53.365389-Processing 90 of 192 batches.
+2019-11-01 03:43:58.583250-Processing 100 of 192 batches.
+2019-11-01 03:44:03.780197-Processing 110 of 192 batches.
+2019-11-01 03:44:08.905841-Processing 120 of 192 batches.
+2019-11-01 03:44:14.055384-Processing 130 of 192 batches.
+2019-11-01 03:44:19.191160-Processing 140 of 192 batches.
+2019-11-01 03:44:24.386974-Processing 150 of 192 batches.
+2019-11-01 03:44:29.590654-Processing 160 of 192 batches.
+2019-11-01 03:44:34.793819-Processing 170 of 192 batches.
+2019-11-01 03:44:39.985703-Processing 180 of 192 batches.
+2019-11-01 03:44:45.149869-Processing 190 of 192 batches.
+corr_vote: 1271483, all pt num 1572864, true all pt num 1500610, acc0.8083871205647787, true acc0.8473107602908151
+2019-11-01 03:44:46.184836-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_15/half_0_pred.h5...
+2019-11-01 03:44:46.592487-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_3/zero_0.h5...
+2019-11-01 03:44:48.087381-181 testing batches. 11/136 rooms
+2019-11-01 03:44:48.087464-Processing 0 of 181 batches.
+2019-11-01 03:44:53.283649-Processing 10 of 181 batches.
+2019-11-01 03:44:58.527359-Processing 20 of 181 batches.
+2019-11-01 03:45:04.441705-Processing 30 of 181 batches.
+2019-11-01 03:45:10.283966-Processing 40 of 181 batches.
+2019-11-01 03:45:16.166783-Processing 50 of 181 batches.
+2019-11-01 03:45:22.020059-Processing 60 of 181 batches.
+2019-11-01 03:45:27.949083-Processing 70 of 181 batches.
+2019-11-01 03:45:33.851977-Processing 80 of 181 batches.
+2019-11-01 03:45:39.724374-Processing 90 of 181 batches.
+2019-11-01 03:45:45.525375-Processing 100 of 181 batches.
+2019-11-01 03:45:51.343618-Processing 110 of 181 batches.
+2019-11-01 03:45:57.194191-Processing 120 of 181 batches.
+2019-11-01 03:46:03.059274-Processing 130 of 181 batches.
+2019-11-01 03:46:08.889567-Processing 140 of 181 batches.
+2019-11-01 03:46:14.695699-Processing 150 of 181 batches.
+2019-11-01 03:46:20.541013-Processing 160 of 181 batches.
+2019-11-01 03:46:26.372489-Processing 170 of 181 batches.
+2019-11-01 03:46:32.214424-Processing 180 of 181 batches.
+corr_vote: 1337031, all pt num 1482752, true all pt num 1405957, acc0.9017226076916437, true acc0.9509757410788523
+2019-11-01 03:46:32.800245-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_3/zero_0_pred.h5...
+2019-11-01 03:46:33.047182-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_3/half_0.h5...
+2019-11-01 03:46:33.824661-185 testing batches. 12/136 rooms
+2019-11-01 03:46:33.824739-Processing 0 of 185 batches.
+2019-11-01 03:46:38.997441-Processing 10 of 185 batches.
+2019-11-01 03:46:44.169795-Processing 20 of 185 batches.
+2019-11-01 03:46:49.408518-Processing 30 of 185 batches.
+2019-11-01 03:46:54.639999-Processing 40 of 185 batches.
+2019-11-01 03:46:59.879538-Processing 50 of 185 batches.
+2019-11-01 03:47:05.089526-Processing 60 of 185 batches.
+2019-11-01 03:47:10.236383-Processing 70 of 185 batches.
+2019-11-01 03:47:15.448038-Processing 80 of 185 batches.
+2019-11-01 03:47:20.666943-Processing 90 of 185 batches.
+2019-11-01 03:47:25.936844-Processing 100 of 185 batches.
+2019-11-01 03:47:31.148278-Processing 110 of 185 batches.
+2019-11-01 03:47:36.385306-Processing 120 of 185 batches.
+2019-11-01 03:47:41.541164-Processing 130 of 185 batches.
+2019-11-01 03:47:46.728251-Processing 140 of 185 batches.
+2019-11-01 03:47:51.899273-Processing 150 of 185 batches.
+2019-11-01 03:47:57.090346-Processing 160 of 185 batches.
+2019-11-01 03:48:02.309996-Processing 170 of 185 batches.
+2019-11-01 03:48:07.476074-Processing 180 of 185 batches.
+point_num <= sample_num * tolerance 2207 4096 0.7
+corr_vote: 1313544, all pt num 1515520, true all pt num 1404313, acc0.8667282516891892, true acc0.9353641246645157
+2019-11-01 03:48:09.527028-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_3/half_0_pred.h5...
+2019-11-01 03:48:09.912175-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_30/zero_0.h5...
+2019-11-01 03:48:10.670839-71 testing batches. 13/136 rooms
+2019-11-01 03:48:10.670938-Processing 0 of 71 batches.
+2019-11-01 03:48:16.079244-Processing 10 of 71 batches.
+2019-11-01 03:48:21.326878-Processing 20 of 71 batches.
+2019-11-01 03:48:26.587582-Processing 30 of 71 batches.
+2019-11-01 03:48:31.822600-Processing 40 of 71 batches.
+2019-11-01 03:48:37.063240-Processing 50 of 71 batches.
+2019-11-01 03:48:42.309402-Processing 60 of 71 batches.
+2019-11-01 03:48:47.495554-Processing 70 of 71 batches.
+corr_vote: 507041, all pt num 581632, true all pt num 550062, acc0.8717556805677817, true acc0.9217888165334089
+2019-11-01 03:48:48.015891-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_30/zero_0_pred.h5...
+2019-11-01 03:48:48.085455-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_30/half_0.h5...
+2019-11-01 03:48:48.415795-72 testing batches. 14/136 rooms
+2019-11-01 03:48:48.415874-Processing 0 of 72 batches.
+2019-11-01 03:48:53.661859-Processing 10 of 72 batches.
+2019-11-01 03:48:58.938405-Processing 20 of 72 batches.
+2019-11-01 03:49:04.198790-Processing 30 of 72 batches.
+2019-11-01 03:49:09.438420-Processing 40 of 72 batches.
+2019-11-01 03:49:14.686840-Processing 50 of 72 batches.
+2019-11-01 03:49:19.987835-Processing 60 of 72 batches.
+2019-11-01 03:49:25.278282-Processing 70 of 72 batches.
+corr_vote: 513338, all pt num 589824, true all pt num 553067, acc0.8703240288628472, true acc0.9281660269008999
+2019-11-01 03:49:26.328877-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_30/half_0_pred.h5...
+2019-11-01 03:49:26.458192-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_6/zero_0.h5...
+2019-11-01 03:49:27.459511-113 testing batches. 15/136 rooms
+2019-11-01 03:49:27.459615-Processing 0 of 113 batches.
+2019-11-01 03:49:32.923885-Processing 10 of 113 batches.
+2019-11-01 03:49:38.163195-Processing 20 of 113 batches.
+2019-11-01 03:49:43.389591-Processing 30 of 113 batches.
+2019-11-01 03:49:48.583516-Processing 40 of 113 batches.
+2019-11-01 03:49:53.843889-Processing 50 of 113 batches.
+2019-11-01 03:49:59.091897-Processing 60 of 113 batches.
+2019-11-01 03:50:04.341403-Processing 70 of 113 batches.
+2019-11-01 03:50:09.498759-Processing 80 of 113 batches.
+2019-11-01 03:50:14.707611-Processing 90 of 113 batches.
+2019-11-01 03:50:19.946080-Processing 100 of 113 batches.
+2019-11-01 03:50:25.169470-Processing 110 of 113 batches.
+corr_vote: 781537, all pt num 925696, true all pt num 868737, acc0.8442696090293141, true acc0.8996243972571676
+2019-11-01 03:50:26.714232-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_6/zero_0_pred.h5...
+2019-11-01 03:50:26.843100-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_6/half_0.h5...
+2019-11-01 03:50:27.323118-114 testing batches. 16/136 rooms
+2019-11-01 03:50:27.323205-Processing 0 of 114 batches.
+2019-11-01 03:50:32.556187-Processing 10 of 114 batches.
+2019-11-01 03:50:37.755901-Processing 20 of 114 batches.
+2019-11-01 03:50:42.963753-Processing 30 of 114 batches.
+2019-11-01 03:50:48.173364-Processing 40 of 114 batches.
+2019-11-01 03:50:53.392734-Processing 50 of 114 batches.
+2019-11-01 03:50:58.599425-Processing 60 of 114 batches.
+2019-11-01 03:51:03.810668-Processing 70 of 114 batches.
+2019-11-01 03:51:09.020648-Processing 80 of 114 batches.
+2019-11-01 03:51:14.259607-Processing 90 of 114 batches.
+2019-11-01 03:51:19.514346-Processing 100 of 114 batches.
+2019-11-01 03:51:24.722909-Processing 110 of 114 batches.
+corr_vote: 787571, all pt num 933888, true all pt num 865446, acc0.8433248954906798, true acc0.9100174938702126
+2019-11-01 03:51:26.802709-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_6/half_0_pred.h5...
+2019-11-01 03:51:26.967840-Reading ../data/3DIS/prepare_label_rgb/./Area_5/conferenceRoom_3/zero_0.h5...
+2019-11-01 03:51:27.811312-219 testing batches. 17/136 rooms
+2019-11-01 03:51:27.811396-Processing 0 of 219 batches.
+2019-11-01 03:51:33.070767-Processing 10 of 219 batches.
+2019-11-01 03:51:38.320215-Processing 20 of 219 batches.
+2019-11-01 03:51:43.526228-Processing 30 of 219 batches.
+2019-11-01 03:51:48.751453-Processing 40 of 219 batches.
+2019-11-01 03:51:54.001692-Processing 50 of 219 batches.
+2019-11-01 03:51:59.234986-Processing 60 of 219 batches.
+2019-11-01 03:52:04.535723-Processing 70 of 219 batches.
+2019-11-01 03:52:09.711697-Processing 80 of 219 batches.
+2019-11-01 03:52:14.939279-Processing 90 of 219 batches.
+2019-11-01 03:52:20.128414-Processing 100 of 219 batches.
+2019-11-01 03:52:25.343855-Processing 110 of 219 batches.
+2019-11-01 03:52:30.574819-Processing 120 of 219 batches.
+2019-11-01 03:52:35.793321-Processing 130 of 219 batches.
+2019-11-01 03:52:40.982084-Processing 140 of 219 batches.
+2019-11-01 03:52:46.113704-Processing 150 of 219 batches.
+2019-11-01 03:52:51.315293-Processing 160 of 219 batches.
+2019-11-01 03:52:56.553266-Processing 170 of 219 batches.
+2019-11-01 03:53:01.759854-Processing 180 of 219 batches.
+2019-11-01 03:53:07.007324-Processing 190 of 219 batches.
+2019-11-01 03:53:12.185112-Processing 200 of 219 batches.
+2019-11-01 03:53:17.392087-Processing 210 of 219 batches.
+corr_vote: 1420457, all pt num 1794048, true all pt num 1701719, acc0.791760867044806, true acc0.8347188930722405
+2019-11-01 03:53:22.017892-Saving ../data/3DIS/prepare_label_rgb/./Area_5/conferenceRoom_3/zero_0_pred.h5...
+2019-11-01 03:53:22.352706-Reading ../data/3DIS/prepare_label_rgb/./Area_5/conferenceRoom_3/half_0.h5...
+2019-11-01 03:53:23.209824-217 testing batches. 18/136 rooms
+2019-11-01 03:53:23.209905-Processing 0 of 217 batches.
+2019-11-01 03:53:28.391348-Processing 10 of 217 batches.
+2019-11-01 03:53:33.663839-Processing 20 of 217 batches.
+2019-11-01 03:53:38.871298-Processing 30 of 217 batches.
+2019-11-01 03:53:44.144299-Processing 40 of 217 batches.
+2019-11-01 03:53:49.357002-Processing 50 of 217 batches.
+2019-11-01 03:53:54.601669-Processing 60 of 217 batches.
+2019-11-01 03:53:59.802682-Processing 70 of 217 batches.
+2019-11-01 03:54:05.057306-Processing 80 of 217 batches.
+2019-11-01 03:54:10.221124-Processing 90 of 217 batches.
+2019-11-01 03:54:15.436105-Processing 100 of 217 batches.
+2019-11-01 03:54:20.621972-Processing 110 of 217 batches.
+2019-11-01 03:54:25.852923-Processing 120 of 217 batches.
+2019-11-01 03:54:31.065297-Processing 130 of 217 batches.
+2019-11-01 03:54:36.309860-Processing 140 of 217 batches.
+2019-11-01 03:54:41.440259-Processing 150 of 217 batches.
+2019-11-01 03:54:46.618150-Processing 160 of 217 batches.
+2019-11-01 03:54:51.843404-Processing 170 of 217 batches.
+2019-11-01 03:54:57.088152-Processing 180 of 217 batches.
+2019-11-01 03:55:02.346891-Processing 190 of 217 batches.
+2019-11-01 03:55:07.600944-Processing 200 of 217 batches.
+2019-11-01 03:55:12.802368-Processing 210 of 217 batches.
+corr_vote: 1423651, all pt num 1777664, true all pt num 1700813, acc0.8008549422163018, true acc0.8370414619361447
+2019-11-01 03:55:16.521057-Saving ../data/3DIS/prepare_label_rgb/./Area_5/conferenceRoom_3/half_0_pred.h5...
+2019-11-01 03:55:16.929826-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_31/zero_0.h5...
+2019-11-01 03:55:17.786931-122 testing batches. 19/136 rooms
+2019-11-01 03:55:17.787025-Processing 0 of 122 batches.
+2019-11-01 03:55:23.116803-Processing 10 of 122 batches.
+2019-11-01 03:55:28.373537-Processing 20 of 122 batches.
+2019-11-01 03:55:33.670252-Processing 30 of 122 batches.
+2019-11-01 03:55:38.937018-Processing 40 of 122 batches.
+2019-11-01 03:55:44.142116-Processing 50 of 122 batches.
+2019-11-01 03:55:49.340217-Processing 60 of 122 batches.
+2019-11-01 03:55:54.601713-Processing 70 of 122 batches.
+2019-11-01 03:55:59.818777-Processing 80 of 122 batches.
+2019-11-01 03:56:05.041965-Processing 90 of 122 batches.
+2019-11-01 03:56:10.266390-Processing 100 of 122 batches.
+2019-11-01 03:56:15.494262-Processing 110 of 122 batches.
+2019-11-01 03:56:20.715872-Processing 120 of 122 batches.
+corr_vote: 768101, all pt num 999424, true all pt num 941971, acc0.7685436811603483, true acc0.815418946018508
+2019-11-01 03:56:21.747774-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_31/zero_0_pred.h5...
+2019-11-01 03:56:22.021437-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_31/half_0.h5...
+2019-11-01 03:56:22.768651-122 testing batches. 20/136 rooms
+2019-11-01 03:56:22.768737-Processing 0 of 122 batches.
+2019-11-01 03:56:28.625378-Processing 10 of 122 batches.
+2019-11-01 03:56:34.502472-Processing 20 of 122 batches.
+2019-11-01 03:56:40.388943-Processing 30 of 122 batches.
+2019-11-01 03:56:46.212632-Processing 40 of 122 batches.
+2019-11-01 03:56:52.074663-Processing 50 of 122 batches.
+2019-11-01 03:56:57.945723-Processing 60 of 122 batches.
+2019-11-01 03:57:03.745671-Processing 70 of 122 batches.
+2019-11-01 03:57:09.620157-Processing 80 of 122 batches.
+2019-11-01 03:57:15.460603-Processing 90 of 122 batches.
+2019-11-01 03:57:21.297941-Processing 100 of 122 batches.
+2019-11-01 03:57:27.111621-Processing 110 of 122 batches.
+2019-11-01 03:57:32.858307-Processing 120 of 122 batches.
+corr_vote: 781148, all pt num 999424, true all pt num 943803, acc0.7815982005635246, true acc0.8276600095570792
+2019-11-01 03:57:34.046420-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_31/half_0_pred.h5...
+2019-11-01 03:57:34.233817-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_13/zero_0.h5...
+2019-11-01 03:57:34.969499-189 testing batches. 21/136 rooms
+2019-11-01 03:57:34.969585-Processing 0 of 189 batches.
+2019-11-01 03:57:40.128937-Processing 10 of 189 batches.
+2019-11-01 03:57:45.348720-Processing 20 of 189 batches.
+2019-11-01 03:57:50.567191-Processing 30 of 189 batches.
+2019-11-01 03:57:55.824266-Processing 40 of 189 batches.
+2019-11-01 03:58:01.098491-Processing 50 of 189 batches.
+2019-11-01 03:58:06.332031-Processing 60 of 189 batches.
+2019-11-01 03:58:11.523002-Processing 70 of 189 batches.
+2019-11-01 03:58:16.741550-Processing 80 of 189 batches.
+2019-11-01 03:58:21.937378-Processing 90 of 189 batches.
+2019-11-01 03:58:27.174926-Processing 100 of 189 batches.
+2019-11-01 03:58:32.432785-Processing 110 of 189 batches.
+2019-11-01 03:58:37.678401-Processing 120 of 189 batches.
+2019-11-01 03:58:42.881284-Processing 130 of 189 batches.
+2019-11-01 03:58:47.990703-Processing 140 of 189 batches.
+2019-11-01 03:58:53.169727-Processing 150 of 189 batches.
+2019-11-01 03:58:58.353780-Processing 160 of 189 batches.
+2019-11-01 03:59:03.544039-Processing 170 of 189 batches.
+2019-11-01 03:59:08.706414-Processing 180 of 189 batches.
+corr_vote: 1306372, all pt num 1548288, true all pt num 1443551, acc0.8437525834986772, true acc0.9049711440745772
+2019-11-01 03:59:13.302996-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_13/zero_0_pred.h5...
+2019-11-01 03:59:14.299326-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_13/half_0.h5...
+2019-11-01 03:59:16.725853-189 testing batches. 22/136 rooms
+2019-11-01 03:59:16.725937-Processing 0 of 189 batches.
+2019-11-01 03:59:21.969363-Processing 10 of 189 batches.
+2019-11-01 03:59:27.216931-Processing 20 of 189 batches.
+2019-11-01 03:59:32.467810-Processing 30 of 189 batches.
+2019-11-01 03:59:37.671968-Processing 40 of 189 batches.
+2019-11-01 03:59:42.796532-Processing 50 of 189 batches.
+2019-11-01 03:59:48.033266-Processing 60 of 189 batches.
+2019-11-01 03:59:53.307210-Processing 70 of 189 batches.
+2019-11-01 03:59:58.586121-Processing 80 of 189 batches.
+2019-11-01 04:00:03.843395-Processing 90 of 189 batches.
+2019-11-01 04:00:09.043954-Processing 100 of 189 batches.
+2019-11-01 04:00:14.218571-Processing 110 of 189 batches.
+2019-11-01 04:00:19.452042-Processing 120 of 189 batches.
+2019-11-01 04:00:24.695526-Processing 130 of 189 batches.
+2019-11-01 04:00:29.879005-Processing 140 of 189 batches.
+2019-11-01 04:00:35.053084-Processing 150 of 189 batches.
+2019-11-01 04:00:40.261671-Processing 160 of 189 batches.
+2019-11-01 04:00:45.505674-Processing 170 of 189 batches.
+2019-11-01 04:00:50.681998-Processing 180 of 189 batches.
+corr_vote: 1323534, all pt num 1548288, true all pt num 1449027, acc0.8548370845734127, true acc0.9133949884991791
+2019-11-01 04:00:55.369337-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_13/half_0_pred.h5...
+2019-11-01 04:00:55.729776-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_5/zero_0.h5...
+2019-11-01 04:00:56.524012-111 testing batches. 23/136 rooms
+2019-11-01 04:00:56.524089-Processing 0 of 111 batches.
+2019-11-01 04:01:02.177818-Processing 10 of 111 batches.
+2019-11-01 04:01:07.450235-Processing 20 of 111 batches.
+2019-11-01 04:01:12.680077-Processing 30 of 111 batches.
+2019-11-01 04:01:17.895639-Processing 40 of 111 batches.
+2019-11-01 04:01:23.163237-Processing 50 of 111 batches.
+2019-11-01 04:01:28.417314-Processing 60 of 111 batches.
+2019-11-01 04:01:33.649427-Processing 70 of 111 batches.
+2019-11-01 04:01:38.897112-Processing 80 of 111 batches.
+2019-11-01 04:01:44.051179-Processing 90 of 111 batches.
+2019-11-01 04:01:49.248712-Processing 100 of 111 batches.
+2019-11-01 04:01:54.506588-Processing 110 of 111 batches.
+corr_vote: 792162, all pt num 909312, true all pt num 867514, acc0.871166332347973, true acc0.9131403066694025
+2019-11-01 04:01:55.050265-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_5/zero_0_pred.h5...
+2019-11-01 04:01:55.156351-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_5/half_0.h5...
+2019-11-01 04:01:55.639154-114 testing batches. 24/136 rooms
+2019-11-01 04:01:55.639243-Processing 0 of 114 batches.
+2019-11-01 04:02:00.929150-Processing 10 of 114 batches.
+2019-11-01 04:02:06.173092-Processing 20 of 114 batches.
+2019-11-01 04:02:11.401101-Processing 30 of 114 batches.
+2019-11-01 04:02:16.601797-Processing 40 of 114 batches.
+2019-11-01 04:02:21.834697-Processing 50 of 114 batches.
+2019-11-01 04:02:27.100959-Processing 60 of 114 batches.
+2019-11-01 04:02:32.390089-Processing 70 of 114 batches.
+2019-11-01 04:02:37.636818-Processing 80 of 114 batches.
+2019-11-01 04:02:42.891242-Processing 90 of 114 batches.
+2019-11-01 04:02:48.184886-Processing 100 of 114 batches.
+2019-11-01 04:02:53.388788-Processing 110 of 114 batches.
+corr_vote: 787502, all pt num 933888, true all pt num 865963, acc0.8432510108278509, true acc0.909394512236666
+2019-11-01 04:02:55.459849-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_5/half_0_pred.h5...
+2019-11-01 04:02:55.642418-Reading ../data/3DIS/prepare_label_rgb/./Area_5/storage_3/zero_0.h5...
+2019-11-01 04:02:55.779810-26 testing batches. 25/136 rooms
+2019-11-01 04:02:55.779888-Processing 0 of 26 batches.
+2019-11-01 04:03:01.487995-Processing 10 of 26 batches.
+2019-11-01 04:03:06.773008-Processing 20 of 26 batches.
+corr_vote: 147554, all pt num 212992, true all pt num 200071, acc0.6927678034855769, true acc0.737508184594469
+2019-11-01 04:03:09.870043-Saving ../data/3DIS/prepare_label_rgb/./Area_5/storage_3/zero_0_pred.h5...
+2019-11-01 04:03:10.443865-Reading ../data/3DIS/prepare_label_rgb/./Area_5/storage_3/half_0.h5...
+2019-11-01 04:03:11.313216-28 testing batches. 26/136 rooms
+2019-11-01 04:03:11.313288-Processing 0 of 28 batches.
+2019-11-01 04:03:16.615787-Processing 10 of 28 batches.
+2019-11-01 04:03:21.839231-Processing 20 of 28 batches.
+corr_vote: 149545, all pt num 229376, true all pt num 203287, acc0.6519644601004464, true acc0.7356348413818886
+2019-11-01 04:03:26.054968-Saving ../data/3DIS/prepare_label_rgb/./Area_5/storage_3/half_0_pred.h5...
+2019-11-01 04:03:26.095664-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_10/zero_0.h5...
+2019-11-01 04:03:26.581346-112 testing batches. 27/136 rooms
+2019-11-01 04:03:26.581422-Processing 0 of 112 batches.
+2019-11-01 04:03:31.854754-Processing 10 of 112 batches.
+2019-11-01 04:03:37.106900-Processing 20 of 112 batches.
+2019-11-01 04:03:42.321075-Processing 30 of 112 batches.
+2019-11-01 04:03:47.585559-Processing 40 of 112 batches.
+2019-11-01 04:03:52.835399-Processing 50 of 112 batches.
+2019-11-01 04:03:58.034641-Processing 60 of 112 batches.
+2019-11-01 04:04:03.277428-Processing 70 of 112 batches.
+2019-11-01 04:04:08.564827-Processing 80 of 112 batches.
+point_num <= sample_num * tolerance 2383 4096 0.7
+2019-11-01 04:04:13.315879-Processing 90 of 112 batches.
+2019-11-01 04:04:18.530601-Processing 100 of 112 batches.
+2019-11-01 04:04:23.733648-Processing 110 of 112 batches.
+corr_vote: 788920, all pt num 917504, true all pt num 871734, acc0.8598545619419643, true acc0.9050008374114122
+2019-11-01 04:04:24.828341-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_10/zero_0_pred.h5...
+2019-11-01 04:04:25.431643-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_10/half_0.h5...
+2019-11-01 04:04:27.164577-113 testing batches. 28/136 rooms
+2019-11-01 04:04:27.164664-Processing 0 of 113 batches.
+2019-11-01 04:04:32.479861-Processing 10 of 113 batches.
+2019-11-01 04:04:37.737089-Processing 20 of 113 batches.
+2019-11-01 04:04:42.900105-Processing 30 of 113 batches.
+2019-11-01 04:04:48.140776-Processing 40 of 113 batches.
+2019-11-01 04:04:53.376866-Processing 50 of 113 batches.
+2019-11-01 04:04:58.611422-Processing 60 of 113 batches.
+2019-11-01 04:05:03.850029-Processing 70 of 113 batches.
+2019-11-01 04:05:09.053866-Processing 80 of 113 batches.
+2019-11-01 04:05:14.245523-Processing 90 of 113 batches.
+2019-11-01 04:05:19.446173-Processing 100 of 113 batches.
+2019-11-01 04:05:24.603163-Processing 110 of 113 batches.
+corr_vote: 778637, all pt num 925696, true all pt num 867463, acc0.8411368310978983, true acc0.8976025490424375
+2019-11-01 04:05:26.198689-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_10/half_0_pred.h5...
+2019-11-01 04:05:26.420261-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_1/zero_0.h5...
+2019-11-01 04:05:29.544986-497 testing batches. 29/136 rooms
+2019-11-01 04:05:29.545068-Processing 0 of 497 batches.
+2019-11-01 04:05:34.759046-Processing 10 of 497 batches.
+2019-11-01 04:05:39.905335-Processing 20 of 497 batches.
+2019-11-01 04:05:45.101151-Processing 30 of 497 batches.
+2019-11-01 04:05:50.343018-Processing 40 of 497 batches.
+2019-11-01 04:05:55.538660-Processing 50 of 497 batches.
+2019-11-01 04:06:00.823845-Processing 60 of 497 batches.
+2019-11-01 04:06:06.088885-Processing 70 of 497 batches.
+2019-11-01 04:06:11.343432-Processing 80 of 497 batches.
+2019-11-01 04:06:16.619891-Processing 90 of 497 batches.
+2019-11-01 04:06:21.840994-Processing 100 of 497 batches.
+2019-11-01 04:06:27.133700-Processing 110 of 497 batches.
+2019-11-01 04:06:32.435363-Processing 120 of 497 batches.
+2019-11-01 04:06:37.723404-Processing 130 of 497 batches.
+2019-11-01 04:06:42.990907-Processing 140 of 497 batches.
+2019-11-01 04:06:48.242752-Processing 150 of 497 batches.
+2019-11-01 04:06:53.442218-Processing 160 of 497 batches.
+2019-11-01 04:06:58.727228-Processing 170 of 497 batches.
+2019-11-01 04:07:04.014971-Processing 180 of 497 batches.
+2019-11-01 04:07:09.279289-Processing 190 of 497 batches.
+2019-11-01 04:07:14.537167-Processing 200 of 497 batches.
+2019-11-01 04:07:19.780496-Processing 210 of 497 batches.
+2019-11-01 04:07:25.032791-Processing 220 of 497 batches.
+2019-11-01 04:07:30.313296-Processing 230 of 497 batches.
+2019-11-01 04:07:35.583795-Processing 240 of 497 batches.
+2019-11-01 04:07:40.771203-Processing 250 of 497 batches.
+2019-11-01 04:07:46.051742-Processing 260 of 497 batches.
+2019-11-01 04:07:51.842107-Processing 270 of 497 batches.
+2019-11-01 04:07:57.716341-Processing 280 of 497 batches.
+2019-11-01 04:08:03.590036-Processing 290 of 497 batches.
+2019-11-01 04:08:09.485308-Processing 300 of 497 batches.
+2019-11-01 04:08:15.316087-Processing 310 of 497 batches.
+2019-11-01 04:08:21.109746-Processing 320 of 497 batches.
+2019-11-01 04:08:26.961642-Processing 330 of 497 batches.
+2019-11-01 04:08:32.825097-Processing 340 of 497 batches.
+2019-11-01 04:08:38.682652-Processing 350 of 497 batches.
+2019-11-01 04:08:44.517637-Processing 360 of 497 batches.
+2019-11-01 04:08:50.348042-Processing 370 of 497 batches.
+2019-11-01 04:08:56.179944-Processing 380 of 497 batches.
+2019-11-01 04:09:02.070023-Processing 390 of 497 batches.
+2019-11-01 04:09:07.917670-Processing 400 of 497 batches.
+2019-11-01 04:09:13.759548-Processing 410 of 497 batches.
+2019-11-01 04:09:19.663379-Processing 420 of 497 batches.
+2019-11-01 04:09:25.529591-Processing 430 of 497 batches.
+2019-11-01 04:09:31.367461-Processing 440 of 497 batches.
+2019-11-01 04:09:37.268921-Processing 450 of 497 batches.
+2019-11-01 04:09:43.121815-Processing 460 of 497 batches.
+2019-11-01 04:09:48.976366-Processing 470 of 497 batches.
+2019-11-01 04:09:54.591725-Processing 480 of 497 batches.
+2019-11-01 04:09:59.864425-Processing 490 of 497 batches.
+point_num <= sample_num * tolerance 1725 4096 0.7
+corr_vote: 2752491, all pt num 4071424, true all pt num 3857846, acc0.6760511801276409, true acc0.7134787132508659
+2019-11-01 04:10:02.927905-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_1/zero_0_pred.h5...
+2019-11-01 04:10:03.530499-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_1/half_0.h5...
+2019-11-01 04:10:05.496336-507 testing batches. 30/136 rooms
+2019-11-01 04:10:05.496429-Processing 0 of 507 batches.
+2019-11-01 04:10:10.687009-Processing 10 of 507 batches.
+2019-11-01 04:10:15.867918-Processing 20 of 507 batches.
+2019-11-01 04:10:21.152276-Processing 30 of 507 batches.
+2019-11-01 04:10:26.327698-Processing 40 of 507 batches.
+2019-11-01 04:10:31.525614-Processing 50 of 507 batches.
+2019-11-01 04:10:36.776374-Processing 60 of 507 batches.
+2019-11-01 04:10:42.000135-Processing 70 of 507 batches.
+2019-11-01 04:10:47.246410-Processing 80 of 507 batches.
+2019-11-01 04:10:52.393046-Processing 90 of 507 batches.
+2019-11-01 04:10:57.649466-Processing 100 of 507 batches.
+2019-11-01 04:11:02.900814-Processing 110 of 507 batches.
+2019-11-01 04:11:08.191788-Processing 120 of 507 batches.
+2019-11-01 04:11:13.422019-Processing 130 of 507 batches.
+2019-11-01 04:11:18.730051-Processing 140 of 507 batches.
+2019-11-01 04:11:23.969044-Processing 150 of 507 batches.
+2019-11-01 04:11:29.300998-Processing 160 of 507 batches.
+2019-11-01 04:11:34.586370-Processing 170 of 507 batches.
+2019-11-01 04:11:39.840510-Processing 180 of 507 batches.
+2019-11-01 04:11:45.135790-Processing 190 of 507 batches.
+2019-11-01 04:11:50.404229-Processing 200 of 507 batches.
+2019-11-01 04:11:55.650511-Processing 210 of 507 batches.
+2019-11-01 04:12:00.849913-Processing 220 of 507 batches.
+2019-11-01 04:12:06.112017-Processing 230 of 507 batches.
+2019-11-01 04:12:11.350041-Processing 240 of 507 batches.
+2019-11-01 04:12:16.548457-Processing 250 of 507 batches.
+2019-11-01 04:12:21.790655-Processing 260 of 507 batches.
+2019-11-01 04:12:27.034266-Processing 270 of 507 batches.
+2019-11-01 04:12:32.295225-Processing 280 of 507 batches.
+2019-11-01 04:12:37.600267-Processing 290 of 507 batches.
+2019-11-01 04:12:42.782253-Processing 300 of 507 batches.
+2019-11-01 04:12:47.957763-Processing 310 of 507 batches.
+2019-11-01 04:12:53.154001-Processing 320 of 507 batches.
+2019-11-01 04:12:58.388360-Processing 330 of 507 batches.
+2019-11-01 04:13:03.569075-Processing 340 of 507 batches.
+2019-11-01 04:13:08.772759-Processing 350 of 507 batches.
+2019-11-01 04:13:13.979110-Processing 360 of 507 batches.
+2019-11-01 04:13:19.201235-Processing 370 of 507 batches.
+2019-11-01 04:13:24.434048-Processing 380 of 507 batches.
+2019-11-01 04:13:29.603041-Processing 390 of 507 batches.
+2019-11-01 04:13:34.833642-Processing 400 of 507 batches.
+2019-11-01 04:13:40.056882-Processing 410 of 507 batches.
+2019-11-01 04:13:45.263482-Processing 420 of 507 batches.
+2019-11-01 04:13:50.528653-Processing 430 of 507 batches.
+2019-11-01 04:13:55.720672-Processing 440 of 507 batches.
+2019-11-01 04:14:01.016125-Processing 450 of 507 batches.
+2019-11-01 04:14:06.248415-Processing 460 of 507 batches.
+2019-11-01 04:14:11.476803-Processing 470 of 507 batches.
+2019-11-01 04:14:16.697930-Processing 480 of 507 batches.
+2019-11-01 04:14:21.904158-Processing 490 of 507 batches.
+2019-11-01 04:14:27.132904-Processing 500 of 507 batches.
+corr_vote: 2786264, all pt num 4153344, true all pt num 3879815, acc0.6708483573717948, true acc0.7181435197296778
+2019-11-01 04:14:30.833067-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_1/half_0_pred.h5...
+2019-11-01 04:14:31.472897-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_3/zero_0.h5...
+2019-11-01 04:14:31.916710-111 testing batches. 31/136 rooms
+2019-11-01 04:14:31.916824-Processing 0 of 111 batches.
+2019-11-01 04:14:37.216245-Processing 10 of 111 batches.
+2019-11-01 04:14:42.500700-Processing 20 of 111 batches.
+point_num <= sample_num * tolerance 1763 4096 0.7
+2019-11-01 04:14:47.254625-Processing 30 of 111 batches.
+2019-11-01 04:14:52.481531-Processing 40 of 111 batches.
+2019-11-01 04:14:57.732214-Processing 50 of 111 batches.
+2019-11-01 04:15:02.997693-Processing 60 of 111 batches.
+2019-11-01 04:15:08.243012-Processing 70 of 111 batches.
+2019-11-01 04:15:13.477710-Processing 80 of 111 batches.
+2019-11-01 04:15:18.716857-Processing 90 of 111 batches.
+2019-11-01 04:15:23.959466-Processing 100 of 111 batches.
+2019-11-01 04:15:29.251435-Processing 110 of 111 batches.
+corr_vote: 733997, all pt num 909312, true all pt num 867147, acc0.8072003888654279, true acc0.8464504864803776
+2019-11-01 04:15:29.779940-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_3/zero_0_pred.h5...
+2019-11-01 04:15:30.260923-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_3/half_0.h5...
+2019-11-01 04:15:32.657319-115 testing batches. 32/136 rooms
+2019-11-01 04:15:32.657397-Processing 0 of 115 batches.
+2019-11-01 04:15:37.882497-Processing 10 of 115 batches.
+2019-11-01 04:15:43.068982-Processing 20 of 115 batches.
+2019-11-01 04:15:48.347260-Processing 30 of 115 batches.
+2019-11-01 04:15:53.591514-Processing 40 of 115 batches.
+2019-11-01 04:15:58.834337-Processing 50 of 115 batches.
+2019-11-01 04:16:04.065738-Processing 60 of 115 batches.
+2019-11-01 04:16:09.275155-Processing 70 of 115 batches.
+2019-11-01 04:16:14.510938-Processing 80 of 115 batches.
+2019-11-01 04:16:19.763289-Processing 90 of 115 batches.
+2019-11-01 04:16:24.981682-Processing 100 of 115 batches.
+2019-11-01 04:16:30.441005-Processing 110 of 115 batches.
+corr_vote: 734025, all pt num 942080, true all pt num 870977, acc0.7791535750679348, true acc0.8427604862126096
+2019-11-01 04:16:33.083546-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_3/half_0_pred.h5...
+2019-11-01 04:16:33.247068-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_38/zero_0.h5...
+2019-11-01 04:16:34.917756-402 testing batches. 33/136 rooms
+2019-11-01 04:16:34.917839-Processing 0 of 402 batches.
+2019-11-01 04:16:40.195975-Processing 10 of 402 batches.
+2019-11-01 04:16:45.488228-Processing 20 of 402 batches.
+2019-11-01 04:16:50.792942-Processing 30 of 402 batches.
+2019-11-01 04:16:56.071328-Processing 40 of 402 batches.
+2019-11-01 04:17:01.344833-Processing 50 of 402 batches.
+2019-11-01 04:17:06.628626-Processing 60 of 402 batches.
+2019-11-01 04:17:11.885658-Processing 70 of 402 batches.
+2019-11-01 04:17:17.239736-Processing 80 of 402 batches.
+2019-11-01 04:17:22.568356-Processing 90 of 402 batches.
+2019-11-01 04:17:27.873911-Processing 100 of 402 batches.
+2019-11-01 04:17:33.188381-Processing 110 of 402 batches.
+2019-11-01 04:17:38.472253-Processing 120 of 402 batches.
+2019-11-01 04:17:43.698994-Processing 130 of 402 batches.
+2019-11-01 04:17:48.952573-Processing 140 of 402 batches.
+2019-11-01 04:17:54.283754-Processing 150 of 402 batches.
+2019-11-01 04:17:59.635796-Processing 160 of 402 batches.
+2019-11-01 04:18:05.328292-Processing 170 of 402 batches.
+2019-11-01 04:18:10.636916-Processing 180 of 402 batches.
+2019-11-01 04:18:15.996316-Processing 190 of 402 batches.
+2019-11-01 04:18:21.330934-Processing 200 of 402 batches.
+2019-11-01 04:18:27.225342-Processing 210 of 402 batches.
+2019-11-01 04:18:33.101001-Processing 220 of 402 batches.
+2019-11-01 04:18:38.901980-Processing 230 of 402 batches.
+2019-11-01 04:18:44.497717-Processing 240 of 402 batches.
+2019-11-01 04:18:49.749639-Processing 250 of 402 batches.
+2019-11-01 04:18:55.059006-Processing 260 of 402 batches.
+2019-11-01 04:19:00.293532-Processing 270 of 402 batches.
+2019-11-01 04:19:05.547996-Processing 280 of 402 batches.
+2019-11-01 04:19:10.604580-Processing 290 of 402 batches.
+2019-11-01 04:19:15.865740-Processing 300 of 402 batches.
+2019-11-01 04:19:21.127718-Processing 310 of 402 batches.
+2019-11-01 04:19:26.515050-Processing 320 of 402 batches.
+2019-11-01 04:19:31.898039-Processing 330 of 402 batches.
+2019-11-01 04:19:37.220543-Processing 340 of 402 batches.
+2019-11-01 04:19:42.634270-Processing 350 of 402 batches.
+2019-11-01 04:19:47.938488-Processing 360 of 402 batches.
+2019-11-01 04:19:53.471084-Processing 370 of 402 batches.
+2019-11-01 04:19:58.785271-Processing 380 of 402 batches.
+2019-11-01 04:20:03.975476-Processing 390 of 402 batches.
+2019-11-01 04:20:09.233453-Processing 400 of 402 batches.
+corr_vote: 2031971, all pt num 3293184, true all pt num 3160865, acc0.6170232212958644, true acc0.6428528266787731
+2019-11-01 04:20:10.292489-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_38/zero_0_pred.h5...
+2019-11-01 04:20:10.948590-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_38/half_0.h5...
+2019-11-01 04:20:12.515138-404 testing batches. 34/136 rooms
+2019-11-01 04:20:12.515224-Processing 0 of 404 batches.
+2019-11-01 04:20:17.721977-Processing 10 of 404 batches.
+2019-11-01 04:20:23.006306-Processing 20 of 404 batches.
+2019-11-01 04:20:28.181294-Processing 30 of 404 batches.
+2019-11-01 04:20:33.453879-Processing 40 of 404 batches.
+2019-11-01 04:20:38.662142-Processing 50 of 404 batches.
+2019-11-01 04:20:43.770825-Processing 60 of 404 batches.
+2019-11-01 04:20:48.861577-Processing 70 of 404 batches.
+2019-11-01 04:20:54.020060-Processing 80 of 404 batches.
+2019-11-01 04:20:59.412436-Processing 90 of 404 batches.
+2019-11-01 04:21:04.532703-Processing 100 of 404 batches.
+2019-11-01 04:21:09.603754-Processing 110 of 404 batches.
+2019-11-01 04:21:14.752537-Processing 120 of 404 batches.
+2019-11-01 04:21:20.014369-Processing 130 of 404 batches.
+2019-11-01 04:21:25.257783-Processing 140 of 404 batches.
+2019-11-01 04:21:30.546451-Processing 150 of 404 batches.
+2019-11-01 04:21:35.755472-Processing 160 of 404 batches.
+2019-11-01 04:21:41.503165-Processing 170 of 404 batches.
+2019-11-01 04:21:47.278716-Processing 180 of 404 batches.
+2019-11-01 04:21:52.738417-Processing 190 of 404 batches.
+2019-11-01 04:21:57.990507-Processing 200 of 404 batches.
+2019-11-01 04:22:03.231336-Processing 210 of 404 batches.
+2019-11-01 04:22:08.381141-Processing 220 of 404 batches.
+2019-11-01 04:22:13.507730-Processing 230 of 404 batches.
+2019-11-01 04:22:18.665552-Processing 240 of 404 batches.
+2019-11-01 04:22:23.786513-Processing 250 of 404 batches.
+2019-11-01 04:22:28.940171-Processing 260 of 404 batches.
+2019-11-01 04:22:34.259805-Processing 270 of 404 batches.
+2019-11-01 04:22:39.613632-Processing 280 of 404 batches.
+2019-11-01 04:22:44.655303-Processing 290 of 404 batches.
+2019-11-01 04:22:49.760488-Processing 300 of 404 batches.
+2019-11-01 04:22:54.828381-Processing 310 of 404 batches.
+2019-11-01 04:22:59.851482-Processing 320 of 404 batches.
+2019-11-01 04:23:04.935784-Processing 330 of 404 batches.
+2019-11-01 04:23:10.074052-Processing 340 of 404 batches.
+2019-11-01 04:23:15.258463-Processing 350 of 404 batches.
+2019-11-01 04:23:20.538986-Processing 360 of 404 batches.
+2019-11-01 04:23:25.755388-Processing 370 of 404 batches.
+2019-11-01 04:23:30.905385-Processing 380 of 404 batches.
+2019-11-01 04:23:36.306695-Processing 390 of 404 batches.
+2019-11-01 04:23:41.573179-Processing 400 of 404 batches.
+corr_vote: 2088426, all pt num 3309568, true all pt num 3173594, acc0.6310267684483292, true acc0.6580633817684304
+2019-11-01 04:23:43.639210-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_38/half_0_pred.h5...
+2019-11-01 04:23:44.317297-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_11/zero_0.h5...
+2019-11-01 04:23:45.035581-128 testing batches. 35/136 rooms
+2019-11-01 04:23:45.035668-Processing 0 of 128 batches.
+2019-11-01 04:23:50.279891-Processing 10 of 128 batches.
+2019-11-01 04:23:55.519688-Processing 20 of 128 batches.
+2019-11-01 04:24:00.749859-Processing 30 of 128 batches.
+2019-11-01 04:24:05.867913-Processing 40 of 128 batches.
+2019-11-01 04:24:10.824104-Processing 50 of 128 batches.
+2019-11-01 04:24:16.012724-Processing 60 of 128 batches.
+2019-11-01 04:24:21.134451-Processing 70 of 128 batches.
+2019-11-01 04:24:26.281119-Processing 80 of 128 batches.
+2019-11-01 04:24:31.436078-Processing 90 of 128 batches.
+2019-11-01 04:24:36.679770-Processing 100 of 128 batches.
+2019-11-01 04:24:42.045776-Processing 110 of 128 batches.
+2019-11-01 04:24:47.151375-Processing 120 of 128 batches.
+corr_vote: 919885, all pt num 1048576, true all pt num 1004059, acc0.8772706985473633, true acc0.9161662810651565
+2019-11-01 04:24:51.305573-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_11/zero_0_pred.h5...
+2019-11-01 04:24:51.505729-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_11/half_0.h5...
+2019-11-01 04:24:52.520243-127 testing batches. 36/136 rooms
+2019-11-01 04:24:52.520332-Processing 0 of 127 batches.
+2019-11-01 04:24:57.806688-Processing 10 of 127 batches.
+2019-11-01 04:25:03.033219-Processing 20 of 127 batches.
+2019-11-01 04:25:08.238739-Processing 30 of 127 batches.
+2019-11-01 04:25:13.410706-Processing 40 of 127 batches.
+2019-11-01 04:25:18.621353-Processing 50 of 127 batches.
+2019-11-01 04:25:23.926044-Processing 60 of 127 batches.
+2019-11-01 04:25:29.399420-Processing 70 of 127 batches.
+2019-11-01 04:25:34.686268-Processing 80 of 127 batches.
+2019-11-01 04:25:39.884612-Processing 90 of 127 batches.
+2019-11-01 04:25:45.030761-Processing 100 of 127 batches.
+2019-11-01 04:25:50.231810-Processing 110 of 127 batches.
+2019-11-01 04:25:55.578236-Processing 120 of 127 batches.
+corr_vote: 920614, all pt num 1040384, true all pt num 1000781, acc0.8848790446604331, true acc0.9198955615664166
+2019-11-01 04:25:59.145617-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_11/half_0_pred.h5...
+2019-11-01 04:25:59.557629-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_9/zero_0.h5...
+2019-11-01 04:26:00.744125-114 testing batches. 37/136 rooms
+2019-11-01 04:26:00.744206-Processing 0 of 114 batches.
+2019-11-01 04:26:05.917390-Processing 10 of 114 batches.
+2019-11-01 04:26:11.079069-Processing 20 of 114 batches.
+2019-11-01 04:26:16.268705-Processing 30 of 114 batches.
+2019-11-01 04:26:21.440865-Processing 40 of 114 batches.
+2019-11-01 04:26:26.609673-Processing 50 of 114 batches.
+2019-11-01 04:26:31.935516-Processing 60 of 114 batches.
+2019-11-01 04:26:37.200292-Processing 70 of 114 batches.
+2019-11-01 04:26:42.316427-Processing 80 of 114 batches.
+2019-11-01 04:26:47.503802-Processing 90 of 114 batches.
+2019-11-01 04:26:52.782727-Processing 100 of 114 batches.
+2019-11-01 04:26:58.033501-Processing 110 of 114 batches.
+corr_vote: 794450, all pt num 933888, true all pt num 903045, acc0.8506908751370614, true acc0.8797457491044189
+2019-11-01 04:27:00.119777-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_9/zero_0_pred.h5...
+2019-11-01 04:27:00.676773-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_9/half_0.h5...
+2019-11-01 04:27:02.215626-116 testing batches. 38/136 rooms
+2019-11-01 04:27:02.215724-Processing 0 of 116 batches.
+2019-11-01 04:27:07.440486-Processing 10 of 116 batches.
+2019-11-01 04:27:12.509889-Processing 20 of 116 batches.
+2019-11-01 04:27:17.806730-Processing 30 of 116 batches.
+2019-11-01 04:27:22.959195-Processing 40 of 116 batches.
+2019-11-01 04:27:28.147593-Processing 50 of 116 batches.
+2019-11-01 04:27:33.424109-Processing 60 of 116 batches.
+2019-11-01 04:27:38.598644-Processing 70 of 116 batches.
+2019-11-01 04:27:43.793075-Processing 80 of 116 batches.
+2019-11-01 04:27:48.964390-Processing 90 of 116 batches.
+2019-11-01 04:27:54.125102-Processing 100 of 116 batches.
+2019-11-01 04:27:59.410598-Processing 110 of 116 batches.
+corr_vote: 783244, all pt num 950272, true all pt num 899957, acc0.8242313779633621, true acc0.870312692717541
+2019-11-01 04:28:02.660165-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_9/half_0_pred.h5...
+2019-11-01 04:28:02.806796-Reading ../data/3DIS/prepare_label_rgb/./Area_5/storage_4/zero_0.h5...
+2019-11-01 04:28:03.220271-101 testing batches. 39/136 rooms
+2019-11-01 04:28:03.220363-Processing 0 of 101 batches.
+2019-11-01 04:28:08.563666-Processing 10 of 101 batches.
+2019-11-01 04:28:13.970613-Processing 20 of 101 batches.
+2019-11-01 04:28:19.781022-Processing 30 of 101 batches.
+2019-11-01 04:28:25.555260-Processing 40 of 101 batches.
+2019-11-01 04:28:30.864717-Processing 50 of 101 batches.
+2019-11-01 04:28:36.073283-Processing 60 of 101 batches.
+2019-11-01 04:28:41.199618-Processing 70 of 101 batches.
+2019-11-01 04:28:46.312263-Processing 80 of 101 batches.
+2019-11-01 04:28:51.463050-Processing 90 of 101 batches.
+2019-11-01 04:28:56.699198-Processing 100 of 101 batches.
+corr_vote: 628608, all pt num 827392, true all pt num 792037, acc0.7597462871287128, true acc0.793659892151503
+2019-11-01 04:28:57.201943-Saving ../data/3DIS/prepare_label_rgb/./Area_5/storage_4/zero_0_pred.h5...
+2019-11-01 04:28:57.454248-Reading ../data/3DIS/prepare_label_rgb/./Area_5/storage_4/half_0.h5...
+2019-11-01 04:28:58.509733-103 testing batches. 40/136 rooms
+2019-11-01 04:28:58.509822-Processing 0 of 103 batches.
+2019-11-01 04:29:03.770288-Processing 10 of 103 batches.
+2019-11-01 04:29:08.923910-Processing 20 of 103 batches.
+2019-11-01 04:29:14.082278-Processing 30 of 103 batches.
+2019-11-01 04:29:19.393193-Processing 40 of 103 batches.
+2019-11-01 04:29:24.681232-Processing 50 of 103 batches.
+2019-11-01 04:29:29.946803-Processing 60 of 103 batches.
+2019-11-01 04:29:35.197494-Processing 70 of 103 batches.
+2019-11-01 04:29:40.372401-Processing 80 of 103 batches.
+2019-11-01 04:29:46.031133-Processing 90 of 103 batches.
+2019-11-01 04:29:51.779537-Processing 100 of 103 batches.
+corr_vote: 640323, all pt num 843776, true all pt num 785353, acc0.7588779486498787, true acc0.8153314496793161
+2019-11-01 04:29:53.388571-Saving ../data/3DIS/prepare_label_rgb/./Area_5/storage_4/half_0_pred.h5...
+2019-11-01 04:29:53.501465-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_21/zero_0.h5...
+2019-11-01 04:29:54.616129-291 testing batches. 41/136 rooms
+2019-11-01 04:29:54.616229-Processing 0 of 291 batches.
+2019-11-01 04:29:59.987742-Processing 10 of 291 batches.
+2019-11-01 04:30:05.304674-Processing 20 of 291 batches.
+2019-11-01 04:30:10.540374-Processing 30 of 291 batches.
+2019-11-01 04:30:16.056520-Processing 40 of 291 batches.
+2019-11-01 04:30:21.228252-Processing 50 of 291 batches.
+2019-11-01 04:30:26.406657-Processing 60 of 291 batches.
+2019-11-01 04:30:31.719433-Processing 70 of 291 batches.
+2019-11-01 04:30:37.066840-Processing 80 of 291 batches.
+2019-11-01 04:30:42.224986-Processing 90 of 291 batches.
+2019-11-01 04:30:47.379669-Processing 100 of 291 batches.
+2019-11-01 04:30:52.447095-Processing 110 of 291 batches.
+2019-11-01 04:30:57.551441-Processing 120 of 291 batches.
+2019-11-01 04:31:02.737561-Processing 130 of 291 batches.
+2019-11-01 04:31:07.854452-Processing 140 of 291 batches.
+2019-11-01 04:31:12.997787-Processing 150 of 291 batches.
+2019-11-01 04:31:18.232740-Processing 160 of 291 batches.
+2019-11-01 04:31:23.392508-Processing 170 of 291 batches.
+2019-11-01 04:31:28.517059-Processing 180 of 291 batches.
+2019-11-01 04:31:33.709609-Processing 190 of 291 batches.
+2019-11-01 04:31:38.956413-Processing 200 of 291 batches.
+2019-11-01 04:31:44.065693-Processing 210 of 291 batches.
+2019-11-01 04:31:49.313557-Processing 220 of 291 batches.
+2019-11-01 04:31:54.471964-Processing 230 of 291 batches.
+2019-11-01 04:31:59.610635-Processing 240 of 291 batches.
+2019-11-01 04:32:04.777195-Processing 250 of 291 batches.
+2019-11-01 04:32:10.053781-Processing 260 of 291 batches.
+2019-11-01 04:32:15.365929-Processing 270 of 291 batches.
+2019-11-01 04:32:20.630337-Processing 280 of 291 batches.
+2019-11-01 04:32:25.780483-Processing 290 of 291 batches.
+corr_vote: 2031956, all pt num 2383872, true all pt num 2296091, acc0.8523763020833334, true acc0.8849631830794162
+2019-11-01 04:32:26.320441-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_21/zero_0_pred.h5...
+2019-11-01 04:32:26.660314-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_21/half_0.h5...
+2019-11-01 04:32:27.844209-299 testing batches. 42/136 rooms
+2019-11-01 04:32:27.844297-Processing 0 of 299 batches.
+2019-11-01 04:32:33.196359-Processing 10 of 299 batches.
+2019-11-01 04:32:38.563281-Processing 20 of 299 batches.
+2019-11-01 04:32:43.785797-Processing 30 of 299 batches.
+2019-11-01 04:32:48.857036-Processing 40 of 299 batches.
+2019-11-01 04:32:53.978263-Processing 50 of 299 batches.
+2019-11-01 04:32:59.174318-Processing 60 of 299 batches.
+2019-11-01 04:33:04.322944-Processing 70 of 299 batches.
+2019-11-01 04:33:09.513616-Processing 80 of 299 batches.
+2019-11-01 04:33:14.873434-Processing 90 of 299 batches.
+2019-11-01 04:33:20.411097-Processing 100 of 299 batches.
+2019-11-01 04:33:25.640076-Processing 110 of 299 batches.
+2019-11-01 04:33:30.848497-Processing 120 of 299 batches.
+2019-11-01 04:33:35.993710-Processing 130 of 299 batches.
+2019-11-01 04:33:41.091509-Processing 140 of 299 batches.
+2019-11-01 04:33:46.259984-Processing 150 of 299 batches.
+2019-11-01 04:33:51.531090-Processing 160 of 299 batches.
+2019-11-01 04:33:56.710856-Processing 170 of 299 batches.
+2019-11-01 04:34:02.397266-Processing 180 of 299 batches.
+2019-11-01 04:34:07.728306-Processing 190 of 299 batches.
+2019-11-01 04:34:13.265778-Processing 200 of 299 batches.
+2019-11-01 04:34:18.502944-Processing 210 of 299 batches.
+2019-11-01 04:34:23.543043-Processing 220 of 299 batches.
+2019-11-01 04:34:28.764208-Processing 230 of 299 batches.
+2019-11-01 04:34:34.239315-Processing 240 of 299 batches.
+2019-11-01 04:34:39.434268-Processing 250 of 299 batches.
+2019-11-01 04:34:44.655545-Processing 260 of 299 batches.
+2019-11-01 04:34:49.781341-Processing 270 of 299 batches.
+2019-11-01 04:34:55.060693-Processing 280 of 299 batches.
+2019-11-01 04:35:00.316773-Processing 290 of 299 batches.
+corr_vote: 1997847, all pt num 2449408, true all pt num 2297057, acc0.8156448415290551, true acc0.8697420220743325
+2019-11-01 04:35:05.033677-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_21/half_0_pred.h5...
+2019-11-01 04:35:05.399696-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_15/zero_0.h5...
+2019-11-01 04:35:06.184441-186 testing batches. 43/136 rooms
+2019-11-01 04:35:06.184522-Processing 0 of 186 batches.
+2019-11-01 04:35:11.546723-Processing 10 of 186 batches.
+2019-11-01 04:35:16.836951-Processing 20 of 186 batches.
+2019-11-01 04:35:22.022451-Processing 30 of 186 batches.
+2019-11-01 04:35:27.249287-Processing 40 of 186 batches.
+2019-11-01 04:35:32.461410-Processing 50 of 186 batches.
+2019-11-01 04:35:37.541151-Processing 60 of 186 batches.
+2019-11-01 04:35:42.591246-Processing 70 of 186 batches.
+2019-11-01 04:35:47.772291-Processing 80 of 186 batches.
+2019-11-01 04:35:52.926653-Processing 90 of 186 batches.
+2019-11-01 04:35:58.119415-Processing 100 of 186 batches.
+2019-11-01 04:36:03.466822-Processing 110 of 186 batches.
+2019-11-01 04:36:08.579205-Processing 120 of 186 batches.
+2019-11-01 04:36:13.773251-Processing 130 of 186 batches.
+2019-11-01 04:36:18.837230-Processing 140 of 186 batches.
+2019-11-01 04:36:23.832610-Processing 150 of 186 batches.
+2019-11-01 04:36:28.888205-Processing 160 of 186 batches.
+2019-11-01 04:36:34.052244-Processing 170 of 186 batches.
+2019-11-01 04:36:39.208902-Processing 180 of 186 batches.
+corr_vote: 1199170, all pt num 1523712, true all pt num 1445142, acc0.7870056808635753, true acc0.8297938887666403
+2019-11-01 04:36:42.306994-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_15/zero_0_pred.h5...
+2019-11-01 04:36:42.682609-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_15/half_0.h5...
+2019-11-01 04:36:44.957032-190 testing batches. 44/136 rooms
+2019-11-01 04:36:44.957120-Processing 0 of 190 batches.
+2019-11-01 04:36:50.074210-Processing 10 of 190 batches.
+2019-11-01 04:36:55.392014-Processing 20 of 190 batches.
+2019-11-01 04:37:00.620948-Processing 30 of 190 batches.
+2019-11-01 04:37:06.380336-Processing 40 of 190 batches.
+2019-11-01 04:37:12.164715-Processing 50 of 190 batches.
+2019-11-01 04:37:17.541726-Processing 60 of 190 batches.
+2019-11-01 04:37:22.713935-Processing 70 of 190 batches.
+2019-11-01 04:37:27.906810-Processing 80 of 190 batches.
+2019-11-01 04:37:33.065453-Processing 90 of 190 batches.
+2019-11-01 04:37:38.279143-Processing 100 of 190 batches.
+2019-11-01 04:37:43.638680-Processing 110 of 190 batches.
+2019-11-01 04:37:48.959976-Processing 120 of 190 batches.
+2019-11-01 04:37:54.367337-Processing 130 of 190 batches.
+2019-11-01 04:37:59.724511-Processing 140 of 190 batches.
+2019-11-01 04:38:04.872441-Processing 150 of 190 batches.
+2019-11-01 04:38:09.962120-Processing 160 of 190 batches.
+2019-11-01 04:38:15.058917-Processing 170 of 190 batches.
+2019-11-01 04:38:20.207088-Processing 180 of 190 batches.
+corr_vote: 1210409, all pt num 1556480, true all pt num 1444330, acc0.7776579204358552, true acc0.838041860239696
+2019-11-01 04:38:25.241820-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_15/half_0_pred.h5...
+2019-11-01 04:38:25.619597-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_7/zero_0.h5...
+2019-11-01 04:38:27.129727-182 testing batches. 45/136 rooms
+2019-11-01 04:38:27.129823-Processing 0 of 182 batches.
+2019-11-01 04:38:32.400880-Processing 10 of 182 batches.
+2019-11-01 04:38:37.759501-Processing 20 of 182 batches.
+2019-11-01 04:38:42.836708-Processing 30 of 182 batches.
+2019-11-01 04:38:47.899227-Processing 40 of 182 batches.
+2019-11-01 04:38:53.084942-Processing 50 of 182 batches.
+2019-11-01 04:38:58.543610-Processing 60 of 182 batches.
+2019-11-01 04:39:03.854386-Processing 70 of 182 batches.
+2019-11-01 04:39:09.273309-Processing 80 of 182 batches.
+2019-11-01 04:39:14.427165-Processing 90 of 182 batches.
+2019-11-01 04:39:19.775305-Processing 100 of 182 batches.
+2019-11-01 04:39:25.053159-Processing 110 of 182 batches.
+2019-11-01 04:39:30.345303-Processing 120 of 182 batches.
+2019-11-01 04:39:35.604784-Processing 130 of 182 batches.
+2019-11-01 04:39:40.805674-Processing 140 of 182 batches.
+2019-11-01 04:39:45.970882-Processing 150 of 182 batches.
+2019-11-01 04:39:51.188753-Processing 160 of 182 batches.
+2019-11-01 04:39:56.625471-Processing 170 of 182 batches.
+2019-11-01 04:40:02.160620-Processing 180 of 182 batches.
+corr_vote: 1313331, all pt num 1490944, true all pt num 1425269, acc0.8808721186040522, true acc0.9214618433432566
+2019-11-01 04:40:03.356077-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_7/zero_0_pred.h5...
+2019-11-01 04:40:03.584170-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_7/half_0.h5...
+2019-11-01 04:40:04.841562-184 testing batches. 46/136 rooms
+2019-11-01 04:40:04.841641-Processing 0 of 184 batches.
+2019-11-01 04:40:10.019444-Processing 10 of 184 batches.
+2019-11-01 04:40:15.244529-Processing 20 of 184 batches.
+2019-11-01 04:40:20.336161-Processing 30 of 184 batches.
+2019-11-01 04:40:25.555375-Processing 40 of 184 batches.
+2019-11-01 04:40:30.714246-Processing 50 of 184 batches.
+2019-11-01 04:40:35.887906-Processing 60 of 184 batches.
+2019-11-01 04:40:41.012033-Processing 70 of 184 batches.
+2019-11-01 04:40:46.091246-Processing 80 of 184 batches.
+2019-11-01 04:40:51.332234-Processing 90 of 184 batches.
+2019-11-01 04:40:56.681334-Processing 100 of 184 batches.
+2019-11-01 04:41:01.794166-Processing 110 of 184 batches.
+2019-11-01 04:41:06.911641-Processing 120 of 184 batches.
+2019-11-01 04:41:12.086929-Processing 130 of 184 batches.
+2019-11-01 04:41:17.355086-Processing 140 of 184 batches.
+2019-11-01 04:41:22.673962-Processing 150 of 184 batches.
+2019-11-01 04:41:28.193730-Processing 160 of 184 batches.
+2019-11-01 04:41:33.390812-Processing 170 of 184 batches.
+2019-11-01 04:41:38.533436-Processing 180 of 184 batches.
+corr_vote: 1271042, all pt num 1507328, true all pt num 1414308, acc0.8432418159816576, true acc0.8987024042853466
+2019-11-01 04:41:40.565802-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_7/half_0_pred.h5...
+2019-11-01 04:41:40.963661-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_13/zero_0.h5...
+2019-11-01 04:41:42.526880-153 testing batches. 47/136 rooms
+2019-11-01 04:41:42.526978-Processing 0 of 153 batches.
+2019-11-01 04:41:47.807261-Processing 10 of 153 batches.
+2019-11-01 04:41:53.106827-Processing 20 of 153 batches.
+2019-11-01 04:41:58.433491-Processing 30 of 153 batches.
+2019-11-01 04:42:03.659741-Processing 40 of 153 batches.
+2019-11-01 04:42:08.889638-Processing 50 of 153 batches.
+2019-11-01 04:42:14.088895-Processing 60 of 153 batches.
+2019-11-01 04:42:19.311024-Processing 70 of 153 batches.
+2019-11-01 04:42:24.507234-Processing 80 of 153 batches.
+2019-11-01 04:42:29.672105-Processing 90 of 153 batches.
+2019-11-01 04:42:35.038014-Processing 100 of 153 batches.
+2019-11-01 04:42:40.167213-Processing 110 of 153 batches.
+point_num <= sample_num * tolerance 2169 4096 0.7
+2019-11-01 04:42:44.869759-Processing 120 of 153 batches.
+2019-11-01 04:42:50.088958-Processing 130 of 153 batches.
+2019-11-01 04:42:55.166315-Processing 140 of 153 batches.
+2019-11-01 04:43:00.267578-Processing 150 of 153 batches.
+corr_vote: 1041769, all pt num 1253376, true all pt num 1184015, acc0.8311703750510621, true acc0.8798613193245018
+2019-11-01 04:43:01.816502-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_13/zero_0_pred.h5...
+2019-11-01 04:43:02.027368-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_13/half_0.h5...
+2019-11-01 04:43:03.251955-154 testing batches. 48/136 rooms
+2019-11-01 04:43:03.252037-Processing 0 of 154 batches.
+2019-11-01 04:43:08.465739-Processing 10 of 154 batches.
+2019-11-01 04:43:13.549444-Processing 20 of 154 batches.
+2019-11-01 04:43:18.693666-Processing 30 of 154 batches.
+2019-11-01 04:43:23.832909-Processing 40 of 154 batches.
+2019-11-01 04:43:29.129697-Processing 50 of 154 batches.
+2019-11-01 04:43:34.329019-Processing 60 of 154 batches.
+2019-11-01 04:43:39.328596-Processing 70 of 154 batches.
+2019-11-01 04:43:44.373125-Processing 80 of 154 batches.
+2019-11-01 04:43:49.357495-Processing 90 of 154 batches.
+2019-11-01 04:43:54.458541-Processing 100 of 154 batches.
+2019-11-01 04:43:59.507244-Processing 110 of 154 batches.
+2019-11-01 04:44:04.678646-Processing 120 of 154 batches.
+2019-11-01 04:44:09.748444-Processing 130 of 154 batches.
+2019-11-01 04:44:14.917783-Processing 140 of 154 batches.
+2019-11-01 04:44:19.941631-Processing 150 of 154 batches.
+corr_vote: 1047938, all pt num 1261568, true all pt num 1192819, acc0.8306631113027597, true acc0.8785389904084359
+2019-11-01 04:44:21.981044-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_13/half_0_pred.h5...
+2019-11-01 04:44:22.321070-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_40/zero_0.h5...
+2019-11-01 04:44:25.283030-368 testing batches. 49/136 rooms
+2019-11-01 04:44:25.283126-Processing 0 of 368 batches.
+2019-11-01 04:44:31.070549-Processing 10 of 368 batches.
+2019-11-01 04:44:36.916415-Processing 20 of 368 batches.
+2019-11-01 04:44:42.513032-Processing 30 of 368 batches.
+2019-11-01 04:44:48.162247-Processing 40 of 368 batches.
+2019-11-01 04:44:53.645967-Processing 50 of 368 batches.
+2019-11-01 04:44:58.712890-Processing 60 of 368 batches.
+2019-11-01 04:45:03.911166-Processing 70 of 368 batches.
+2019-11-01 04:45:09.080385-Processing 80 of 368 batches.
+2019-11-01 04:45:14.270196-Processing 90 of 368 batches.
+2019-11-01 04:45:19.294856-Processing 100 of 368 batches.
+2019-11-01 04:45:24.373515-Processing 110 of 368 batches.
+2019-11-01 04:45:29.429501-Processing 120 of 368 batches.
+2019-11-01 04:45:34.533223-Processing 130 of 368 batches.
+2019-11-01 04:45:39.552218-Processing 140 of 368 batches.
+2019-11-01 04:45:44.510920-Processing 150 of 368 batches.
+2019-11-01 04:45:49.542948-Processing 160 of 368 batches.
+2019-11-01 04:45:54.756885-Processing 170 of 368 batches.
+2019-11-01 04:45:59.832567-Processing 180 of 368 batches.
+2019-11-01 04:46:04.914482-Processing 190 of 368 batches.
+2019-11-01 04:46:10.013700-Processing 200 of 368 batches.
+2019-11-01 04:46:15.147825-Processing 210 of 368 batches.
+2019-11-01 04:46:20.186681-Processing 220 of 368 batches.
+2019-11-01 04:46:25.492852-Processing 230 of 368 batches.
+2019-11-01 04:46:30.804568-Processing 240 of 368 batches.
+2019-11-01 04:46:36.098538-Processing 250 of 368 batches.
+2019-11-01 04:46:41.183034-Processing 260 of 368 batches.
+2019-11-01 04:46:46.283592-Processing 270 of 368 batches.
+2019-11-01 04:46:51.209672-Processing 280 of 368 batches.
+2019-11-01 04:46:56.234973-Processing 290 of 368 batches.
+2019-11-01 04:47:01.236995-Processing 300 of 368 batches.
+2019-11-01 04:47:06.335757-Processing 310 of 368 batches.
+2019-11-01 04:47:11.227166-Processing 320 of 368 batches.
+2019-11-01 04:47:16.213614-Processing 330 of 368 batches.
+2019-11-01 04:47:21.218811-Processing 340 of 368 batches.
+2019-11-01 04:47:26.209031-Processing 350 of 368 batches.
+2019-11-01 04:47:31.212156-Processing 360 of 368 batches.
+point_num <= sample_num * tolerance 2125 4096 0.7
+corr_vote: 2526069, all pt num 3014656, true all pt num 2883114, acc0.8379294353982677, true acc0.8761599437275113
+2019-11-01 04:47:34.811429-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_40/zero_0_pred.h5...
+2019-11-01 04:47:35.265185-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_40/half_0.h5...
+2019-11-01 04:47:36.707047-370 testing batches. 50/136 rooms
+2019-11-01 04:47:36.707155-Processing 0 of 370 batches.
+2019-11-01 04:47:42.236746-Processing 10 of 370 batches.
+2019-11-01 04:47:47.885241-Processing 20 of 370 batches.
+2019-11-01 04:47:53.396171-Processing 30 of 370 batches.
+2019-11-01 04:47:58.631646-Processing 40 of 370 batches.
+2019-11-01 04:48:03.708762-Processing 50 of 370 batches.
+2019-11-01 04:48:08.736043-Processing 60 of 370 batches.
+2019-11-01 04:48:13.724120-Processing 70 of 370 batches.
+2019-11-01 04:48:18.838034-Processing 80 of 370 batches.
+2019-11-01 04:48:23.881288-Processing 90 of 370 batches.
+2019-11-01 04:48:29.054603-Processing 100 of 370 batches.
+2019-11-01 04:48:34.306134-Processing 110 of 370 batches.
+2019-11-01 04:48:39.560604-Processing 120 of 370 batches.
+2019-11-01 04:48:44.729867-Processing 130 of 370 batches.
+2019-11-01 04:48:49.968950-Processing 140 of 370 batches.
+2019-11-01 04:48:55.215511-Processing 150 of 370 batches.
+2019-11-01 04:49:00.400607-Processing 160 of 370 batches.
+2019-11-01 04:49:05.611498-Processing 170 of 370 batches.
+2019-11-01 04:49:10.759742-Processing 180 of 370 batches.
+2019-11-01 04:49:16.014648-Processing 190 of 370 batches.
+2019-11-01 04:49:21.239197-Processing 200 of 370 batches.
+2019-11-01 04:49:26.516603-Processing 210 of 370 batches.
+2019-11-01 04:49:31.759435-Processing 220 of 370 batches.
+2019-11-01 04:49:37.006046-Processing 230 of 370 batches.
+2019-11-01 04:49:42.222058-Processing 240 of 370 batches.
+2019-11-01 04:49:47.385402-Processing 250 of 370 batches.
+2019-11-01 04:49:52.633440-Processing 260 of 370 batches.
+2019-11-01 04:49:57.815556-Processing 270 of 370 batches.
+2019-11-01 04:50:03.111270-Processing 280 of 370 batches.
+2019-11-01 04:50:08.354512-Processing 290 of 370 batches.
+2019-11-01 04:50:13.556487-Processing 300 of 370 batches.
+2019-11-01 04:50:18.743458-Processing 310 of 370 batches.
+2019-11-01 04:50:23.901529-Processing 320 of 370 batches.
+2019-11-01 04:50:29.091092-Processing 330 of 370 batches.
+2019-11-01 04:50:34.301704-Processing 340 of 370 batches.
+2019-11-01 04:50:39.534551-Processing 350 of 370 batches.
+2019-11-01 04:50:44.716639-Processing 360 of 370 batches.
+corr_vote: 2533991, all pt num 3031040, true all pt num 2886870, acc0.8360137114653716, true acc0.877764152871449
+2019-11-01 04:50:49.935293-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_40/half_0_pred.h5...
+2019-11-01 04:50:50.679300-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_41/zero_0.h5...
+2019-11-01 04:50:52.161628-208 testing batches. 51/136 rooms
+2019-11-01 04:50:52.170624-Processing 0 of 208 batches.
+2019-11-01 04:50:57.501491-Processing 10 of 208 batches.
+2019-11-01 04:51:02.745162-Processing 20 of 208 batches.
+2019-11-01 04:51:07.937419-Processing 30 of 208 batches.
+2019-11-01 04:51:13.142181-Processing 40 of 208 batches.
+2019-11-01 04:51:18.370749-Processing 50 of 208 batches.
+2019-11-01 04:51:23.615916-Processing 60 of 208 batches.
+2019-11-01 04:51:28.836603-Processing 70 of 208 batches.
+2019-11-01 04:51:34.053513-Processing 80 of 208 batches.
+2019-11-01 04:51:39.316585-Processing 90 of 208 batches.
+2019-11-01 04:51:44.573818-Processing 100 of 208 batches.
+2019-11-01 04:51:49.828655-Processing 110 of 208 batches.
+2019-11-01 04:51:55.097986-Processing 120 of 208 batches.
+2019-11-01 04:52:00.409732-Processing 130 of 208 batches.
+2019-11-01 04:52:05.705763-Processing 140 of 208 batches.
+2019-11-01 04:52:10.914938-Processing 150 of 208 batches.
+2019-11-01 04:52:16.151404-Processing 160 of 208 batches.
+2019-11-01 04:52:21.273525-Processing 170 of 208 batches.
+2019-11-01 04:52:26.449897-Processing 180 of 208 batches.
+2019-11-01 04:52:31.705052-Processing 190 of 208 batches.
+2019-11-01 04:52:36.915731-Processing 200 of 208 batches.
+corr_vote: 1336842, all pt num 1703936, true all pt num 1622225, acc0.7845611572265625, true acc0.8240792738368599
+2019-11-01 04:52:41.011110-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_41/zero_0_pred.h5...
+2019-11-01 04:52:41.393560-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_41/half_0.h5...
+2019-11-01 04:52:43.468971-208 testing batches. 52/136 rooms
+2019-11-01 04:52:43.469053-Processing 0 of 208 batches.
+2019-11-01 04:52:48.604167-Processing 10 of 208 batches.
+2019-11-01 04:52:53.741299-Processing 20 of 208 batches.
+2019-11-01 04:52:58.988995-Processing 30 of 208 batches.
+2019-11-01 04:53:04.236124-Processing 40 of 208 batches.
+2019-11-01 04:53:09.480562-Processing 50 of 208 batches.
+2019-11-01 04:53:14.724143-Processing 60 of 208 batches.
+2019-11-01 04:53:19.940293-Processing 70 of 208 batches.
+2019-11-01 04:53:25.097341-Processing 80 of 208 batches.
+2019-11-01 04:53:30.348818-Processing 90 of 208 batches.
+2019-11-01 04:53:35.517067-Processing 100 of 208 batches.
+2019-11-01 04:53:40.534989-Processing 110 of 208 batches.
+2019-11-01 04:53:45.592892-Processing 120 of 208 batches.
+2019-11-01 04:53:50.694742-Processing 130 of 208 batches.
+2019-11-01 04:53:55.850081-Processing 140 of 208 batches.
+2019-11-01 04:54:01.027649-Processing 150 of 208 batches.
+2019-11-01 04:54:06.273000-Processing 160 of 208 batches.
+2019-11-01 04:54:11.497523-Processing 170 of 208 batches.
+2019-11-01 04:54:16.726555-Processing 180 of 208 batches.
+2019-11-01 04:54:21.939718-Processing 190 of 208 batches.
+2019-11-01 04:54:27.231514-Processing 200 of 208 batches.
+corr_vote: 1381853, all pt num 1703936, true all pt num 1625402, acc0.810977055476262, true acc0.8501607602303922
+2019-11-01 04:54:31.366975-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_41/half_0_pred.h5...
+2019-11-01 04:54:31.828286-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_42/zero_0.h5...
+2019-11-01 04:54:32.673669-125 testing batches. 53/136 rooms
+2019-11-01 04:54:32.673747-Processing 0 of 125 batches.
+2019-11-01 04:54:38.545874-Processing 10 of 125 batches.
+2019-11-01 04:54:43.836985-Processing 20 of 125 batches.
+2019-11-01 04:54:49.114064-Processing 30 of 125 batches.
+2019-11-01 04:54:54.423149-Processing 40 of 125 batches.
+2019-11-01 04:54:59.677942-Processing 50 of 125 batches.
+2019-11-01 04:55:04.911995-Processing 60 of 125 batches.
+2019-11-01 04:55:10.166808-Processing 70 of 125 batches.
+2019-11-01 04:55:15.491338-Processing 80 of 125 batches.
+2019-11-01 04:55:20.679951-Processing 90 of 125 batches.
+2019-11-01 04:55:25.858245-Processing 100 of 125 batches.
+2019-11-01 04:55:31.112673-Processing 110 of 125 batches.
+2019-11-01 04:55:36.390281-Processing 120 of 125 batches.
+corr_vote: 837331, all pt num 1024000, true all pt num 973305, acc0.8177060546875, true acc0.8602966182234757
+2019-11-01 04:55:38.967427-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_42/zero_0_pred.h5...
+2019-11-01 04:55:39.727446-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_42/half_0.h5...
+2019-11-01 04:55:41.294231-126 testing batches. 54/136 rooms
+2019-11-01 04:55:41.294304-Processing 0 of 126 batches.
+2019-11-01 04:55:46.535799-Processing 10 of 126 batches.
+2019-11-01 04:55:51.784300-Processing 20 of 126 batches.
+2019-11-01 04:55:57.084058-Processing 30 of 126 batches.
+2019-11-01 04:56:02.391984-Processing 40 of 126 batches.
+2019-11-01 04:56:07.735244-Processing 50 of 126 batches.
+2019-11-01 04:56:13.042047-Processing 60 of 126 batches.
+2019-11-01 04:56:18.294922-Processing 70 of 126 batches.
+2019-11-01 04:56:23.513314-Processing 80 of 126 batches.
+2019-11-01 04:56:28.726178-Processing 90 of 126 batches.
+2019-11-01 04:56:33.929101-Processing 100 of 126 batches.
+2019-11-01 04:56:39.186131-Processing 110 of 126 batches.
+2019-11-01 04:56:44.370386-Processing 120 of 126 batches.
+corr_vote: 833063, all pt num 1032192, true all pt num 972674, acc0.8070814344618056, true acc0.8564668121076537
+2019-11-01 04:56:47.496738-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_42/half_0_pred.h5...
+2019-11-01 04:56:47.680534-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_33/zero_0.h5...
+2019-11-01 04:56:48.815439-124 testing batches. 55/136 rooms
+2019-11-01 04:56:48.815514-Processing 0 of 124 batches.
+2019-11-01 04:56:54.085691-Processing 10 of 124 batches.
+2019-11-01 04:56:59.394205-Processing 20 of 124 batches.
+2019-11-01 04:57:04.709283-Processing 30 of 124 batches.
+2019-11-01 04:57:09.970341-Processing 40 of 124 batches.
+2019-11-01 04:57:15.213503-Processing 50 of 124 batches.
+2019-11-01 04:57:20.512032-Processing 60 of 124 batches.
+2019-11-01 04:57:25.751096-Processing 70 of 124 batches.
+2019-11-01 04:57:31.039931-Processing 80 of 124 batches.
+2019-11-01 04:57:36.235997-Processing 90 of 124 batches.
+2019-11-01 04:57:41.524000-Processing 100 of 124 batches.
+2019-11-01 04:57:46.867947-Processing 110 of 124 batches.
+2019-11-01 04:57:52.198941-Processing 120 of 124 batches.
+corr_vote: 853028, all pt num 1015808, true all pt num 973275, acc0.839753181703629, true acc0.8764511571755157
+2019-11-01 04:57:54.315368-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_33/zero_0_pred.h5...
+2019-11-01 04:57:54.520561-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_33/half_0.h5...
+2019-11-01 04:57:55.035399-127 testing batches. 56/136 rooms
+2019-11-01 04:57:55.035476-Processing 0 of 127 batches.
+2019-11-01 04:58:00.323635-Processing 10 of 127 batches.
+2019-11-01 04:58:05.657840-Processing 20 of 127 batches.
+2019-11-01 04:58:10.946356-Processing 30 of 127 batches.
+2019-11-01 04:58:16.191566-Processing 40 of 127 batches.
+2019-11-01 04:58:21.316616-Processing 50 of 127 batches.
+2019-11-01 04:58:26.426541-Processing 60 of 127 batches.
+2019-11-01 04:58:31.497560-Processing 70 of 127 batches.
+2019-11-01 04:58:36.676803-Processing 80 of 127 batches.
+2019-11-01 04:58:41.912777-Processing 90 of 127 batches.
+2019-11-01 04:58:47.157040-Processing 100 of 127 batches.
+2019-11-01 04:58:52.457268-Processing 110 of 127 batches.
+2019-11-01 04:58:57.662380-Processing 120 of 127 batches.
+corr_vote: 853837, all pt num 1040384, true all pt num 974491, acc0.8206940898745079, true acc0.87618767130738
+2019-11-01 04:59:01.305449-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_33/half_0_pred.h5...
+2019-11-01 04:59:01.461973-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_6/zero_0.h5...
+2019-11-01 04:59:01.977795-130 testing batches. 57/136 rooms
+2019-11-01 04:59:01.977878-Processing 0 of 130 batches.
+2019-11-01 04:59:07.232229-Processing 10 of 130 batches.
+2019-11-01 04:59:12.530303-Processing 20 of 130 batches.
+2019-11-01 04:59:17.679115-Processing 30 of 130 batches.
+2019-11-01 04:59:22.694964-Processing 40 of 130 batches.
+2019-11-01 04:59:27.922450-Processing 50 of 130 batches.
+2019-11-01 04:59:33.156484-Processing 60 of 130 batches.
+2019-11-01 04:59:38.286817-Processing 70 of 130 batches.
+2019-11-01 04:59:43.405448-Processing 80 of 130 batches.
+2019-11-01 04:59:48.608011-Processing 90 of 130 batches.
+2019-11-01 04:59:53.871267-Processing 100 of 130 batches.
+2019-11-01 04:59:58.965656-Processing 110 of 130 batches.
+2019-11-01 05:00:04.134581-Processing 120 of 130 batches.
+corr_vote: 927479, all pt num 1064960, true all pt num 1016931, acc0.8709050105168269, true acc0.9120372965324097
+2019-11-01 05:00:09.257707-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_6/zero_0_pred.h5...
+2019-11-01 05:00:09.418494-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_6/half_0.h5...
+2019-11-01 05:00:09.986133-137 testing batches. 58/136 rooms
+2019-11-01 05:00:09.986211-Processing 0 of 137 batches.
+2019-11-01 05:00:15.104615-Processing 10 of 137 batches.
+2019-11-01 05:00:20.101743-Processing 20 of 137 batches.
+2019-11-01 05:00:25.119672-Processing 30 of 137 batches.
+2019-11-01 05:00:30.177434-Processing 40 of 137 batches.
+2019-11-01 05:00:35.261491-Processing 50 of 137 batches.
+2019-11-01 05:00:40.257782-Processing 60 of 137 batches.
+2019-11-01 05:00:45.257807-Processing 70 of 137 batches.
+2019-11-01 05:00:50.295048-Processing 80 of 137 batches.
+2019-11-01 05:00:55.332620-Processing 90 of 137 batches.
+2019-11-01 05:01:00.426777-Processing 100 of 137 batches.
+2019-11-01 05:01:05.430182-Processing 110 of 137 batches.
+2019-11-01 05:01:10.451260-Processing 120 of 137 batches.
+2019-11-01 05:01:15.472272-Processing 130 of 137 batches.
+point_num <= sample_num * tolerance 2857 4096 0.7
+corr_vote: 932237, all pt num 1122304, true all pt num 1011854, acc0.830645707401916, true acc0.9213157234146429
+2019-11-01 05:01:18.485913-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_6/half_0_pred.h5...
+2019-11-01 05:01:18.717275-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_5/zero_0.h5...
+2019-11-01 05:01:20.313009-414 testing batches. 59/136 rooms
+2019-11-01 05:01:20.313115-Processing 0 of 414 batches.
+2019-11-01 05:01:25.507492-Processing 10 of 414 batches.
+2019-11-01 05:01:30.572385-Processing 20 of 414 batches.
+2019-11-01 05:01:35.664238-Processing 30 of 414 batches.
+2019-11-01 05:01:40.784996-Processing 40 of 414 batches.
+2019-11-01 05:01:45.987649-Processing 50 of 414 batches.
+2019-11-01 05:01:51.289927-Processing 60 of 414 batches.
+2019-11-01 05:01:56.615221-Processing 70 of 414 batches.
+2019-11-01 05:02:01.919792-Processing 80 of 414 batches.
+2019-11-01 05:02:07.256257-Processing 90 of 414 batches.
+2019-11-01 05:02:12.563882-Processing 100 of 414 batches.
+2019-11-01 05:02:17.755248-Processing 110 of 414 batches.
+2019-11-01 05:02:23.030065-Processing 120 of 414 batches.
+2019-11-01 05:02:28.346795-Processing 130 of 414 batches.
+2019-11-01 05:02:33.676491-Processing 140 of 414 batches.
+2019-11-01 05:02:38.933651-Processing 150 of 414 batches.
+2019-11-01 05:02:44.199036-Processing 160 of 414 batches.
+2019-11-01 05:02:49.453671-Processing 170 of 414 batches.
+2019-11-01 05:02:54.709478-Processing 180 of 414 batches.
+2019-11-01 05:03:00.062052-Processing 190 of 414 batches.
+2019-11-01 05:03:05.309860-Processing 200 of 414 batches.
+2019-11-01 05:03:10.515361-Processing 210 of 414 batches.
+2019-11-01 05:03:15.742546-Processing 220 of 414 batches.
+2019-11-01 05:03:20.969792-Processing 230 of 414 batches.
+2019-11-01 05:03:26.191454-Processing 240 of 414 batches.
+2019-11-01 05:03:31.407460-Processing 250 of 414 batches.
+2019-11-01 05:03:36.525955-Processing 260 of 414 batches.
+2019-11-01 05:03:41.565723-Processing 270 of 414 batches.
+2019-11-01 05:03:46.708131-Processing 280 of 414 batches.
+2019-11-01 05:03:51.926094-Processing 290 of 414 batches.
+2019-11-01 05:03:57.077653-Processing 300 of 414 batches.
+2019-11-01 05:04:02.293349-Processing 310 of 414 batches.
+2019-11-01 05:04:07.473142-Processing 320 of 414 batches.
+2019-11-01 05:04:12.578850-Processing 330 of 414 batches.
+2019-11-01 05:04:17.716257-Processing 340 of 414 batches.
+2019-11-01 05:04:22.764815-Processing 350 of 414 batches.
+2019-11-01 05:04:27.976648-Processing 360 of 414 batches.
+2019-11-01 05:04:33.151886-Processing 370 of 414 batches.
+2019-11-01 05:04:38.356408-Processing 380 of 414 batches.
+2019-11-01 05:04:43.496949-Processing 390 of 414 batches.
+2019-11-01 05:04:48.586008-Processing 400 of 414 batches.
+2019-11-01 05:04:53.820999-Processing 410 of 414 batches.
+corr_vote: 3045891, all pt num 3391488, true all pt num 3233830, acc0.8980987106544384, true acc0.9418834632618288
+2019-11-01 05:04:55.942348-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_5/zero_0_pred.h5...
+2019-11-01 05:04:56.533818-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_5/half_0.h5...
+2019-11-01 05:04:58.466501-427 testing batches. 60/136 rooms
+2019-11-01 05:04:58.466610-Processing 0 of 427 batches.
+2019-11-01 05:05:03.608611-Processing 10 of 427 batches.
+2019-11-01 05:05:08.777948-Processing 20 of 427 batches.
+2019-11-01 05:05:13.937567-Processing 30 of 427 batches.
+2019-11-01 05:05:19.112501-Processing 40 of 427 batches.
+2019-11-01 05:05:24.342045-Processing 50 of 427 batches.
+2019-11-01 05:05:29.514080-Processing 60 of 427 batches.
+2019-11-01 05:05:34.642710-Processing 70 of 427 batches.
+2019-11-01 05:05:39.652336-Processing 80 of 427 batches.
+2019-11-01 05:05:44.652618-Processing 90 of 427 batches.
+2019-11-01 05:05:49.824625-Processing 100 of 427 batches.
+2019-11-01 05:05:55.015516-Processing 110 of 427 batches.
+2019-11-01 05:06:00.173625-Processing 120 of 427 batches.
+2019-11-01 05:06:05.282358-Processing 130 of 427 batches.
+2019-11-01 05:06:10.264317-Processing 140 of 427 batches.
+2019-11-01 05:06:15.398250-Processing 150 of 427 batches.
+2019-11-01 05:06:20.482412-Processing 160 of 427 batches.
+2019-11-01 05:06:25.655788-Processing 170 of 427 batches.
+2019-11-01 05:06:30.711993-Processing 180 of 427 batches.
+2019-11-01 05:06:35.866215-Processing 190 of 427 batches.
+2019-11-01 05:06:40.973393-Processing 200 of 427 batches.
+2019-11-01 05:06:46.034183-Processing 210 of 427 batches.
+2019-11-01 05:06:51.078661-Processing 220 of 427 batches.
+2019-11-01 05:06:56.140404-Processing 230 of 427 batches.
+2019-11-01 05:07:01.217335-Processing 240 of 427 batches.
+2019-11-01 05:07:06.324328-Processing 250 of 427 batches.
+2019-11-01 05:07:11.338552-Processing 260 of 427 batches.
+2019-11-01 05:07:16.435578-Processing 270 of 427 batches.
+2019-11-01 05:07:21.561651-Processing 280 of 427 batches.
+2019-11-01 05:07:26.706701-Processing 290 of 427 batches.
+2019-11-01 05:07:31.889261-Processing 300 of 427 batches.
+2019-11-01 05:07:37.022446-Processing 310 of 427 batches.
+2019-11-01 05:07:41.969359-Processing 320 of 427 batches.
+2019-11-01 05:07:47.066132-Processing 330 of 427 batches.
+2019-11-01 05:07:52.244753-Processing 340 of 427 batches.
+2019-11-01 05:07:57.484380-Processing 350 of 427 batches.
+2019-11-01 05:08:02.661198-Processing 360 of 427 batches.
+2019-11-01 05:08:07.908457-Processing 370 of 427 batches.
+2019-11-01 05:08:13.086736-Processing 380 of 427 batches.
+2019-11-01 05:08:18.268541-Processing 390 of 427 batches.
+2019-11-01 05:08:23.582302-Processing 400 of 427 batches.
+2019-11-01 05:08:28.863443-Processing 410 of 427 batches.
+2019-11-01 05:08:34.107609-Processing 420 of 427 batches.
+corr_vote: 3014284, all pt num 3497984, true all pt num 3217862, acc0.8617203509221312, true acc0.9367350122534777
+2019-11-01 05:08:37.767146-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_5/half_0_pred.h5...
+2019-11-01 05:08:38.483395-Reading ../data/3DIS/prepare_label_rgb/./Area_5/WC_2/zero_0.h5...
+2019-11-01 05:08:39.233563-95 testing batches. 61/136 rooms
+2019-11-01 05:08:39.233665-Processing 0 of 95 batches.
+2019-11-01 05:08:44.507922-Processing 10 of 95 batches.
+2019-11-01 05:08:49.714412-Processing 20 of 95 batches.
+2019-11-01 05:08:54.969238-Processing 30 of 95 batches.
+2019-11-01 05:09:00.274639-Processing 40 of 95 batches.
+2019-11-01 05:09:05.534901-Processing 50 of 95 batches.
+2019-11-01 05:09:10.703274-Processing 60 of 95 batches.
+2019-11-01 05:09:15.975469-Processing 70 of 95 batches.
+2019-11-01 05:09:21.186905-Processing 80 of 95 batches.
+2019-11-01 05:09:26.399575-Processing 90 of 95 batches.
+corr_vote: 553832, all pt num 778240, true all pt num 718890, acc0.7116467927631579, true acc0.7703988092754107
+2019-11-01 05:09:28.984674-Saving ../data/3DIS/prepare_label_rgb/./Area_5/WC_2/zero_0_pred.h5...
+2019-11-01 05:09:29.246689-Reading ../data/3DIS/prepare_label_rgb/./Area_5/WC_2/half_0.h5...
+2019-11-01 05:09:30.609699-94 testing batches. 62/136 rooms
+2019-11-01 05:09:30.609783-Processing 0 of 94 batches.
+2019-11-01 05:09:36.415221-Processing 10 of 94 batches.
+2019-11-01 05:09:42.272770-Processing 20 of 94 batches.
+2019-11-01 05:09:48.090147-Processing 30 of 94 batches.
+2019-11-01 05:09:53.996164-Processing 40 of 94 batches.
+2019-11-01 05:09:59.895706-Processing 50 of 94 batches.
+2019-11-01 05:10:05.754158-Processing 60 of 94 batches.
+2019-11-01 05:10:11.572296-Processing 70 of 94 batches.
+2019-11-01 05:10:17.372044-Processing 80 of 94 batches.
+2019-11-01 05:10:23.259948-Processing 90 of 94 batches.
+corr_vote: 608837, all pt num 770048, true all pt num 720535, acc0.7906481154421543, true acc0.844979078046174
+2019-11-01 05:10:25.648965-Saving ../data/3DIS/prepare_label_rgb/./Area_5/WC_2/half_0_pred.h5...
+2019-11-01 05:10:25.918472-Reading ../data/3DIS/prepare_label_rgb/./Area_5/WC_1/zero_0.h5...
+2019-11-01 05:10:26.663386-105 testing batches. 63/136 rooms
+2019-11-01 05:10:26.663466-Processing 0 of 105 batches.
+2019-11-01 05:10:31.923974-Processing 10 of 105 batches.
+2019-11-01 05:10:37.151900-Processing 20 of 105 batches.
+2019-11-01 05:10:42.398509-Processing 30 of 105 batches.
+2019-11-01 05:10:47.570065-Processing 40 of 105 batches.
+2019-11-01 05:10:52.761456-Processing 50 of 105 batches.
+2019-11-01 05:10:57.967097-Processing 60 of 105 batches.
+2019-11-01 05:11:03.211405-Processing 70 of 105 batches.
+2019-11-01 05:11:08.428977-Processing 80 of 105 batches.
+2019-11-01 05:11:13.727340-Processing 90 of 105 batches.
+2019-11-01 05:11:18.937636-Processing 100 of 105 batches.
+corr_vote: 698076, all pt num 860160, true all pt num 800569, acc0.8115652901785714, true acc0.8719748079178684
+2019-11-01 05:11:21.524409-Saving ../data/3DIS/prepare_label_rgb/./Area_5/WC_1/zero_0_pred.h5...
+2019-11-01 05:11:21.652910-Reading ../data/3DIS/prepare_label_rgb/./Area_5/WC_1/half_0.h5...
+2019-11-01 05:11:22.080341-104 testing batches. 64/136 rooms
+2019-11-01 05:11:22.080441-Processing 0 of 104 batches.
+2019-11-01 05:11:27.308743-Processing 10 of 104 batches.
+2019-11-01 05:11:32.625433-Processing 20 of 104 batches.
+2019-11-01 05:11:37.834736-Processing 30 of 104 batches.
+2019-11-01 05:11:43.067518-Processing 40 of 104 batches.
+2019-11-01 05:11:48.306445-Processing 50 of 104 batches.
+2019-11-01 05:11:53.545339-Processing 60 of 104 batches.
+2019-11-01 05:11:58.749264-Processing 70 of 104 batches.
+2019-11-01 05:12:04.038574-Processing 80 of 104 batches.
+2019-11-01 05:12:09.331130-Processing 90 of 104 batches.
+2019-11-01 05:12:14.575201-Processing 100 of 104 batches.
+corr_vote: 661033, all pt num 851968, true all pt num 801176, acc0.7758894700270432, true acc0.8250783847743817
+2019-11-01 05:12:16.661012-Saving ../data/3DIS/prepare_label_rgb/./Area_5/WC_1/half_0_pred.h5...
+2019-11-01 05:12:16.848630-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_9/zero_0.h5...
+2019-11-01 05:12:18.324550-174 testing batches. 65/136 rooms
+2019-11-01 05:12:18.324642-Processing 0 of 174 batches.
+2019-11-01 05:12:23.636467-Processing 10 of 174 batches.
+2019-11-01 05:12:28.870181-Processing 20 of 174 batches.
+2019-11-01 05:12:34.104287-Processing 30 of 174 batches.
+2019-11-01 05:12:39.357659-Processing 40 of 174 batches.
+2019-11-01 05:12:44.578096-Processing 50 of 174 batches.
+2019-11-01 05:12:49.788730-Processing 60 of 174 batches.
+2019-11-01 05:12:55.004805-Processing 70 of 174 batches.
+2019-11-01 05:13:00.161994-Processing 80 of 174 batches.
+2019-11-01 05:13:05.341485-Processing 90 of 174 batches.
+2019-11-01 05:13:10.513788-Processing 100 of 174 batches.
+2019-11-01 05:13:15.731394-Processing 110 of 174 batches.
+2019-11-01 05:13:20.965005-Processing 120 of 174 batches.
+2019-11-01 05:13:26.219959-Processing 130 of 174 batches.
+2019-11-01 05:13:31.475409-Processing 140 of 174 batches.
+2019-11-01 05:13:36.709451-Processing 150 of 174 batches.
+2019-11-01 05:13:41.937053-Processing 160 of 174 batches.
+2019-11-01 05:13:47.198088-Processing 170 of 174 batches.
+corr_vote: 1249913, all pt num 1425408, true all pt num 1332026, acc0.8768808649874281, true acc0.9383548068881539
+2019-11-01 05:13:49.312607-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_9/zero_0_pred.h5...
+2019-11-01 05:13:49.535647-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_9/half_0.h5...
+2019-11-01 05:13:50.251809-183 testing batches. 66/136 rooms
+2019-11-01 05:13:50.251896-Processing 0 of 183 batches.
+2019-11-01 05:13:56.065567-Processing 10 of 183 batches.
+2019-11-01 05:14:01.912937-Processing 20 of 183 batches.
+2019-11-01 05:14:07.715651-Processing 30 of 183 batches.
+2019-11-01 05:14:13.532928-Processing 40 of 183 batches.
+2019-11-01 05:14:19.375870-Processing 50 of 183 batches.
+2019-11-01 05:14:25.203078-Processing 60 of 183 batches.
+2019-11-01 05:14:31.047282-Processing 70 of 183 batches.
+2019-11-01 05:14:36.902224-Processing 80 of 183 batches.
+2019-11-01 05:14:42.717569-Processing 90 of 183 batches.
+2019-11-01 05:14:48.514143-Processing 100 of 183 batches.
+2019-11-01 05:14:54.381550-Processing 110 of 183 batches.
+2019-11-01 05:15:00.259639-Processing 120 of 183 batches.
+2019-11-01 05:15:06.094376-Processing 130 of 183 batches.
+2019-11-01 05:15:11.929211-Processing 140 of 183 batches.
+2019-11-01 05:15:17.799722-Processing 150 of 183 batches.
+2019-11-01 05:15:23.709248-Processing 160 of 183 batches.
+2019-11-01 05:15:29.622036-Processing 170 of 183 batches.
+2019-11-01 05:15:35.472811-Processing 180 of 183 batches.
+point_num <= sample_num * tolerance 2385 4096 0.7
+corr_vote: 1257508, all pt num 1499136, true all pt num 1338425, acc0.8388218280396175, true acc0.9395431197116013
+2019-11-01 05:15:36.484002-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_9/half_0_pred.h5...
+2019-11-01 05:15:37.124919-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_2/zero_0.h5...
+2019-11-01 05:15:39.260725-129 testing batches. 67/136 rooms
+2019-11-01 05:15:39.260811-Processing 0 of 129 batches.
+2019-11-01 05:15:44.577781-Processing 10 of 129 batches.
+2019-11-01 05:15:49.888183-Processing 20 of 129 batches.
+2019-11-01 05:15:55.197146-Processing 30 of 129 batches.
+2019-11-01 05:16:00.478858-Processing 40 of 129 batches.
+2019-11-01 05:16:05.776068-Processing 50 of 129 batches.
+2019-11-01 05:16:11.051356-Processing 60 of 129 batches.
+2019-11-01 05:16:16.274901-Processing 70 of 129 batches.
+2019-11-01 05:16:21.572335-Processing 80 of 129 batches.
+2019-11-01 05:16:26.816596-Processing 90 of 129 batches.
+2019-11-01 05:16:32.081570-Processing 100 of 129 batches.
+2019-11-01 05:16:37.347613-Processing 110 of 129 batches.
+2019-11-01 05:16:42.550997-Processing 120 of 129 batches.
+corr_vote: 872604, all pt num 1056768, true all pt num 1002523, acc0.8257290152616279, true acc0.8704079607151157
+2019-11-01 05:16:47.263087-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_2/zero_0_pred.h5...
+2019-11-01 05:16:47.458768-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_2/half_0.h5...
+2019-11-01 05:16:47.982323-129 testing batches. 68/136 rooms
+2019-11-01 05:16:47.982410-Processing 0 of 129 batches.
+2019-11-01 05:16:53.259344-Processing 10 of 129 batches.
+2019-11-01 05:16:58.559452-Processing 20 of 129 batches.
+2019-11-01 05:17:03.856751-Processing 30 of 129 batches.
+2019-11-01 05:17:09.060425-Processing 40 of 129 batches.
+2019-11-01 05:17:14.367413-Processing 50 of 129 batches.
+2019-11-01 05:17:19.659543-Processing 60 of 129 batches.
+2019-11-01 05:17:24.958291-Processing 70 of 129 batches.
+2019-11-01 05:17:30.229715-Processing 80 of 129 batches.
+2019-11-01 05:17:35.447654-Processing 90 of 129 batches.
+2019-11-01 05:17:40.696861-Processing 100 of 129 batches.
+2019-11-01 05:17:45.872738-Processing 110 of 129 batches.
+2019-11-01 05:17:51.089829-Processing 120 of 129 batches.
+corr_vote: 884727, all pt num 1056768, true all pt num 998581, acc0.8372007857921512, true acc0.8859842115962551
+2019-11-01 05:17:55.782959-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_2/half_0_pred.h5...
+2019-11-01 05:17:56.034660-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_8/zero_0.h5...
+2019-11-01 05:17:56.894030-74 testing batches. 69/136 rooms
+2019-11-01 05:17:56.894119-Processing 0 of 74 batches.
+2019-11-01 05:18:02.306414-Processing 10 of 74 batches.
+2019-11-01 05:18:07.642286-Processing 20 of 74 batches.
+2019-11-01 05:18:12.921817-Processing 30 of 74 batches.
+point_num <= sample_num * tolerance 1607 4096 0.7
+2019-11-01 05:18:17.695158-Processing 40 of 74 batches.
+2019-11-01 05:18:22.916371-Processing 50 of 74 batches.
+2019-11-01 05:18:28.159844-Processing 60 of 74 batches.
+2019-11-01 05:18:33.377408-Processing 70 of 74 batches.
+corr_vote: 530389, all pt num 606208, true all pt num 576898, acc0.8749290672508446, true acc0.9193808957562689
+2019-11-01 05:18:35.453498-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_8/zero_0_pred.h5...
+2019-11-01 05:18:35.569719-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_8/half_0.h5...
+2019-11-01 05:18:36.386277-77 testing batches. 70/136 rooms
+2019-11-01 05:18:36.386357-Processing 0 of 77 batches.
+2019-11-01 05:18:41.628044-Processing 10 of 77 batches.
+2019-11-01 05:18:46.858595-Processing 20 of 77 batches.
+2019-11-01 05:18:52.073759-Processing 30 of 77 batches.
+2019-11-01 05:18:57.246572-Processing 40 of 77 batches.
+2019-11-01 05:19:02.520129-Processing 50 of 77 batches.
+2019-11-01 05:19:07.767278-Processing 60 of 77 batches.
+2019-11-01 05:19:12.971648-Processing 70 of 77 batches.
+corr_vote: 531257, all pt num 630784, true all pt num 579833, acc0.842216987114448, true acc0.916224154196122
+2019-11-01 05:19:16.546884-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_8/half_0_pred.h5...
+2019-11-01 05:19:16.706773-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_29/zero_0.h5...
+2019-11-01 05:19:18.432758-244 testing batches. 71/136 rooms
+2019-11-01 05:19:18.432837-Processing 0 of 244 batches.
+2019-11-01 05:19:23.744285-Processing 10 of 244 batches.
+2019-11-01 05:19:28.968570-Processing 20 of 244 batches.
+2019-11-01 05:19:34.140290-Processing 30 of 244 batches.
+2019-11-01 05:19:39.431423-Processing 40 of 244 batches.
+2019-11-01 05:19:44.657199-Processing 50 of 244 batches.
+2019-11-01 05:19:49.965070-Processing 60 of 244 batches.
+2019-11-01 05:19:55.261359-Processing 70 of 244 batches.
+2019-11-01 05:20:00.502549-Processing 80 of 244 batches.
+2019-11-01 05:20:05.790439-Processing 90 of 244 batches.
+2019-11-01 05:20:11.016743-Processing 100 of 244 batches.
+2019-11-01 05:20:16.288532-Processing 110 of 244 batches.
+2019-11-01 05:20:21.507947-Processing 120 of 244 batches.
+2019-11-01 05:20:26.720616-Processing 130 of 244 batches.
+2019-11-01 05:20:31.971223-Processing 140 of 244 batches.
+2019-11-01 05:20:37.214782-Processing 150 of 244 batches.
+2019-11-01 05:20:42.435781-Processing 160 of 244 batches.
+2019-11-01 05:20:47.706925-Processing 170 of 244 batches.
+2019-11-01 05:20:52.991533-Processing 180 of 244 batches.
+2019-11-01 05:20:58.277056-Processing 190 of 244 batches.
+2019-11-01 05:21:03.501357-Processing 200 of 244 batches.
+2019-11-01 05:21:08.745982-Processing 210 of 244 batches.
+2019-11-01 05:21:13.946613-Processing 220 of 244 batches.
+2019-11-01 05:21:19.210686-Processing 230 of 244 batches.
+2019-11-01 05:21:24.467908-Processing 240 of 244 batches.
+corr_vote: 1415802, all pt num 1998848, true all pt num 1900949, acc0.7083089859759222, true acc0.7447869458886062
+2019-11-01 05:21:26.547359-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_29/zero_0_pred.h5...
+2019-11-01 05:21:27.077233-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_29/half_0.h5...
+2019-11-01 05:21:29.226216-245 testing batches. 72/136 rooms
+2019-11-01 05:21:29.226298-Processing 0 of 245 batches.
+2019-11-01 05:21:34.494847-Processing 10 of 245 batches.
+2019-11-01 05:21:39.779467-Processing 20 of 245 batches.
+2019-11-01 05:21:45.000985-Processing 30 of 245 batches.
+2019-11-01 05:21:50.276903-Processing 40 of 245 batches.
+2019-11-01 05:21:55.549035-Processing 50 of 245 batches.
+2019-11-01 05:22:00.781074-Processing 60 of 245 batches.
+2019-11-01 05:22:06.044158-Processing 70 of 245 batches.
+2019-11-01 05:22:11.236888-Processing 80 of 245 batches.
+2019-11-01 05:22:16.498186-Processing 90 of 245 batches.
+2019-11-01 05:22:21.760717-Processing 100 of 245 batches.
+2019-11-01 05:22:27.012478-Processing 110 of 245 batches.
+2019-11-01 05:22:32.264963-Processing 120 of 245 batches.
+2019-11-01 05:22:37.485680-Processing 130 of 245 batches.
+2019-11-01 05:22:42.712016-Processing 140 of 245 batches.
+2019-11-01 05:22:47.890066-Processing 150 of 245 batches.
+2019-11-01 05:22:53.138100-Processing 160 of 245 batches.
+2019-11-01 05:22:58.372784-Processing 170 of 245 batches.
+2019-11-01 05:23:03.611188-Processing 180 of 245 batches.
+2019-11-01 05:23:08.823101-Processing 190 of 245 batches.
+2019-11-01 05:23:14.096154-Processing 200 of 245 batches.
+2019-11-01 05:23:19.345986-Processing 210 of 245 batches.
+2019-11-01 05:23:24.619627-Processing 220 of 245 batches.
+2019-11-01 05:23:29.910735-Processing 230 of 245 batches.
+2019-11-01 05:23:35.161837-Processing 240 of 245 batches.
+corr_vote: 1397232, all pt num 2007040, true all pt num 1903559, acc0.6961654974489796, true acc0.7340103458836842
+2019-11-01 05:23:37.814717-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_29/half_0_pred.h5...
+2019-11-01 05:23:38.352439-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_28/zero_0.h5...
+2019-11-01 05:23:39.311417-116 testing batches. 73/136 rooms
+2019-11-01 05:23:39.311502-Processing 0 of 116 batches.
+2019-11-01 05:23:44.765128-Processing 10 of 116 batches.
+2019-11-01 05:23:50.044564-Processing 20 of 116 batches.
+2019-11-01 05:23:55.300878-Processing 30 of 116 batches.
+2019-11-01 05:24:00.568106-Processing 40 of 116 batches.
+2019-11-01 05:24:05.838817-Processing 50 of 116 batches.
+2019-11-01 05:24:11.071188-Processing 60 of 116 batches.
+2019-11-01 05:24:16.298715-Processing 70 of 116 batches.
+2019-11-01 05:24:21.545333-Processing 80 of 116 batches.
+2019-11-01 05:24:26.817164-Processing 90 of 116 batches.
+2019-11-01 05:24:32.071218-Processing 100 of 116 batches.
+2019-11-01 05:24:37.296765-Processing 110 of 116 batches.
+corr_vote: 795338, all pt num 950272, true all pt num 885714, acc0.8369582603717672, true acc0.8979625477298541
+2019-11-01 05:24:40.437677-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_28/zero_0_pred.h5...
+2019-11-01 05:24:40.622006-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_28/half_0.h5...
+2019-11-01 05:24:41.417248-114 testing batches. 74/136 rooms
+2019-11-01 05:24:41.417334-Processing 0 of 114 batches.
+2019-11-01 05:24:46.702686-Processing 10 of 114 batches.
+2019-11-01 05:24:51.954358-Processing 20 of 114 batches.
+2019-11-01 05:24:57.231140-Processing 30 of 114 batches.
+2019-11-01 05:25:02.436720-Processing 40 of 114 batches.
+2019-11-01 05:25:07.735729-Processing 50 of 114 batches.
+2019-11-01 05:25:13.012555-Processing 60 of 114 batches.
+2019-11-01 05:25:18.272286-Processing 70 of 114 batches.
+2019-11-01 05:25:23.557624-Processing 80 of 114 batches.
+2019-11-01 05:25:28.858202-Processing 90 of 114 batches.
+2019-11-01 05:25:34.140017-Processing 100 of 114 batches.
+2019-11-01 05:25:39.429025-Processing 110 of 114 batches.
+corr_vote: 798779, all pt num 933888, true all pt num 891410, acc0.8553263346354166, true acc0.8960848543319011
+2019-11-01 05:25:41.536643-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_28/half_0_pred.h5...
+2019-11-01 05:25:41.781689-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_1/zero_0.h5...
+2019-11-01 05:25:42.722964-120 testing batches. 75/136 rooms
+2019-11-01 05:25:42.723058-Processing 0 of 120 batches.
+2019-11-01 05:25:47.984541-Processing 10 of 120 batches.
+2019-11-01 05:25:53.242878-Processing 20 of 120 batches.
+2019-11-01 05:25:58.504329-Processing 30 of 120 batches.
+2019-11-01 05:26:03.788670-Processing 40 of 120 batches.
+2019-11-01 05:26:09.069847-Processing 50 of 120 batches.
+2019-11-01 05:26:14.340671-Processing 60 of 120 batches.
+2019-11-01 05:26:19.664361-Processing 70 of 120 batches.
+2019-11-01 05:26:24.968577-Processing 80 of 120 batches.
+2019-11-01 05:26:30.238593-Processing 90 of 120 batches.
+2019-11-01 05:26:35.541697-Processing 100 of 120 batches.
+2019-11-01 05:26:40.809997-Processing 110 of 120 batches.
+corr_vote: 800555, all pt num 983040, true all pt num 941051, acc0.8143666585286459, true acc0.8507030968565997
+2019-11-01 05:26:46.066572-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_1/zero_0_pred.h5...
+2019-11-01 05:26:46.703197-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_1/half_0.h5...
+2019-11-01 05:26:48.409719-121 testing batches. 76/136 rooms
+2019-11-01 05:26:48.409824-Processing 0 of 121 batches.
+2019-11-01 05:26:53.719274-Processing 10 of 121 batches.
+2019-11-01 05:26:58.993345-Processing 20 of 121 batches.
+2019-11-01 05:27:04.240778-Processing 30 of 121 batches.
+2019-11-01 05:27:09.509566-Processing 40 of 121 batches.
+2019-11-01 05:27:14.801023-Processing 50 of 121 batches.
+2019-11-01 05:27:20.099967-Processing 60 of 121 batches.
+2019-11-01 05:27:25.359590-Processing 70 of 121 batches.
+2019-11-01 05:27:30.511016-Processing 80 of 121 batches.
+2019-11-01 05:27:35.700429-Processing 90 of 121 batches.
+2019-11-01 05:27:40.957037-Processing 100 of 121 batches.
+2019-11-01 05:27:46.188340-Processing 110 of 121 batches.
+2019-11-01 05:27:51.401850-Processing 120 of 121 batches.
+corr_vote: 788314, all pt num 991232, true all pt num 938059, acc0.7952870770919421, true acc0.8403671837272496
+2019-11-01 05:27:51.918900-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_1/half_0_pred.h5...
+2019-11-01 05:27:52.091321-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_27/zero_0.h5...
+2019-11-01 05:27:53.083541-111 testing batches. 77/136 rooms
+2019-11-01 05:27:53.083615-Processing 0 of 111 batches.
+2019-11-01 05:27:58.346630-Processing 10 of 111 batches.
+2019-11-01 05:28:03.645963-Processing 20 of 111 batches.
+2019-11-01 05:28:08.867248-Processing 30 of 111 batches.
+2019-11-01 05:28:14.105634-Processing 40 of 111 batches.
+2019-11-01 05:28:19.339932-Processing 50 of 111 batches.
+2019-11-01 05:28:24.633481-Processing 60 of 111 batches.
+2019-11-01 05:28:29.867825-Processing 70 of 111 batches.
+2019-11-01 05:28:35.121629-Processing 80 of 111 batches.
+2019-11-01 05:28:40.445201-Processing 90 of 111 batches.
+2019-11-01 05:28:45.681088-Processing 100 of 111 batches.
+2019-11-01 05:28:50.961774-Processing 110 of 111 batches.
+corr_vote: 743091, all pt num 909312, true all pt num 854541, acc0.8172013566300675, true acc0.8695791073804534
+2019-11-01 05:28:51.489811-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_27/zero_0_pred.h5...
+2019-11-01 05:28:51.594845-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_27/half_0.h5...
+2019-11-01 05:28:52.148813-109 testing batches. 78/136 rooms
+2019-11-01 05:28:52.148908-Processing 0 of 109 batches.
+2019-11-01 05:28:57.505928-Processing 10 of 109 batches.
+2019-11-01 05:29:02.813137-Processing 20 of 109 batches.
+2019-11-01 05:29:08.057147-Processing 30 of 109 batches.
+2019-11-01 05:29:13.261374-Processing 40 of 109 batches.
+2019-11-01 05:29:18.525236-Processing 50 of 109 batches.
+2019-11-01 05:29:23.819760-Processing 60 of 109 batches.
+2019-11-01 05:29:29.058453-Processing 70 of 109 batches.
+2019-11-01 05:29:34.296936-Processing 80 of 109 batches.
+2019-11-01 05:29:39.486849-Processing 90 of 109 batches.
+2019-11-01 05:29:44.690961-Processing 100 of 109 batches.
+corr_vote: 726241, all pt num 892928, true all pt num 851195, acc0.8133253744982798, true acc0.8532016752917957
+2019-11-01 05:29:49.426667-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_27/half_0_pred.h5...
+2019-11-01 05:29:49.566901-Reading ../data/3DIS/prepare_label_rgb/./Area_5/storage_2/zero_0.h5...
+2019-11-01 05:29:50.052355-120 testing batches. 79/136 rooms
+2019-11-01 05:29:50.052446-Processing 0 of 120 batches.
+2019-11-01 05:29:55.359522-Processing 10 of 120 batches.
+2019-11-01 05:30:00.636814-Processing 20 of 120 batches.
+2019-11-01 05:30:05.879112-Processing 30 of 120 batches.
+2019-11-01 05:30:11.092030-Processing 40 of 120 batches.
+2019-11-01 05:30:16.348524-Processing 50 of 120 batches.
+2019-11-01 05:30:21.580139-Processing 60 of 120 batches.
+2019-11-01 05:30:26.768285-Processing 70 of 120 batches.
+2019-11-01 05:30:31.916677-Processing 80 of 120 batches.
+2019-11-01 05:30:37.151153-Processing 90 of 120 batches.
+2019-11-01 05:30:42.372709-Processing 100 of 120 batches.
+2019-11-01 05:30:47.594910-Processing 110 of 120 batches.
+corr_vote: 546410, all pt num 983040, true all pt num 901773, acc0.5558369954427084, true acc0.605928542992527
+2019-11-01 05:30:52.767531-Saving ../data/3DIS/prepare_label_rgb/./Area_5/storage_2/zero_0_pred.h5...
+2019-11-01 05:30:52.923254-Reading ../data/3DIS/prepare_label_rgb/./Area_5/storage_2/half_0.h5...
+2019-11-01 05:30:53.390353-118 testing batches. 80/136 rooms
+2019-11-01 05:30:53.390454-Processing 0 of 118 batches.
+2019-11-01 05:30:58.631014-Processing 10 of 118 batches.
+2019-11-01 05:31:03.867699-Processing 20 of 118 batches.
+2019-11-01 05:31:09.122498-Processing 30 of 118 batches.
+2019-11-01 05:31:14.378283-Processing 40 of 118 batches.
+2019-11-01 05:31:19.641973-Processing 50 of 118 batches.
+2019-11-01 05:31:24.938940-Processing 60 of 118 batches.
+2019-11-01 05:31:30.206931-Processing 70 of 118 batches.
+2019-11-01 05:31:35.380696-Processing 80 of 118 batches.
+2019-11-01 05:31:40.533917-Processing 90 of 118 batches.
+2019-11-01 05:31:45.745504-Processing 100 of 118 batches.
+2019-11-01 05:31:50.990751-Processing 110 of 118 batches.
+corr_vote: 546987, all pt num 966656, true all pt num 903105, acc0.5658548646054026, true acc0.6056737588652482
+2019-11-01 05:31:55.210807-Saving ../data/3DIS/prepare_label_rgb/./Area_5/storage_2/half_0_pred.h5...
+2019-11-01 05:31:55.465347-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_2/zero_0.h5...
+2019-11-01 05:32:00.683133-634 testing batches. 81/136 rooms
+2019-11-01 05:32:00.683224-Processing 0 of 634 batches.
+2019-11-01 05:32:06.594648-Processing 10 of 634 batches.
+2019-11-01 05:32:12.412131-Processing 20 of 634 batches.
+2019-11-01 05:32:18.282220-Processing 30 of 634 batches.
+2019-11-01 05:32:24.201985-Processing 40 of 634 batches.
+2019-11-01 05:32:30.059996-Processing 50 of 634 batches.
+2019-11-01 05:32:35.991361-Processing 60 of 634 batches.
+2019-11-01 05:32:41.841498-Processing 70 of 634 batches.
+2019-11-01 05:32:47.761624-Processing 80 of 634 batches.
+2019-11-01 05:32:53.689408-Processing 90 of 634 batches.
+2019-11-01 05:32:59.604770-Processing 100 of 634 batches.
+2019-11-01 05:33:05.459942-Processing 110 of 634 batches.
+2019-11-01 05:33:11.229617-Processing 120 of 634 batches.
+2019-11-01 05:33:17.098706-Processing 130 of 634 batches.
+2019-11-01 05:33:23.024682-Processing 140 of 634 batches.
+2019-11-01 05:33:28.974883-Processing 150 of 634 batches.
+2019-11-01 05:33:34.869944-Processing 160 of 634 batches.
+2019-11-01 05:33:40.759857-Processing 170 of 634 batches.
+2019-11-01 05:33:46.613916-Processing 180 of 634 batches.
+2019-11-01 05:33:52.524304-Processing 190 of 634 batches.
+2019-11-01 05:33:58.411261-Processing 200 of 634 batches.
+2019-11-01 05:34:04.274257-Processing 210 of 634 batches.
+2019-11-01 05:34:09.566401-Processing 220 of 634 batches.
+2019-11-01 05:34:14.775927-Processing 230 of 634 batches.
+2019-11-01 05:34:20.090806-Processing 240 of 634 batches.
+2019-11-01 05:34:25.383855-Processing 250 of 634 batches.
+2019-11-01 05:34:30.633205-Processing 260 of 634 batches.
+2019-11-01 05:34:35.896461-Processing 270 of 634 batches.
+2019-11-01 05:34:41.099382-Processing 280 of 634 batches.
+2019-11-01 05:34:46.375067-Processing 290 of 634 batches.
+2019-11-01 05:34:51.662239-Processing 300 of 634 batches.
+2019-11-01 05:34:56.934572-Processing 310 of 634 batches.
+2019-11-01 05:35:02.229670-Processing 320 of 634 batches.
+2019-11-01 05:35:07.441209-Processing 330 of 634 batches.
+2019-11-01 05:35:12.675445-Processing 340 of 634 batches.
+2019-11-01 05:35:17.994089-Processing 350 of 634 batches.
+2019-11-01 05:35:23.319485-Processing 360 of 634 batches.
+2019-11-01 05:35:28.627871-Processing 370 of 634 batches.
+2019-11-01 05:35:33.893087-Processing 380 of 634 batches.
+2019-11-01 05:35:39.087515-Processing 390 of 634 batches.
+2019-11-01 05:35:44.340725-Processing 400 of 634 batches.
+2019-11-01 05:35:49.633913-Processing 410 of 634 batches.
+2019-11-01 05:35:54.928982-Processing 420 of 634 batches.
+2019-11-01 05:36:00.244914-Processing 430 of 634 batches.
+2019-11-01 05:36:05.544676-Processing 440 of 634 batches.
+2019-11-01 05:36:10.754121-Processing 450 of 634 batches.
+2019-11-01 05:36:16.004798-Processing 460 of 634 batches.
+2019-11-01 05:36:21.309356-Processing 470 of 634 batches.
+2019-11-01 05:36:26.608077-Processing 480 of 634 batches.
+2019-11-01 05:36:31.872095-Processing 490 of 634 batches.
+2019-11-01 05:36:37.213840-Processing 500 of 634 batches.
+2019-11-01 05:36:42.493720-Processing 510 of 634 batches.
+2019-11-01 05:36:47.710686-Processing 520 of 634 batches.
+2019-11-01 05:36:53.012553-Processing 530 of 634 batches.
+2019-11-01 05:36:58.330226-Processing 540 of 634 batches.
+2019-11-01 05:37:03.589810-Processing 550 of 634 batches.
+2019-11-01 05:37:08.806524-Processing 560 of 634 batches.
+2019-11-01 05:37:14.007232-Processing 570 of 634 batches.
+2019-11-01 05:37:19.250966-Processing 580 of 634 batches.
+2019-11-01 05:37:24.517356-Processing 590 of 634 batches.
+2019-11-01 05:37:29.764964-Processing 600 of 634 batches.
+2019-11-01 05:37:35.049959-Processing 610 of 634 batches.
+2019-11-01 05:37:40.326946-Processing 620 of 634 batches.
+2019-11-01 05:37:45.594990-Processing 630 of 634 batches.
+corr_vote: 4412138, all pt num 5193728, true all pt num 4974915, acc0.8495127199576105, true acc0.8868770622211636
+2019-11-01 05:37:47.719646-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_2/zero_0_pred.h5...
+2019-11-01 05:37:48.754979-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_2/half_0.h5...
+2019-11-01 05:37:51.892612-651 testing batches. 82/136 rooms
+2019-11-01 05:37:51.892697-Processing 0 of 651 batches.
+2019-11-01 05:37:57.189809-Processing 10 of 651 batches.
+2019-11-01 05:38:02.476918-Processing 20 of 651 batches.
+2019-11-01 05:38:07.727151-Processing 30 of 651 batches.
+2019-11-01 05:38:13.037385-Processing 40 of 651 batches.
+2019-11-01 05:38:18.232039-Processing 50 of 651 batches.
+2019-11-01 05:38:23.444545-Processing 60 of 651 batches.
+2019-11-01 05:38:28.692558-Processing 70 of 651 batches.
+2019-11-01 05:38:33.936081-Processing 80 of 651 batches.
+2019-11-01 05:38:39.143813-Processing 90 of 651 batches.
+2019-11-01 05:38:44.344555-Processing 100 of 651 batches.
+2019-11-01 05:38:49.471947-Processing 110 of 651 batches.
+2019-11-01 05:38:54.623419-Processing 120 of 651 batches.
+2019-11-01 05:38:59.888948-Processing 130 of 651 batches.
+2019-11-01 05:39:05.161294-Processing 140 of 651 batches.
+2019-11-01 05:39:10.446874-Processing 150 of 651 batches.
+2019-11-01 05:39:15.659480-Processing 160 of 651 batches.
+2019-11-01 05:39:20.881418-Processing 170 of 651 batches.
+2019-11-01 05:39:26.239338-Processing 180 of 651 batches.
+2019-11-01 05:39:31.501489-Processing 190 of 651 batches.
+2019-11-01 05:39:36.692287-Processing 200 of 651 batches.
+2019-11-01 05:39:41.872634-Processing 210 of 651 batches.
+2019-11-01 05:39:47.099434-Processing 220 of 651 batches.
+2019-11-01 05:39:52.324864-Processing 230 of 651 batches.
+2019-11-01 05:39:57.550654-Processing 240 of 651 batches.
+2019-11-01 05:40:02.815190-Processing 250 of 651 batches.
+2019-11-01 05:40:07.982029-Processing 260 of 651 batches.
+2019-11-01 05:40:13.218829-Processing 270 of 651 batches.
+2019-11-01 05:40:18.373111-Processing 280 of 651 batches.
+2019-11-01 05:40:23.598156-Processing 290 of 651 batches.
+2019-11-01 05:40:28.801604-Processing 300 of 651 batches.
+2019-11-01 05:40:33.980309-Processing 310 of 651 batches.
+2019-11-01 05:40:39.246599-Processing 320 of 651 batches.
+2019-11-01 05:40:44.550530-Processing 330 of 651 batches.
+2019-11-01 05:40:49.821244-Processing 340 of 651 batches.
+2019-11-01 05:40:54.988938-Processing 350 of 651 batches.
+2019-11-01 05:41:00.212805-Processing 360 of 651 batches.
+2019-11-01 05:41:05.402150-Processing 370 of 651 batches.
+2019-11-01 05:41:10.535047-Processing 380 of 651 batches.
+2019-11-01 05:41:15.726591-Processing 390 of 651 batches.
+2019-11-01 05:41:20.950072-Processing 400 of 651 batches.
+2019-11-01 05:41:26.171179-Processing 410 of 651 batches.
+2019-11-01 05:41:31.414012-Processing 420 of 651 batches.
+2019-11-01 05:41:36.667259-Processing 430 of 651 batches.
+2019-11-01 05:41:41.828010-Processing 440 of 651 batches.
+2019-11-01 05:41:47.014633-Processing 450 of 651 batches.
+2019-11-01 05:41:52.256167-Processing 460 of 651 batches.
+2019-11-01 05:41:57.510543-Processing 470 of 651 batches.
+2019-11-01 05:42:02.683708-Processing 480 of 651 batches.
+2019-11-01 05:42:07.915750-Processing 490 of 651 batches.
+2019-11-01 05:42:13.112637-Processing 500 of 651 batches.
+2019-11-01 05:42:18.345074-Processing 510 of 651 batches.
+2019-11-01 05:42:23.605178-Processing 520 of 651 batches.
+2019-11-01 05:42:28.815290-Processing 530 of 651 batches.
+2019-11-01 05:42:34.088135-Processing 540 of 651 batches.
+2019-11-01 05:42:39.353601-Processing 550 of 651 batches.
+2019-11-01 05:42:44.576612-Processing 560 of 651 batches.
+2019-11-01 05:42:49.834809-Processing 570 of 651 batches.
+2019-11-01 05:42:55.042326-Processing 580 of 651 batches.
+2019-11-01 05:43:00.295547-Processing 590 of 651 batches.
+2019-11-01 05:43:05.501899-Processing 600 of 651 batches.
+2019-11-01 05:43:10.691792-Processing 610 of 651 batches.
+2019-11-01 05:43:15.942562-Processing 620 of 651 batches.
+2019-11-01 05:43:21.146834-Processing 630 of 651 batches.
+2019-11-01 05:43:26.389580-Processing 640 of 651 batches.
+2019-11-01 05:43:31.603049-Processing 650 of 651 batches.
+corr_vote: 4519431, all pt num 5332992, true all pt num 4992759, acc0.8474475491431451, true acc0.9051971064495603
+2019-11-01 05:43:32.152619-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_2/half_0_pred.h5...
+2019-11-01 05:43:32.923015-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_17/zero_0.h5...
+2019-11-01 05:43:33.547608-150 testing batches. 83/136 rooms
+2019-11-01 05:43:33.547702-Processing 0 of 150 batches.
+2019-11-01 05:43:39.241924-Processing 10 of 150 batches.
+2019-11-01 05:43:44.480746-Processing 20 of 150 batches.
+2019-11-01 05:43:49.781341-Processing 30 of 150 batches.
+2019-11-01 05:43:55.022103-Processing 40 of 150 batches.
+2019-11-01 05:44:00.321375-Processing 50 of 150 batches.
+2019-11-01 05:44:05.648021-Processing 60 of 150 batches.
+2019-11-01 05:44:10.876160-Processing 70 of 150 batches.
+2019-11-01 05:44:16.127079-Processing 80 of 150 batches.
+2019-11-01 05:44:21.347019-Processing 90 of 150 batches.
+2019-11-01 05:44:26.590903-Processing 100 of 150 batches.
+2019-11-01 05:44:31.852330-Processing 110 of 150 batches.
+2019-11-01 05:44:37.115162-Processing 120 of 150 batches.
+2019-11-01 05:44:42.330751-Processing 130 of 150 batches.
+2019-11-01 05:44:47.582388-Processing 140 of 150 batches.
+corr_vote: 1014428, all pt num 1228800, true all pt num 1178684, acc0.8255436197916667, true acc0.8606445832810151
+2019-11-01 05:44:52.816889-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_17/zero_0_pred.h5...
+2019-11-01 05:44:53.163648-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_17/half_0.h5...
+2019-11-01 05:44:54.579140-151 testing batches. 84/136 rooms
+2019-11-01 05:44:54.579237-Processing 0 of 151 batches.
+2019-11-01 05:44:59.945550-Processing 10 of 151 batches.
+2019-11-01 05:45:05.153556-Processing 20 of 151 batches.
+2019-11-01 05:45:10.419024-Processing 30 of 151 batches.
+2019-11-01 05:45:15.613427-Processing 40 of 151 batches.
+2019-11-01 05:45:20.854511-Processing 50 of 151 batches.
+2019-11-01 05:45:26.146911-Processing 60 of 151 batches.
+2019-11-01 05:45:31.447934-Processing 70 of 151 batches.
+2019-11-01 05:45:36.696451-Processing 80 of 151 batches.
+2019-11-01 05:45:41.949968-Processing 90 of 151 batches.
+2019-11-01 05:45:47.191632-Processing 100 of 151 batches.
+2019-11-01 05:45:52.393211-Processing 110 of 151 batches.
+2019-11-01 05:45:57.672667-Processing 120 of 151 batches.
+2019-11-01 05:46:02.959469-Processing 130 of 151 batches.
+2019-11-01 05:46:08.193304-Processing 140 of 151 batches.
+2019-11-01 05:46:13.418259-Processing 150 of 151 batches.
+corr_vote: 938992, all pt num 1236992, true all pt num 1173634, acc0.7590930256622517, true acc0.8000722542121309
+2019-11-01 05:46:13.939755-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_17/half_0_pred.h5...
+2019-11-01 05:46:14.148081-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_19/zero_0.h5...
+2019-11-01 05:46:15.684600-238 testing batches. 85/136 rooms
+2019-11-01 05:46:15.684677-Processing 0 of 238 batches.
+2019-11-01 05:46:20.864123-Processing 10 of 238 batches.
+2019-11-01 05:46:26.128402-Processing 20 of 238 batches.
+2019-11-01 05:46:31.381771-Processing 30 of 238 batches.
+2019-11-01 05:46:36.659288-Processing 40 of 238 batches.
+2019-11-01 05:46:41.906967-Processing 50 of 238 batches.
+2019-11-01 05:46:47.185637-Processing 60 of 238 batches.
+2019-11-01 05:46:52.417091-Processing 70 of 238 batches.
+2019-11-01 05:46:57.618772-Processing 80 of 238 batches.
+2019-11-01 05:47:02.859109-Processing 90 of 238 batches.
+2019-11-01 05:47:08.112307-Processing 100 of 238 batches.
+2019-11-01 05:47:13.349602-Processing 110 of 238 batches.
+2019-11-01 05:47:18.615684-Processing 120 of 238 batches.
+2019-11-01 05:47:23.845257-Processing 130 of 238 batches.
+2019-11-01 05:47:29.049503-Processing 140 of 238 batches.
+2019-11-01 05:47:34.286754-Processing 150 of 238 batches.
+2019-11-01 05:47:39.507568-Processing 160 of 238 batches.
+2019-11-01 05:47:44.757504-Processing 170 of 238 batches.
+2019-11-01 05:47:50.014750-Processing 180 of 238 batches.
+2019-11-01 05:47:55.297194-Processing 190 of 238 batches.
+2019-11-01 05:48:00.582880-Processing 200 of 238 batches.
+2019-11-01 05:48:05.844445-Processing 210 of 238 batches.
+2019-11-01 05:48:11.084679-Processing 220 of 238 batches.
+2019-11-01 05:48:16.366894-Processing 230 of 238 batches.
+corr_vote: 1528112, all pt num 1949696, true all pt num 1872129, acc0.7837693671218487, true acc0.8162428977917654
+2019-11-01 05:48:20.570452-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_19/zero_0_pred.h5...
+2019-11-01 05:48:20.910704-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_19/half_0.h5...
+2019-11-01 05:48:21.878711-242 testing batches. 86/136 rooms
+2019-11-01 05:48:21.878786-Processing 0 of 242 batches.
+2019-11-01 05:48:27.193080-Processing 10 of 242 batches.
+2019-11-01 05:48:32.541434-Processing 20 of 242 batches.
+2019-11-01 05:48:37.865332-Processing 30 of 242 batches.
+2019-11-01 05:48:43.157446-Processing 40 of 242 batches.
+2019-11-01 05:48:48.468027-Processing 50 of 242 batches.
+2019-11-01 05:48:53.752770-Processing 60 of 242 batches.
+2019-11-01 05:48:59.100766-Processing 70 of 242 batches.
+2019-11-01 05:49:04.401328-Processing 80 of 242 batches.
+2019-11-01 05:49:09.580489-Processing 90 of 242 batches.
+2019-11-01 05:49:14.826671-Processing 100 of 242 batches.
+2019-11-01 05:49:20.122457-Processing 110 of 242 batches.
+2019-11-01 05:49:25.398859-Processing 120 of 242 batches.
+2019-11-01 05:49:30.592995-Processing 130 of 242 batches.
+2019-11-01 05:49:35.788238-Processing 140 of 242 batches.
+2019-11-01 05:49:41.026038-Processing 150 of 242 batches.
+2019-11-01 05:49:46.301165-Processing 160 of 242 batches.
+2019-11-01 05:49:51.578714-Processing 170 of 242 batches.
+2019-11-01 05:49:56.838809-Processing 180 of 242 batches.
+2019-11-01 05:50:02.095027-Processing 190 of 242 batches.
+2019-11-01 05:50:07.393594-Processing 200 of 242 batches.
+2019-11-01 05:50:12.664589-Processing 210 of 242 batches.
+2019-11-01 05:50:17.981389-Processing 220 of 242 batches.
+2019-11-01 05:50:23.237813-Processing 230 of 242 batches.
+2019-11-01 05:50:28.491822-Processing 240 of 242 batches.
+corr_vote: 1529529, all pt num 1982464, true all pt num 1877440, acc0.7715292686273244, true acc0.8146886185444009
+2019-11-01 05:50:29.590668-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_19/half_0_pred.h5...
+2019-11-01 05:50:30.089987-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_10/zero_0.h5...
+2019-11-01 05:50:30.805691-171 testing batches. 87/136 rooms
+2019-11-01 05:50:30.805775-Processing 0 of 171 batches.
+2019-11-01 05:50:36.077690-Processing 10 of 171 batches.
+2019-11-01 05:50:41.357552-Processing 20 of 171 batches.
+2019-11-01 05:50:46.611620-Processing 30 of 171 batches.
+2019-11-01 05:50:51.886631-Processing 40 of 171 batches.
+2019-11-01 05:50:57.144229-Processing 50 of 171 batches.
+2019-11-01 05:51:02.366580-Processing 60 of 171 batches.
+2019-11-01 05:51:07.619210-Processing 70 of 171 batches.
+2019-11-01 05:51:12.754753-Processing 80 of 171 batches.
+2019-11-01 05:51:18.012971-Processing 90 of 171 batches.
+2019-11-01 05:51:23.265437-Processing 100 of 171 batches.
+2019-11-01 05:51:28.462143-Processing 110 of 171 batches.
+2019-11-01 05:51:33.648482-Processing 120 of 171 batches.
+2019-11-01 05:51:38.853692-Processing 130 of 171 batches.
+2019-11-01 05:51:44.094293-Processing 140 of 171 batches.
+2019-11-01 05:51:49.327976-Processing 150 of 171 batches.
+2019-11-01 05:51:54.593991-Processing 160 of 171 batches.
+2019-11-01 05:51:59.832568-Processing 170 of 171 batches.
+corr_vote: 1275918, all pt num 1400832, true all pt num 1343771, acc0.9108287075109649, true acc0.9495055333088748
+2019-11-01 05:52:00.360757-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_10/zero_0_pred.h5...
+2019-11-01 05:52:00.655344-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_10/half_0.h5...
+2019-11-01 05:52:02.740293-177 testing batches. 88/136 rooms
+2019-11-01 05:52:02.740374-Processing 0 of 177 batches.
+2019-11-01 05:52:08.535583-Processing 10 of 177 batches.
+2019-11-01 05:52:13.703576-Processing 20 of 177 batches.
+2019-11-01 05:52:18.928967-Processing 30 of 177 batches.
+2019-11-01 05:52:24.152784-Processing 40 of 177 batches.
+2019-11-01 05:52:29.428094-Processing 50 of 177 batches.
+2019-11-01 05:52:34.659765-Processing 60 of 177 batches.
+2019-11-01 05:52:39.909091-Processing 70 of 177 batches.
+2019-11-01 05:52:45.179522-Processing 80 of 177 batches.
+2019-11-01 05:52:50.424544-Processing 90 of 177 batches.
+2019-11-01 05:52:55.704225-Processing 100 of 177 batches.
+2019-11-01 05:53:00.968166-Processing 110 of 177 batches.
+2019-11-01 05:53:06.218676-Processing 120 of 177 batches.
+2019-11-01 05:53:11.469365-Processing 130 of 177 batches.
+2019-11-01 05:53:16.669942-Processing 140 of 177 batches.
+2019-11-01 05:53:21.943463-Processing 150 of 177 batches.
+2019-11-01 05:53:27.214415-Processing 160 of 177 batches.
+2019-11-01 05:53:32.453739-Processing 170 of 177 batches.
+corr_vote: 1294963, all pt num 1449984, true all pt num 1351737, acc0.893087785796257, true acc0.9579992261808326
+2019-11-01 05:53:36.145511-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_10/half_0_pred.h5...
+2019-11-01 05:53:36.425642-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_24/zero_0.h5...
+2019-11-01 05:53:38.142278-237 testing batches. 89/136 rooms
+2019-11-01 05:53:38.142352-Processing 0 of 237 batches.
+2019-11-01 05:53:43.440474-Processing 10 of 237 batches.
+2019-11-01 05:53:48.693653-Processing 20 of 237 batches.
+2019-11-01 05:53:53.909146-Processing 30 of 237 batches.
+2019-11-01 05:53:59.185567-Processing 40 of 237 batches.
+2019-11-01 05:54:04.443774-Processing 50 of 237 batches.
+2019-11-01 05:54:09.754562-Processing 60 of 237 batches.
+2019-11-01 05:54:15.041941-Processing 70 of 237 batches.
+2019-11-01 05:54:20.308715-Processing 80 of 237 batches.
+2019-11-01 05:54:25.561835-Processing 90 of 237 batches.
+2019-11-01 05:54:30.799197-Processing 100 of 237 batches.
+2019-11-01 05:54:36.019823-Processing 110 of 237 batches.
+2019-11-01 05:54:41.258588-Processing 120 of 237 batches.
+2019-11-01 05:54:46.552040-Processing 130 of 237 batches.
+2019-11-01 05:54:51.846803-Processing 140 of 237 batches.
+2019-11-01 05:54:57.053236-Processing 150 of 237 batches.
+2019-11-01 05:55:02.288300-Processing 160 of 237 batches.
+2019-11-01 05:55:07.537967-Processing 170 of 237 batches.
+2019-11-01 05:55:12.760372-Processing 180 of 237 batches.
+2019-11-01 05:55:17.992976-Processing 190 of 237 batches.
+2019-11-01 05:55:23.217222-Processing 200 of 237 batches.
+2019-11-01 05:55:28.480515-Processing 210 of 237 batches.
+2019-11-01 05:55:33.655166-Processing 220 of 237 batches.
+2019-11-01 05:55:38.867451-Processing 230 of 237 batches.
+corr_vote: 1387541, all pt num 1941504, true all pt num 1843409, acc0.7146732636141878, true acc0.752703822103505
+2019-11-01 05:55:42.479693-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_24/zero_0_pred.h5...
+2019-11-01 05:55:42.765674-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_24/half_0.h5...
+2019-11-01 05:55:43.699252-237 testing batches. 90/136 rooms
+2019-11-01 05:55:43.699333-Processing 0 of 237 batches.
+2019-11-01 05:55:48.889600-Processing 10 of 237 batches.
+2019-11-01 05:55:54.146939-Processing 20 of 237 batches.
+2019-11-01 05:55:59.434395-Processing 30 of 237 batches.
+2019-11-01 05:56:04.610420-Processing 40 of 237 batches.
+2019-11-01 05:56:09.827153-Processing 50 of 237 batches.
+2019-11-01 05:56:15.152191-Processing 60 of 237 batches.
+2019-11-01 05:56:20.435632-Processing 70 of 237 batches.
+2019-11-01 05:56:25.705251-Processing 80 of 237 batches.
+2019-11-01 05:56:31.008917-Processing 90 of 237 batches.
+2019-11-01 05:56:36.265444-Processing 100 of 237 batches.
+2019-11-01 05:56:41.498895-Processing 110 of 237 batches.
+2019-11-01 05:56:46.742962-Processing 120 of 237 batches.
+2019-11-01 05:56:51.995552-Processing 130 of 237 batches.
+2019-11-01 05:56:57.295494-Processing 140 of 237 batches.
+2019-11-01 05:57:02.487467-Processing 150 of 237 batches.
+2019-11-01 05:57:07.672865-Processing 160 of 237 batches.
+2019-11-01 05:57:12.880919-Processing 170 of 237 batches.
+2019-11-01 05:57:18.140983-Processing 180 of 237 batches.
+2019-11-01 05:57:23.411887-Processing 190 of 237 batches.
+2019-11-01 05:57:28.661283-Processing 200 of 237 batches.
+2019-11-01 05:57:33.949202-Processing 210 of 237 batches.
+2019-11-01 05:57:39.212584-Processing 220 of 237 batches.
+2019-11-01 05:57:44.501944-Processing 230 of 237 batches.
+corr_vote: 1357570, all pt num 1941504, true all pt num 1832881, acc0.69923626219673, true acc0.7406754721119374
+2019-11-01 05:57:48.188852-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_24/half_0_pred.h5...
+2019-11-01 05:57:48.528569-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_32/zero_0.h5...
+2019-11-01 05:57:49.009404-118 testing batches. 91/136 rooms
+2019-11-01 05:57:49.009486-Processing 0 of 118 batches.
+2019-11-01 05:57:54.281707-Processing 10 of 118 batches.
+2019-11-01 05:57:59.586745-Processing 20 of 118 batches.
+2019-11-01 05:58:04.904788-Processing 30 of 118 batches.
+2019-11-01 05:58:10.162237-Processing 40 of 118 batches.
+2019-11-01 05:58:15.401102-Processing 50 of 118 batches.
+2019-11-01 05:58:20.667363-Processing 60 of 118 batches.
+2019-11-01 05:58:25.957844-Processing 70 of 118 batches.
+2019-11-01 05:58:31.254655-Processing 80 of 118 batches.
+2019-11-01 05:58:36.516074-Processing 90 of 118 batches.
+2019-11-01 05:58:41.794382-Processing 100 of 118 batches.
+2019-11-01 05:58:47.090397-Processing 110 of 118 batches.
+corr_vote: 793799, all pt num 966656, true all pt num 929354, acc0.8211804406117584, true acc0.8541406181067709
+2019-11-01 05:58:51.332495-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_32/zero_0_pred.h5...
+2019-11-01 05:58:51.587372-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_32/half_0.h5...
+2019-11-01 05:58:52.661144-121 testing batches. 92/136 rooms
+2019-11-01 05:58:52.661228-Processing 0 of 121 batches.
+2019-11-01 05:58:57.962484-Processing 10 of 121 batches.
+2019-11-01 05:59:03.147634-Processing 20 of 121 batches.
+2019-11-01 05:59:08.391703-Processing 30 of 121 batches.
+2019-11-01 05:59:13.671428-Processing 40 of 121 batches.
+2019-11-01 05:59:18.957728-Processing 50 of 121 batches.
+2019-11-01 05:59:24.212076-Processing 60 of 121 batches.
+2019-11-01 05:59:29.461538-Processing 70 of 121 batches.
+2019-11-01 05:59:34.713701-Processing 80 of 121 batches.
+2019-11-01 05:59:39.993286-Processing 90 of 121 batches.
+2019-11-01 05:59:45.194023-Processing 100 of 121 batches.
+2019-11-01 05:59:50.469048-Processing 110 of 121 batches.
+2019-11-01 05:59:55.675639-Processing 120 of 121 batches.
+corr_vote: 784581, all pt num 991232, true all pt num 927221, acc0.7915210566244835, true acc0.846163967382102
+2019-11-01 05:59:56.199237-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_32/half_0_pred.h5...
+2019-11-01 05:59:56.374809-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_12/zero_0.h5...
+2019-11-01 05:59:57.499907-126 testing batches. 93/136 rooms
+2019-11-01 05:59:57.499986-Processing 0 of 126 batches.
+2019-11-01 06:00:02.972382-Processing 10 of 126 batches.
+2019-11-01 06:00:08.225440-Processing 20 of 126 batches.
+2019-11-01 06:00:13.471202-Processing 30 of 126 batches.
+2019-11-01 06:00:18.772583-Processing 40 of 126 batches.
+2019-11-01 06:00:24.095536-Processing 50 of 126 batches.
+2019-11-01 06:00:29.426462-Processing 60 of 126 batches.
+2019-11-01 06:00:34.760111-Processing 70 of 126 batches.
+2019-11-01 06:00:40.100624-Processing 80 of 126 batches.
+2019-11-01 06:00:45.431154-Processing 90 of 126 batches.
+2019-11-01 06:00:50.689737-Processing 100 of 126 batches.
+2019-11-01 06:00:55.913019-Processing 110 of 126 batches.
+2019-11-01 06:01:01.208647-Processing 120 of 126 batches.
+corr_vote: 869045, all pt num 1032192, true all pt num 982675, acc0.8419412279885913, true acc0.8843666522502354
+2019-11-01 06:01:04.392760-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_12/zero_0_pred.h5...
+2019-11-01 06:01:04.549948-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_12/half_0.h5...
+2019-11-01 06:01:05.087432-128 testing batches. 94/136 rooms
+2019-11-01 06:01:05.087513-Processing 0 of 128 batches.
+2019-11-01 06:01:10.350066-Processing 10 of 128 batches.
+2019-11-01 06:01:15.668924-Processing 20 of 128 batches.
+2019-11-01 06:01:21.019910-Processing 30 of 128 batches.
+2019-11-01 06:01:26.376345-Processing 40 of 128 batches.
+2019-11-01 06:01:31.597713-Processing 50 of 128 batches.
+2019-11-01 06:01:36.821721-Processing 60 of 128 batches.
+2019-11-01 06:01:42.074789-Processing 70 of 128 batches.
+2019-11-01 06:01:47.340110-Processing 80 of 128 batches.
+2019-11-01 06:01:52.606993-Processing 90 of 128 batches.
+2019-11-01 06:01:57.824392-Processing 100 of 128 batches.
+2019-11-01 06:02:03.126588-Processing 110 of 128 batches.
+2019-11-01 06:02:08.331416-Processing 120 of 128 batches.
+corr_vote: 850416, all pt num 1048576, true all pt num 980936, acc0.8110198974609375, true acc0.8669434091520751
+2019-11-01 06:02:12.505934-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_12/half_0_pred.h5...
+2019-11-01 06:02:12.824098-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_39/zero_0.h5...
+2019-11-01 06:02:14.175645-138 testing batches. 95/136 rooms
+2019-11-01 06:02:14.175724-Processing 0 of 138 batches.
+2019-11-01 06:02:19.413230-Processing 10 of 138 batches.
+2019-11-01 06:02:24.673529-Processing 20 of 138 batches.
+2019-11-01 06:02:29.975859-Processing 30 of 138 batches.
+2019-11-01 06:02:35.265289-Processing 40 of 138 batches.
+2019-11-01 06:02:40.471784-Processing 50 of 138 batches.
+2019-11-01 06:02:45.708116-Processing 60 of 138 batches.
+2019-11-01 06:02:50.990354-Processing 70 of 138 batches.
+2019-11-01 06:02:56.199690-Processing 80 of 138 batches.
+2019-11-01 06:03:01.473956-Processing 90 of 138 batches.
+2019-11-01 06:03:06.744654-Processing 100 of 138 batches.
+2019-11-01 06:03:12.025201-Processing 110 of 138 batches.
+2019-11-01 06:03:17.281907-Processing 120 of 138 batches.
+2019-11-01 06:03:22.592206-Processing 130 of 138 batches.
+corr_vote: 850294, all pt num 1130496, true all pt num 1065884, acc0.7521424224411232, true acc0.7977359637634114
+2019-11-01 06:03:26.849395-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_39/zero_0_pred.h5...
+2019-11-01 06:03:27.052446-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_39/half_0.h5...
+2019-11-01 06:03:27.618523-142 testing batches. 96/136 rooms
+2019-11-01 06:03:27.618605-Processing 0 of 142 batches.
+2019-11-01 06:03:32.884547-Processing 10 of 142 batches.
+point_num <= sample_num * tolerance 1087 4096 0.7
+2019-11-01 06:03:37.613542-Processing 20 of 142 batches.
+2019-11-01 06:03:42.920395-Processing 30 of 142 batches.
+2019-11-01 06:03:48.175216-Processing 40 of 142 batches.
+2019-11-01 06:03:53.504522-Processing 50 of 142 batches.
+2019-11-01 06:03:58.831969-Processing 60 of 142 batches.
+2019-11-01 06:04:04.147081-Processing 70 of 142 batches.
+2019-11-01 06:04:09.310003-Processing 80 of 142 batches.
+2019-11-01 06:04:14.575360-Processing 90 of 142 batches.
+2019-11-01 06:04:19.867237-Processing 100 of 142 batches.
+2019-11-01 06:04:25.160603-Processing 110 of 142 batches.
+2019-11-01 06:04:30.392109-Processing 120 of 142 batches.
+point_num <= sample_num * tolerance 2274 4096 0.7
+2019-11-01 06:04:35.123185-Processing 130 of 142 batches.
+2019-11-01 06:04:40.388564-Processing 140 of 142 batches.
+point_num <= sample_num * tolerance 2200 4096 0.7
+corr_vote: 858428, all pt num 1163264, true all pt num 1066744, acc0.7379477057658451, true acc0.8047179079516735
+2019-11-01 06:04:40.919516-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_39/half_0_pred.h5...
+2019-11-01 06:04:41.153632-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_20/zero_0.h5...
+2019-11-01 06:04:41.466836-77 testing batches. 97/136 rooms
+2019-11-01 06:04:41.466922-Processing 0 of 77 batches.
+2019-11-01 06:04:46.740577-Processing 10 of 77 batches.
+2019-11-01 06:04:52.025533-Processing 20 of 77 batches.
+2019-11-01 06:04:57.298799-Processing 30 of 77 batches.
+2019-11-01 06:05:02.576389-Processing 40 of 77 batches.
+2019-11-01 06:05:07.836196-Processing 50 of 77 batches.
+2019-11-01 06:05:13.038294-Processing 60 of 77 batches.
+2019-11-01 06:05:18.313605-Processing 70 of 77 batches.
+point_num <= sample_num * tolerance 2160 4096 0.7
+corr_vote: 489140, all pt num 630784, true all pt num 589469, acc0.7754476968344156, true acc0.8297976653564479
+2019-11-01 06:05:21.459210-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_20/zero_0_pred.h5...
+2019-11-01 06:05:21.533252-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_20/half_0.h5...
+2019-11-01 06:05:21.873427-75 testing batches. 98/136 rooms
+2019-11-01 06:05:21.873503-Processing 0 of 75 batches.
+2019-11-01 06:05:27.146024-Processing 10 of 75 batches.
+2019-11-01 06:05:32.394195-Processing 20 of 75 batches.
+2019-11-01 06:05:37.567995-Processing 30 of 75 batches.
+2019-11-01 06:05:42.762092-Processing 40 of 75 batches.
+2019-11-01 06:05:48.027578-Processing 50 of 75 batches.
+2019-11-01 06:05:53.312466-Processing 60 of 75 batches.
+2019-11-01 06:05:58.556721-Processing 70 of 75 batches.
+corr_vote: 498648, all pt num 614400, true all pt num 586711, acc0.8116015625, true acc0.8499039561214976
+2019-11-01 06:06:01.174483-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_20/half_0_pred.h5...
+2019-11-01 06:06:01.432468-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_4/zero_0.h5...
+2019-11-01 06:06:02.031883-147 testing batches. 99/136 rooms
+2019-11-01 06:06:02.031958-Processing 0 of 147 batches.
+2019-11-01 06:06:07.313687-Processing 10 of 147 batches.
+2019-11-01 06:06:12.539276-Processing 20 of 147 batches.
+2019-11-01 06:06:17.789606-Processing 30 of 147 batches.
+2019-11-01 06:06:22.959148-Processing 40 of 147 batches.
+2019-11-01 06:06:28.190127-Processing 50 of 147 batches.
+2019-11-01 06:06:33.445570-Processing 60 of 147 batches.
+2019-11-01 06:06:38.714075-Processing 70 of 147 batches.
+2019-11-01 06:06:43.874563-Processing 80 of 147 batches.
+2019-11-01 06:06:49.356860-Processing 90 of 147 batches.
+2019-11-01 06:06:55.287413-Processing 100 of 147 batches.
+2019-11-01 06:07:01.240668-Processing 110 of 147 batches.
+2019-11-01 06:07:07.089250-Processing 120 of 147 batches.
+2019-11-01 06:07:12.918035-Processing 130 of 147 batches.
+2019-11-01 06:07:18.882216-Processing 140 of 147 batches.
+corr_vote: 1055015, all pt num 1204224, true all pt num 1138118, acc0.8760953111713435, true acc0.9269820879733033
+2019-11-01 06:07:23.002611-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_4/zero_0_pred.h5...
+2019-11-01 06:07:23.323360-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_4/half_0.h5...
+2019-11-01 06:07:24.450176-148 testing batches. 100/136 rooms
+2019-11-01 06:07:24.450259-Processing 0 of 148 batches.
+2019-11-01 06:07:29.645942-Processing 10 of 148 batches.
+2019-11-01 06:07:34.793812-Processing 20 of 148 batches.
+2019-11-01 06:07:40.068902-Processing 30 of 148 batches.
+2019-11-01 06:07:45.341883-Processing 40 of 148 batches.
+2019-11-01 06:07:50.606330-Processing 50 of 148 batches.
+2019-11-01 06:07:55.858975-Processing 60 of 148 batches.
+2019-11-01 06:08:01.055875-Processing 70 of 148 batches.
+2019-11-01 06:08:06.329583-Processing 80 of 148 batches.
+2019-11-01 06:08:11.619762-Processing 90 of 148 batches.
+2019-11-01 06:08:16.889754-Processing 100 of 148 batches.
+2019-11-01 06:08:22.126392-Processing 110 of 148 batches.
+2019-11-01 06:08:27.397859-Processing 120 of 148 batches.
+2019-11-01 06:08:32.634724-Processing 130 of 148 batches.
+2019-11-01 06:08:37.910636-Processing 140 of 148 batches.
+corr_vote: 1076823, all pt num 1212416, true all pt num 1141703, acc0.8881629737647804, true acc0.943172611440979
+2019-11-01 06:08:42.090029-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_4/half_0_pred.h5...
+2019-11-01 06:08:42.278801-Reading ../data/3DIS/prepare_label_rgb/./Area_5/storage_1/zero_0.h5...
+2019-11-01 06:08:42.669061-96 testing batches. 101/136 rooms
+2019-11-01 06:08:42.669134-Processing 0 of 96 batches.
+2019-11-01 06:08:47.977959-Processing 10 of 96 batches.
+2019-11-01 06:08:53.306283-Processing 20 of 96 batches.
+2019-11-01 06:08:58.590688-Processing 30 of 96 batches.
+2019-11-01 06:09:03.897130-Processing 40 of 96 batches.
+2019-11-01 06:09:09.201393-Processing 50 of 96 batches.
+2019-11-01 06:09:14.456630-Processing 60 of 96 batches.
+2019-11-01 06:09:19.746824-Processing 70 of 96 batches.
+2019-11-01 06:09:25.074144-Processing 80 of 96 batches.
+2019-11-01 06:09:30.350846-Processing 90 of 96 batches.
+corr_vote: 457472, all pt num 786432, true all pt num 740537, acc0.5817057291666666, true acc0.6177571140942316
+2019-11-01 06:09:33.473502-Saving ../data/3DIS/prepare_label_rgb/./Area_5/storage_1/zero_0_pred.h5...
+2019-11-01 06:09:33.597265-Reading ../data/3DIS/prepare_label_rgb/./Area_5/storage_1/half_0.h5...
+2019-11-01 06:09:34.003497-93 testing batches. 102/136 rooms
+2019-11-01 06:09:34.003593-Processing 0 of 93 batches.
+2019-11-01 06:09:39.370747-Processing 10 of 93 batches.
+2019-11-01 06:09:44.636876-Processing 20 of 93 batches.
+2019-11-01 06:09:49.900185-Processing 30 of 93 batches.
+2019-11-01 06:09:55.170840-Processing 40 of 93 batches.
+2019-11-01 06:10:00.482740-Processing 50 of 93 batches.
+2019-11-01 06:10:05.794423-Processing 60 of 93 batches.
+2019-11-01 06:10:11.065693-Processing 70 of 93 batches.
+2019-11-01 06:10:16.414822-Processing 80 of 93 batches.
+2019-11-01 06:10:21.682916-Processing 90 of 93 batches.
+corr_vote: 420000, all pt num 761856, true all pt num 741377, acc0.5512852822580645, true acc0.5665133933208071
+2019-11-01 06:10:23.276679-Saving ../data/3DIS/prepare_label_rgb/./Area_5/storage_1/half_0_pred.h5...
+2019-11-01 06:10:23.437909-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_11/zero_0.h5...
+2019-11-01 06:10:24.420651-114 testing batches. 103/136 rooms
+2019-11-01 06:10:24.420739-Processing 0 of 114 batches.
+2019-11-01 06:10:30.273496-Processing 10 of 114 batches.
+2019-11-01 06:10:36.124530-Processing 20 of 114 batches.
+2019-11-01 06:10:42.021629-Processing 30 of 114 batches.
+2019-11-01 06:10:47.971174-Processing 40 of 114 batches.
+2019-11-01 06:10:53.886624-Processing 50 of 114 batches.
+2019-11-01 06:10:59.783817-Processing 60 of 114 batches.
+2019-11-01 06:11:05.658170-Processing 70 of 114 batches.
+2019-11-01 06:11:11.501404-Processing 80 of 114 batches.
+2019-11-01 06:11:17.356303-Processing 90 of 114 batches.
+2019-11-01 06:11:23.240644-Processing 100 of 114 batches.
+2019-11-01 06:11:29.109223-Processing 110 of 114 batches.
+corr_vote: 849971, all pt num 933888, true all pt num 892142, acc0.9101423297012061, true acc0.9527306191166877
+2019-11-01 06:11:31.490069-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_11/zero_0_pred.h5...
+2019-11-01 06:11:31.828854-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_11/half_0.h5...
+2019-11-01 06:11:32.569584-117 testing batches. 104/136 rooms
+2019-11-01 06:11:32.569676-Processing 0 of 117 batches.
+2019-11-01 06:11:37.759151-Processing 10 of 117 batches.
+2019-11-01 06:11:42.956529-Processing 20 of 117 batches.
+2019-11-01 06:11:48.185133-Processing 30 of 117 batches.
+2019-11-01 06:11:53.418820-Processing 40 of 117 batches.
+2019-11-01 06:11:58.689802-Processing 50 of 117 batches.
+2019-11-01 06:12:03.943875-Processing 60 of 117 batches.
+2019-11-01 06:12:09.163980-Processing 70 of 117 batches.
+2019-11-01 06:12:14.439390-Processing 80 of 117 batches.
+2019-11-01 06:12:19.686654-Processing 90 of 117 batches.
+2019-11-01 06:12:24.933629-Processing 100 of 117 batches.
+2019-11-01 06:12:30.223145-Processing 110 of 117 batches.
+corr_vote: 860960, all pt num 958464, true all pt num 899914, acc0.8982705662393162, true acc0.9567136415257458
+2019-11-01 06:12:33.896138-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_11/half_0_pred.h5...
+2019-11-01 06:12:34.091988-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_37/zero_0.h5...
+2019-11-01 06:12:36.309147-379 testing batches. 105/136 rooms
+2019-11-01 06:12:36.309234-Processing 0 of 379 batches.
+2019-11-01 06:12:41.582304-Processing 10 of 379 batches.
+2019-11-01 06:12:46.890430-Processing 20 of 379 batches.
+2019-11-01 06:12:52.172542-Processing 30 of 379 batches.
+2019-11-01 06:12:57.453876-Processing 40 of 379 batches.
+2019-11-01 06:13:02.777723-Processing 50 of 379 batches.
+2019-11-01 06:13:08.084972-Processing 60 of 379 batches.
+2019-11-01 06:13:13.397280-Processing 70 of 379 batches.
+2019-11-01 06:13:18.737620-Processing 80 of 379 batches.
+2019-11-01 06:13:24.075286-Processing 90 of 379 batches.
+2019-11-01 06:13:29.360872-Processing 100 of 379 batches.
+2019-11-01 06:13:34.677923-Processing 110 of 379 batches.
+2019-11-01 06:13:40.021698-Processing 120 of 379 batches.
+2019-11-01 06:13:45.327151-Processing 130 of 379 batches.
+2019-11-01 06:13:50.943550-Processing 140 of 379 batches.
+2019-11-01 06:13:56.224251-Processing 150 of 379 batches.
+2019-11-01 06:14:01.601917-Processing 160 of 379 batches.
+2019-11-01 06:14:06.893289-Processing 170 of 379 batches.
+2019-11-01 06:14:12.160620-Processing 180 of 379 batches.
+2019-11-01 06:14:17.473011-Processing 190 of 379 batches.
+2019-11-01 06:14:22.749994-Processing 200 of 379 batches.
+2019-11-01 06:14:28.062376-Processing 210 of 379 batches.
+2019-11-01 06:14:33.384415-Processing 220 of 379 batches.
+2019-11-01 06:14:38.673294-Processing 230 of 379 batches.
+2019-11-01 06:14:43.968348-Processing 240 of 379 batches.
+2019-11-01 06:14:49.263916-Processing 250 of 379 batches.
+2019-11-01 06:14:54.579247-Processing 260 of 379 batches.
+2019-11-01 06:14:59.915575-Processing 270 of 379 batches.
+2019-11-01 06:15:05.241680-Processing 280 of 379 batches.
+2019-11-01 06:15:10.459843-Processing 290 of 379 batches.
+2019-11-01 06:15:15.712760-Processing 300 of 379 batches.
+2019-11-01 06:15:20.922659-Processing 310 of 379 batches.
+2019-11-01 06:15:26.241818-Processing 320 of 379 batches.
+2019-11-01 06:15:31.550291-Processing 330 of 379 batches.
+2019-11-01 06:15:36.782575-Processing 340 of 379 batches.
+2019-11-01 06:15:42.030078-Processing 350 of 379 batches.
+2019-11-01 06:15:47.289746-Processing 360 of 379 batches.
+2019-11-01 06:15:52.569929-Processing 370 of 379 batches.
+corr_vote: 2268409, all pt num 3104768, true all pt num 2994410, acc0.730621096326682, true acc0.7575478975824954
+2019-11-01 06:15:57.358764-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_37/zero_0_pred.h5...
+2019-11-01 06:15:58.134709-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_37/half_0.h5...
+2019-11-01 06:16:01.179248-382 testing batches. 106/136 rooms
+2019-11-01 06:16:01.179330-Processing 0 of 382 batches.
+2019-11-01 06:16:06.479120-Processing 10 of 382 batches.
+2019-11-01 06:16:11.738729-Processing 20 of 382 batches.
+2019-11-01 06:16:16.970850-Processing 30 of 382 batches.
+2019-11-01 06:16:22.218139-Processing 40 of 382 batches.
+2019-11-01 06:16:27.487760-Processing 50 of 382 batches.
+2019-11-01 06:16:32.743298-Processing 60 of 382 batches.
+2019-11-01 06:16:37.985375-Processing 70 of 382 batches.
+2019-11-01 06:16:43.235305-Processing 80 of 382 batches.
+2019-11-01 06:16:48.474856-Processing 90 of 382 batches.
+2019-11-01 06:16:53.723921-Processing 100 of 382 batches.
+2019-11-01 06:16:58.985444-Processing 110 of 382 batches.
+2019-11-01 06:17:04.265604-Processing 120 of 382 batches.
+2019-11-01 06:17:09.488021-Processing 130 of 382 batches.
+2019-11-01 06:17:14.721419-Processing 140 of 382 batches.
+2019-11-01 06:17:20.031807-Processing 150 of 382 batches.
+2019-11-01 06:17:25.335246-Processing 160 of 382 batches.
+2019-11-01 06:17:30.623153-Processing 170 of 382 batches.
+2019-11-01 06:17:35.853665-Processing 180 of 382 batches.
+2019-11-01 06:17:41.080003-Processing 190 of 382 batches.
+2019-11-01 06:17:46.368687-Processing 200 of 382 batches.
+2019-11-01 06:17:51.638978-Processing 210 of 382 batches.
+2019-11-01 06:17:56.941829-Processing 220 of 382 batches.
+2019-11-01 06:18:02.258789-Processing 230 of 382 batches.
+2019-11-01 06:18:07.446975-Processing 240 of 382 batches.
+2019-11-01 06:18:12.678226-Processing 250 of 382 batches.
+2019-11-01 06:18:17.923381-Processing 260 of 382 batches.
+2019-11-01 06:18:23.185241-Processing 270 of 382 batches.
+2019-11-01 06:18:28.461519-Processing 280 of 382 batches.
+2019-11-01 06:18:33.775115-Processing 290 of 382 batches.
+2019-11-01 06:18:39.010674-Processing 300 of 382 batches.
+2019-11-01 06:18:44.284740-Processing 310 of 382 batches.
+2019-11-01 06:18:49.585341-Processing 320 of 382 batches.
+2019-11-01 06:18:54.865885-Processing 330 of 382 batches.
+2019-11-01 06:19:00.168401-Processing 340 of 382 batches.
+2019-11-01 06:19:05.453208-Processing 350 of 382 batches.
+2019-11-01 06:19:10.651550-Processing 360 of 382 batches.
+2019-11-01 06:19:15.952513-Processing 370 of 382 batches.
+2019-11-01 06:19:21.278614-Processing 380 of 382 batches.
+corr_vote: 2238276, all pt num 3129344, true all pt num 3011569, acc0.7152540596367801, true acc0.7432258732906335
+2019-11-01 06:19:22.342984-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_37/half_0_pred.h5...
+2019-11-01 06:19:22.810972-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_14/zero_0.h5...
+2019-11-01 06:19:23.534196-175 testing batches. 107/136 rooms
+2019-11-01 06:19:23.534276-Processing 0 of 175 batches.
+2019-11-01 06:19:28.850769-Processing 10 of 175 batches.
+2019-11-01 06:19:34.099118-Processing 20 of 175 batches.
+2019-11-01 06:19:39.362522-Processing 30 of 175 batches.
+2019-11-01 06:19:44.604963-Processing 40 of 175 batches.
+2019-11-01 06:19:49.839981-Processing 50 of 175 batches.
+2019-11-01 06:19:55.103638-Processing 60 of 175 batches.
+2019-11-01 06:20:00.389928-Processing 70 of 175 batches.
+2019-11-01 06:20:05.669716-Processing 80 of 175 batches.
+2019-11-01 06:20:10.899950-Processing 90 of 175 batches.
+2019-11-01 06:20:16.185987-Processing 100 of 175 batches.
+2019-11-01 06:20:21.481227-Processing 110 of 175 batches.
+2019-11-01 06:20:26.763881-Processing 120 of 175 batches.
+2019-11-01 06:20:32.011336-Processing 130 of 175 batches.
+2019-11-01 06:20:37.284514-Processing 140 of 175 batches.
+2019-11-01 06:20:42.517500-Processing 150 of 175 batches.
+2019-11-01 06:20:47.756439-Processing 160 of 175 batches.
+2019-11-01 06:20:52.952932-Processing 170 of 175 batches.
+corr_vote: 1179198, all pt num 1433600, true all pt num 1375349, acc0.8225432477678571, true acc0.8573809265866337
+2019-11-01 06:20:55.584682-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_14/zero_0_pred.h5...
+2019-11-01 06:20:56.004518-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_14/half_0.h5...
+2019-11-01 06:20:57.804487-180 testing batches. 108/136 rooms
+2019-11-01 06:20:57.804571-Processing 0 of 180 batches.
+2019-11-01 06:21:03.135061-Processing 10 of 180 batches.
+2019-11-01 06:21:08.267777-Processing 20 of 180 batches.
+2019-11-01 06:21:13.474934-Processing 30 of 180 batches.
+2019-11-01 06:21:18.631157-Processing 40 of 180 batches.
+2019-11-01 06:21:23.819641-Processing 50 of 180 batches.
+2019-11-01 06:21:28.976819-Processing 60 of 180 batches.
+2019-11-01 06:21:34.120327-Processing 70 of 180 batches.
+2019-11-01 06:21:39.253960-Processing 80 of 180 batches.
+2019-11-01 06:21:44.327825-Processing 90 of 180 batches.
+2019-11-01 06:21:49.568674-Processing 100 of 180 batches.
+2019-11-01 06:21:54.816128-Processing 110 of 180 batches.
+2019-11-01 06:22:00.093328-Processing 120 of 180 batches.
+2019-11-01 06:22:05.338257-Processing 130 of 180 batches.
+2019-11-01 06:22:10.533882-Processing 140 of 180 batches.
+2019-11-01 06:22:15.696028-Processing 150 of 180 batches.
+2019-11-01 06:22:20.952269-Processing 160 of 180 batches.
+2019-11-01 06:22:26.155994-Processing 170 of 180 batches.
+corr_vote: 1177530, all pt num 1474560, true all pt num 1379936, acc0.7985636393229166, true acc0.853322183057765
+2019-11-01 06:22:31.378371-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_14/half_0_pred.h5...
+2019-11-01 06:22:31.707895-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_7/zero_0.h5...
+2019-11-01 06:22:32.752377-124 testing batches. 109/136 rooms
+2019-11-01 06:22:32.752468-Processing 0 of 124 batches.
+2019-11-01 06:22:37.959995-Processing 10 of 124 batches.
+2019-11-01 06:22:43.243438-Processing 20 of 124 batches.
+2019-11-01 06:22:48.489548-Processing 30 of 124 batches.
+2019-11-01 06:22:53.753256-Processing 40 of 124 batches.
+2019-11-01 06:22:59.026511-Processing 50 of 124 batches.
+2019-11-01 06:23:04.292891-Processing 60 of 124 batches.
+2019-11-01 06:23:09.531077-Processing 70 of 124 batches.
+2019-11-01 06:23:14.797475-Processing 80 of 124 batches.
+2019-11-01 06:23:20.077294-Processing 90 of 124 batches.
+2019-11-01 06:23:25.391900-Processing 100 of 124 batches.
+2019-11-01 06:23:30.651873-Processing 110 of 124 batches.
+2019-11-01 06:23:35.854172-Processing 120 of 124 batches.
+corr_vote: 852715, all pt num 1015808, true all pt num 957572, acc0.8394450526083669, true acc0.8904970070135718
+2019-11-01 06:23:37.961566-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_7/zero_0_pred.h5...
+2019-11-01 06:23:38.159182-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_7/half_0.h5...
+2019-11-01 06:23:38.684136-126 testing batches. 110/136 rooms
+2019-11-01 06:23:38.684220-Processing 0 of 126 batches.
+2019-11-01 06:23:43.908516-Processing 10 of 126 batches.
+2019-11-01 06:23:49.120694-Processing 20 of 126 batches.
+2019-11-01 06:23:54.386511-Processing 30 of 126 batches.
+2019-11-01 06:23:59.641146-Processing 40 of 126 batches.
+2019-11-01 06:24:04.868489-Processing 50 of 126 batches.
+2019-11-01 06:24:10.116899-Processing 60 of 126 batches.
+2019-11-01 06:24:15.410107-Processing 70 of 126 batches.
+2019-11-01 06:24:20.642927-Processing 80 of 126 batches.
+2019-11-01 06:24:25.899019-Processing 90 of 126 batches.
+2019-11-01 06:24:31.128541-Processing 100 of 126 batches.
+2019-11-01 06:24:36.396462-Processing 110 of 126 batches.
+2019-11-01 06:24:41.637458-Processing 120 of 126 batches.
+corr_vote: 851631, all pt num 1032192, true all pt num 949521, acc0.8250703357514881, true acc0.896905913613285
+2019-11-01 06:24:44.814210-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_7/half_0_pred.h5...
+2019-11-01 06:24:44.981597-Reading ../data/3DIS/prepare_label_rgb/./Area_5/conferenceRoom_1/zero_0.h5...
+2019-11-01 06:24:45.583862-148 testing batches. 111/136 rooms
+2019-11-01 06:24:45.583938-Processing 0 of 148 batches.
+2019-11-01 06:24:50.885744-Processing 10 of 148 batches.
+2019-11-01 06:24:56.194418-Processing 20 of 148 batches.
+2019-11-01 06:25:01.523229-Processing 30 of 148 batches.
+2019-11-01 06:25:06.848458-Processing 40 of 148 batches.
+2019-11-01 06:25:12.121935-Processing 50 of 148 batches.
+2019-11-01 06:25:17.402592-Processing 60 of 148 batches.
+2019-11-01 06:25:22.643372-Processing 70 of 148 batches.
+2019-11-01 06:25:27.927300-Processing 80 of 148 batches.
+2019-11-01 06:25:33.211065-Processing 90 of 148 batches.
+2019-11-01 06:25:38.439433-Processing 100 of 148 batches.
+2019-11-01 06:25:43.683171-Processing 110 of 148 batches.
+2019-11-01 06:25:48.943115-Processing 120 of 148 batches.
+2019-11-01 06:25:54.186164-Processing 130 of 148 batches.
+2019-11-01 06:25:59.518515-Processing 140 of 148 batches.
+corr_vote: 1024457, all pt num 1212416, true all pt num 1170162, acc0.8449715279244088, true acc0.8754830527738894
+2019-11-01 06:26:03.707283-Saving ../data/3DIS/prepare_label_rgb/./Area_5/conferenceRoom_1/zero_0_pred.h5...
+2019-11-01 06:26:04.046749-Reading ../data/3DIS/prepare_label_rgb/./Area_5/conferenceRoom_1/half_0.h5...
+2019-11-01 06:26:05.242839-150 testing batches. 112/136 rooms
+2019-11-01 06:26:05.242917-Processing 0 of 150 batches.
+2019-11-01 06:26:10.523157-Processing 10 of 150 batches.
+2019-11-01 06:26:15.786548-Processing 20 of 150 batches.
+2019-11-01 06:26:21.094187-Processing 30 of 150 batches.
+2019-11-01 06:26:26.391999-Processing 40 of 150 batches.
+2019-11-01 06:26:31.662180-Processing 50 of 150 batches.
+2019-11-01 06:26:36.869133-Processing 60 of 150 batches.
+2019-11-01 06:26:42.088645-Processing 70 of 150 batches.
+2019-11-01 06:26:47.354983-Processing 80 of 150 batches.
+2019-11-01 06:26:52.647124-Processing 90 of 150 batches.
+2019-11-01 06:26:57.893241-Processing 100 of 150 batches.
+2019-11-01 06:27:03.161105-Processing 110 of 150 batches.
+2019-11-01 06:27:08.384225-Processing 120 of 150 batches.
+2019-11-01 06:27:13.661266-Processing 130 of 150 batches.
+2019-11-01 06:27:18.999563-Processing 140 of 150 batches.
+point_num <= sample_num * tolerance 1102 4096 0.7
+corr_vote: 1042701, all pt num 1228800, true all pt num 1167373, acc0.84855224609375, true acc0.893202943703512
+2019-11-01 06:27:23.721736-Saving ../data/3DIS/prepare_label_rgb/./Area_5/conferenceRoom_1/half_0_pred.h5...
+2019-11-01 06:27:24.067376-Reading ../data/3DIS/prepare_label_rgb/./Area_5/pantry_1/zero_0.h5...
+2019-11-01 06:27:24.925175-104 testing batches. 113/136 rooms
+2019-11-01 06:27:24.925274-Processing 0 of 104 batches.
+2019-11-01 06:27:30.471471-Processing 10 of 104 batches.
+2019-11-01 06:27:35.690196-Processing 20 of 104 batches.
+2019-11-01 06:27:40.910351-Processing 30 of 104 batches.
+2019-11-01 06:27:46.176669-Processing 40 of 104 batches.
+2019-11-01 06:27:51.403441-Processing 50 of 104 batches.
+2019-11-01 06:27:56.704485-Processing 60 of 104 batches.
+2019-11-01 06:28:01.904401-Processing 70 of 104 batches.
+2019-11-01 06:28:07.153553-Processing 80 of 104 batches.
+2019-11-01 06:28:12.381331-Processing 90 of 104 batches.
+2019-11-01 06:28:17.539167-Processing 100 of 104 batches.
+corr_vote: 630704, all pt num 851968, true all pt num 803545, acc0.7402907151442307, true acc0.7849019034403798
+2019-11-01 06:28:19.675028-Saving ../data/3DIS/prepare_label_rgb/./Area_5/pantry_1/zero_0_pred.h5...
+2019-11-01 06:28:19.902519-Reading ../data/3DIS/prepare_label_rgb/./Area_5/pantry_1/half_0.h5...
+2019-11-01 06:28:20.784555-106 testing batches. 114/136 rooms
+2019-11-01 06:28:20.784630-Processing 0 of 106 batches.
+2019-11-01 06:28:26.025042-Processing 10 of 106 batches.
+2019-11-01 06:28:31.187876-Processing 20 of 106 batches.
+2019-11-01 06:28:36.461611-Processing 30 of 106 batches.
+2019-11-01 06:28:41.739509-Processing 40 of 106 batches.
+2019-11-01 06:28:47.027207-Processing 50 of 106 batches.
+2019-11-01 06:28:52.261995-Processing 60 of 106 batches.
+2019-11-01 06:28:57.565112-Processing 70 of 106 batches.
+2019-11-01 06:29:02.813827-Processing 80 of 106 batches.
+2019-11-01 06:29:08.063894-Processing 90 of 106 batches.
+2019-11-01 06:29:13.353798-Processing 100 of 106 batches.
+corr_vote: 605146, all pt num 868352, true all pt num 803086, acc0.6968902012087265, true acc0.7535257743255392
+2019-11-01 06:29:16.502589-Saving ../data/3DIS/prepare_label_rgb/./Area_5/pantry_1/half_0_pred.h5...
+2019-11-01 06:29:16.706166-Reading ../data/3DIS/prepare_label_rgb/./Area_5/lobby_1/zero_0.h5...
+2019-11-01 06:29:17.387777-173 testing batches. 115/136 rooms
+2019-11-01 06:29:17.387862-Processing 0 of 173 batches.
+2019-11-01 06:29:23.283824-Processing 10 of 173 batches.
+2019-11-01 06:29:29.188529-Processing 20 of 173 batches.
+2019-11-01 06:29:35.030391-Processing 30 of 173 batches.
+2019-11-01 06:29:40.869817-Processing 40 of 173 batches.
+2019-11-01 06:29:46.750172-Processing 50 of 173 batches.
+2019-11-01 06:29:52.577315-Processing 60 of 173 batches.
+2019-11-01 06:29:58.471583-Processing 70 of 173 batches.
+2019-11-01 06:30:04.339326-Processing 80 of 173 batches.
+2019-11-01 06:30:10.168956-Processing 90 of 173 batches.
+2019-11-01 06:30:16.011261-Processing 100 of 173 batches.
+2019-11-01 06:30:21.913676-Processing 110 of 173 batches.
+2019-11-01 06:30:27.759836-Processing 120 of 173 batches.
+2019-11-01 06:30:33.618891-Processing 130 of 173 batches.
+2019-11-01 06:30:39.534112-Processing 140 of 173 batches.
+2019-11-01 06:30:45.435720-Processing 150 of 173 batches.
+2019-11-01 06:30:51.342429-Processing 160 of 173 batches.
+2019-11-01 06:30:57.224178-Processing 170 of 173 batches.
+corr_vote: 1271784, all pt num 1417216, true all pt num 1339848, acc0.8973819093208093, true acc0.9492002077847637
+2019-11-01 06:30:59.019692-Saving ../data/3DIS/prepare_label_rgb/./Area_5/lobby_1/zero_0_pred.h5...
+2019-11-01 06:30:59.441076-Reading ../data/3DIS/prepare_label_rgb/./Area_5/lobby_1/half_0.h5...
+2019-11-01 06:31:01.186878-176 testing batches. 116/136 rooms
+2019-11-01 06:31:01.186962-Processing 0 of 176 batches.
+2019-11-01 06:31:06.921335-Processing 10 of 176 batches.
+2019-11-01 06:31:12.750235-Processing 20 of 176 batches.
+2019-11-01 06:31:18.632120-Processing 30 of 176 batches.
+2019-11-01 06:31:24.218419-Processing 40 of 176 batches.
+2019-11-01 06:31:30.051904-Processing 50 of 176 batches.
+2019-11-01 06:31:35.927588-Processing 60 of 176 batches.
+2019-11-01 06:31:41.794240-Processing 70 of 176 batches.
+2019-11-01 06:31:47.657646-Processing 80 of 176 batches.
+2019-11-01 06:31:53.544358-Processing 90 of 176 batches.
+2019-11-01 06:31:59.437893-Processing 100 of 176 batches.
+2019-11-01 06:32:05.280332-Processing 110 of 176 batches.
+2019-11-01 06:32:11.160778-Processing 120 of 176 batches.
+2019-11-01 06:32:17.026224-Processing 130 of 176 batches.
+2019-11-01 06:32:22.906611-Processing 140 of 176 batches.
+2019-11-01 06:32:28.691473-Processing 150 of 176 batches.
+2019-11-01 06:32:34.616634-Processing 160 of 176 batches.
+2019-11-01 06:32:40.509556-Processing 170 of 176 batches.
+corr_vote: 1282665, all pt num 1441792, true all pt num 1341285, acc0.8896324851296165, true acc0.9562956418658227
+2019-11-01 06:32:44.070798-Saving ../data/3DIS/prepare_label_rgb/./Area_5/lobby_1/half_0_pred.h5...
+2019-11-01 06:32:44.303946-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_36/zero_0.h5...
+2019-11-01 06:32:45.006744-178 testing batches. 117/136 rooms
+2019-11-01 06:32:45.006827-Processing 0 of 178 batches.
+2019-11-01 06:32:50.287186-Processing 10 of 178 batches.
+2019-11-01 06:32:55.633173-Processing 20 of 178 batches.
+2019-11-01 06:33:00.931296-Processing 30 of 178 batches.
+2019-11-01 06:33:06.232409-Processing 40 of 178 batches.
+2019-11-01 06:33:11.454055-Processing 50 of 178 batches.
+2019-11-01 06:33:16.693507-Processing 60 of 178 batches.
+2019-11-01 06:33:21.973805-Processing 70 of 178 batches.
+2019-11-01 06:33:27.257588-Processing 80 of 178 batches.
+2019-11-01 06:33:32.514812-Processing 90 of 178 batches.
+2019-11-01 06:33:37.799094-Processing 100 of 178 batches.
+2019-11-01 06:33:43.002629-Processing 110 of 178 batches.
+2019-11-01 06:33:48.283453-Processing 120 of 178 batches.
+2019-11-01 06:33:53.507742-Processing 130 of 178 batches.
+2019-11-01 06:33:58.797114-Processing 140 of 178 batches.
+2019-11-01 06:34:04.068030-Processing 150 of 178 batches.
+2019-11-01 06:34:09.334067-Processing 160 of 178 batches.
+2019-11-01 06:34:14.540441-Processing 170 of 178 batches.
+corr_vote: 1243343, all pt num 1458176, true all pt num 1394714, acc0.8526700480600421, true acc0.8914680715903045
+2019-11-01 06:34:18.768460-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_36/zero_0_pred.h5...
+2019-11-01 06:34:18.994821-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_36/half_0.h5...
+2019-11-01 06:34:19.730422-180 testing batches. 118/136 rooms
+2019-11-01 06:34:19.730506-Processing 0 of 180 batches.
+2019-11-01 06:34:25.072066-Processing 10 of 180 batches.
+2019-11-01 06:34:30.368291-Processing 20 of 180 batches.
+2019-11-01 06:34:35.658185-Processing 30 of 180 batches.
+2019-11-01 06:34:40.924878-Processing 40 of 180 batches.
+2019-11-01 06:34:46.183583-Processing 50 of 180 batches.
+2019-11-01 06:34:51.423900-Processing 60 of 180 batches.
+2019-11-01 06:34:56.666154-Processing 70 of 180 batches.
+2019-11-01 06:35:01.886065-Processing 80 of 180 batches.
+2019-11-01 06:35:07.156227-Processing 90 of 180 batches.
+2019-11-01 06:35:12.389725-Processing 100 of 180 batches.
+2019-11-01 06:35:17.661016-Processing 110 of 180 batches.
+2019-11-01 06:35:22.933064-Processing 120 of 180 batches.
+2019-11-01 06:35:28.174207-Processing 130 of 180 batches.
+2019-11-01 06:35:33.465441-Processing 140 of 180 batches.
+2019-11-01 06:35:38.697533-Processing 150 of 180 batches.
+2019-11-01 06:35:43.917090-Processing 160 of 180 batches.
+2019-11-01 06:35:49.181616-Processing 170 of 180 batches.
+corr_vote: 1238923, all pt num 1474560, true all pt num 1393647, acc0.8401984320746527, true acc0.8889790599771679
+2019-11-01 06:35:54.455971-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_36/half_0_pred.h5...
+2019-11-01 06:35:54.696770-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_12/zero_0.h5...
+2019-11-01 06:35:55.158868-115 testing batches. 119/136 rooms
+2019-11-01 06:35:55.158946-Processing 0 of 115 batches.
+2019-11-01 06:36:00.398472-Processing 10 of 115 batches.
+2019-11-01 06:36:05.653534-Processing 20 of 115 batches.
+2019-11-01 06:36:10.901009-Processing 30 of 115 batches.
+2019-11-01 06:36:16.196884-Processing 40 of 115 batches.
+2019-11-01 06:36:21.464955-Processing 50 of 115 batches.
+2019-11-01 06:36:26.723720-Processing 60 of 115 batches.
+2019-11-01 06:36:31.963134-Processing 70 of 115 batches.
+2019-11-01 06:36:37.258309-Processing 80 of 115 batches.
+2019-11-01 06:36:42.578173-Processing 90 of 115 batches.
+2019-11-01 06:36:47.816238-Processing 100 of 115 batches.
+2019-11-01 06:36:53.012895-Processing 110 of 115 batches.
+corr_vote: 850008, all pt num 942080, true all pt num 899171, acc0.9022673233695652, true acc0.9453240818487251
+2019-11-01 06:36:55.647386-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_12/zero_0_pred.h5...
+2019-11-01 06:36:55.821973-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_12/half_0.h5...
+2019-11-01 06:36:56.334693-119 testing batches. 120/136 rooms
+2019-11-01 06:36:56.334770-Processing 0 of 119 batches.
+2019-11-01 06:37:01.560968-Processing 10 of 119 batches.
+2019-11-01 06:37:06.803423-Processing 20 of 119 batches.
+2019-11-01 06:37:12.029131-Processing 30 of 119 batches.
+2019-11-01 06:37:17.281515-Processing 40 of 119 batches.
+2019-11-01 06:37:22.505923-Processing 50 of 119 batches.
+2019-11-01 06:37:27.753537-Processing 60 of 119 batches.
+2019-11-01 06:37:32.983923-Processing 70 of 119 batches.
+2019-11-01 06:37:38.236991-Processing 80 of 119 batches.
+2019-11-01 06:37:43.483576-Processing 90 of 119 batches.
+2019-11-01 06:37:48.736708-Processing 100 of 119 batches.
+2019-11-01 06:37:53.952996-Processing 110 of 119 batches.
+corr_vote: 846386, all pt num 974848, true all pt num 897643, acc0.8682235589548319, true acc0.9428982345988327
+2019-11-01 06:37:58.674055-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_12/half_0_pred.h5...
+2019-11-01 06:37:58.973422-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_23/zero_0.h5...
+2019-11-01 06:38:00.057972-133 testing batches. 121/136 rooms
+2019-11-01 06:38:00.058053-Processing 0 of 133 batches.
+2019-11-01 06:38:05.372350-Processing 10 of 133 batches.
+2019-11-01 06:38:10.631744-Processing 20 of 133 batches.
+2019-11-01 06:38:15.868701-Processing 30 of 133 batches.
+2019-11-01 06:38:21.127941-Processing 40 of 133 batches.
+2019-11-01 06:38:26.432458-Processing 50 of 133 batches.
+2019-11-01 06:38:31.691297-Processing 60 of 133 batches.
+2019-11-01 06:38:36.966115-Processing 70 of 133 batches.
+2019-11-01 06:38:42.184284-Processing 80 of 133 batches.
+2019-11-01 06:38:47.434209-Processing 90 of 133 batches.
+2019-11-01 06:38:52.692081-Processing 100 of 133 batches.
+2019-11-01 06:38:57.914334-Processing 110 of 133 batches.
+2019-11-01 06:39:03.165077-Processing 120 of 133 batches.
+2019-11-01 06:39:08.358751-Processing 130 of 133 batches.
+corr_vote: 917955, all pt num 1089536, true all pt num 1032402, acc0.8425192008341166, true acc0.8891449261043664
+2019-11-01 06:39:09.930110-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_23/zero_0_pred.h5...
+2019-11-01 06:39:10.108405-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_23/half_0.h5...
+2019-11-01 06:39:10.631195-131 testing batches. 122/136 rooms
+2019-11-01 06:39:10.631277-Processing 0 of 131 batches.
+2019-11-01 06:39:16.196792-Processing 10 of 131 batches.
+2019-11-01 06:39:21.476196-Processing 20 of 131 batches.
+2019-11-01 06:39:26.810593-Processing 30 of 131 batches.
+2019-11-01 06:39:32.127804-Processing 40 of 131 batches.
+2019-11-01 06:39:37.473018-Processing 50 of 131 batches.
+2019-11-01 06:39:42.750237-Processing 60 of 131 batches.
+2019-11-01 06:39:48.016918-Processing 70 of 131 batches.
+2019-11-01 06:39:53.327936-Processing 80 of 131 batches.
+2019-11-01 06:39:58.644725-Processing 90 of 131 batches.
+2019-11-01 06:40:03.909568-Processing 100 of 131 batches.
+2019-11-01 06:40:09.184455-Processing 110 of 131 batches.
+2019-11-01 06:40:14.410747-Processing 120 of 131 batches.
+2019-11-01 06:40:19.666241-Processing 130 of 131 batches.
+corr_vote: 914507, all pt num 1073152, true all pt num 1027866, acc0.8521691242247137, true acc0.8897142234493601
+2019-11-01 06:40:20.175618-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_23/half_0_pred.h5...
+2019-11-01 06:40:20.472070-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_16/zero_0.h5...
+2019-11-01 06:40:21.439300-107 testing batches. 123/136 rooms
+2019-11-01 06:40:21.439379-Processing 0 of 107 batches.
+2019-11-01 06:40:26.816391-Processing 10 of 107 batches.
+2019-11-01 06:40:32.094618-Processing 20 of 107 batches.
+2019-11-01 06:40:37.384801-Processing 30 of 107 batches.
+2019-11-01 06:40:42.673455-Processing 40 of 107 batches.
+2019-11-01 06:40:47.903351-Processing 50 of 107 batches.
+2019-11-01 06:40:53.145101-Processing 60 of 107 batches.
+2019-11-01 06:40:58.396884-Processing 70 of 107 batches.
+2019-11-01 06:41:03.670731-Processing 80 of 107 batches.
+2019-11-01 06:41:08.928174-Processing 90 of 107 batches.
+2019-11-01 06:41:14.174779-Processing 100 of 107 batches.
+corr_vote: 738131, all pt num 876544, true all pt num 847303, acc0.8420923536068925, true acc0.8711535306732067
+2019-11-01 06:41:17.871891-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_16/zero_0_pred.h5...
+2019-11-01 06:41:17.994884-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_16/half_0.h5...
+2019-11-01 06:41:18.906654-111 testing batches. 124/136 rooms
+2019-11-01 06:41:18.906740-Processing 0 of 111 batches.
+2019-11-01 06:41:24.788741-Processing 10 of 111 batches.
+2019-11-01 06:41:30.651570-Processing 20 of 111 batches.
+2019-11-01 06:41:36.502111-Processing 30 of 111 batches.
+2019-11-01 06:41:42.338745-Processing 40 of 111 batches.
+2019-11-01 06:41:48.201018-Processing 50 of 111 batches.
+2019-11-01 06:41:54.086501-Processing 60 of 111 batches.
+2019-11-01 06:41:59.966427-Processing 70 of 111 batches.
+2019-11-01 06:42:05.799278-Processing 80 of 111 batches.
+2019-11-01 06:42:11.719849-Processing 90 of 111 batches.
+2019-11-01 06:42:17.596530-Processing 100 of 111 batches.
+2019-11-01 06:42:23.467315-Processing 110 of 111 batches.
+corr_vote: 734228, all pt num 909312, true all pt num 847241, acc0.8074544270833334, true acc0.866610562992112
+2019-11-01 06:42:24.060518-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_16/half_0_pred.h5...
+2019-11-01 06:42:24.222819-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_14/zero_0.h5...
+2019-11-01 06:42:25.141283-107 testing batches. 125/136 rooms
+2019-11-01 06:42:25.141357-Processing 0 of 107 batches.
+2019-11-01 06:42:30.466570-Processing 10 of 107 batches.
+2019-11-01 06:42:35.680605-Processing 20 of 107 batches.
+2019-11-01 06:42:40.933935-Processing 30 of 107 batches.
+2019-11-01 06:42:46.187118-Processing 40 of 107 batches.
+2019-11-01 06:42:51.472004-Processing 50 of 107 batches.
+2019-11-01 06:42:56.742792-Processing 60 of 107 batches.
+2019-11-01 06:43:01.951903-Processing 70 of 107 batches.
+2019-11-01 06:43:07.142137-Processing 80 of 107 batches.
+2019-11-01 06:43:12.378927-Processing 90 of 107 batches.
+2019-11-01 06:43:17.616957-Processing 100 of 107 batches.
+corr_vote: 734575, all pt num 876544, true all pt num 825162, acc0.8380355121933412, true acc0.8902191327278764
+2019-11-01 06:43:21.280007-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_14/zero_0_pred.h5...
+2019-11-01 06:43:21.393475-Reading ../data/3DIS/prepare_label_rgb/./Area_5/hallway_14/half_0.h5...
+2019-11-01 06:43:22.217243-110 testing batches. 126/136 rooms
+2019-11-01 06:43:22.217335-Processing 0 of 110 batches.
+2019-11-01 06:43:27.919862-Processing 10 of 110 batches.
+2019-11-01 06:43:33.234439-Processing 20 of 110 batches.
+2019-11-01 06:43:38.508323-Processing 30 of 110 batches.
+2019-11-01 06:43:43.720008-Processing 40 of 110 batches.
+2019-11-01 06:43:48.969555-Processing 50 of 110 batches.
+2019-11-01 06:43:54.247917-Processing 60 of 110 batches.
+2019-11-01 06:43:59.553252-Processing 70 of 110 batches.
+2019-11-01 06:44:04.827970-Processing 80 of 110 batches.
+2019-11-01 06:44:10.032407-Processing 90 of 110 batches.
+2019-11-01 06:44:15.344856-Processing 100 of 110 batches.
+corr_vote: 742124, all pt num 901120, true all pt num 824755, acc0.8235573508522728, true acc0.8998114591605992
+2019-11-01 06:44:20.629178-Saving ../data/3DIS/prepare_label_rgb/./Area_5/hallway_14/half_0_pred.h5...
+2019-11-01 06:44:20.889680-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_4/zero_0.h5...
+2019-11-01 06:44:21.425677-120 testing batches. 127/136 rooms
+2019-11-01 06:44:21.425762-Processing 0 of 120 batches.
+2019-11-01 06:44:26.774583-Processing 10 of 120 batches.
+2019-11-01 06:44:32.045252-Processing 20 of 120 batches.
+2019-11-01 06:44:37.350957-Processing 30 of 120 batches.
+2019-11-01 06:44:42.597478-Processing 40 of 120 batches.
+2019-11-01 06:44:47.869286-Processing 50 of 120 batches.
+2019-11-01 06:44:53.137119-Processing 60 of 120 batches.
+2019-11-01 06:44:58.421182-Processing 70 of 120 batches.
+2019-11-01 06:45:03.655097-Processing 80 of 120 batches.
+2019-11-01 06:45:08.869886-Processing 90 of 120 batches.
+2019-11-01 06:45:14.122174-Processing 100 of 120 batches.
+2019-11-01 06:45:19.434862-Processing 110 of 120 batches.
+corr_vote: 810156, all pt num 983040, true all pt num 942785, acc0.82413330078125, true acc0.8593221147981778
+2019-11-01 06:45:24.746521-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_4/zero_0_pred.h5...
+2019-11-01 06:45:24.938563-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_4/half_0.h5...
+2019-11-01 06:45:26.006660-121 testing batches. 128/136 rooms
+2019-11-01 06:45:26.006735-Processing 0 of 121 batches.
+2019-11-01 06:45:31.229916-Processing 10 of 121 batches.
+2019-11-01 06:45:36.472554-Processing 20 of 121 batches.
+2019-11-01 06:45:41.745186-Processing 30 of 121 batches.
+2019-11-01 06:45:47.038729-Processing 40 of 121 batches.
+2019-11-01 06:45:52.485748-Processing 50 of 121 batches.
+2019-11-01 06:45:57.747531-Processing 60 of 121 batches.
+2019-11-01 06:46:03.051233-Processing 70 of 121 batches.
+2019-11-01 06:46:08.313812-Processing 80 of 121 batches.
+2019-11-01 06:46:13.539301-Processing 90 of 121 batches.
+2019-11-01 06:46:18.778165-Processing 100 of 121 batches.
+2019-11-01 06:46:23.993641-Processing 110 of 121 batches.
+2019-11-01 06:46:29.291575-Processing 120 of 121 batches.
+corr_vote: 816981, all pt num 991232, true all pt num 941859, acc0.8242076526988636, true acc0.8674132752354652
+2019-11-01 06:46:29.836924-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_4/half_0_pred.h5...
+2019-11-01 06:46:30.017105-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_18/zero_0.h5...
+2019-11-01 06:46:31.149121-188 testing batches. 129/136 rooms
+2019-11-01 06:46:31.149205-Processing 0 of 188 batches.
+2019-11-01 06:46:36.415865-Processing 10 of 188 batches.
+2019-11-01 06:46:41.673061-Processing 20 of 188 batches.
+2019-11-01 06:46:46.935619-Processing 30 of 188 batches.
+2019-11-01 06:46:52.227407-Processing 40 of 188 batches.
+2019-11-01 06:46:57.492326-Processing 50 of 188 batches.
+2019-11-01 06:47:02.730599-Processing 60 of 188 batches.
+2019-11-01 06:47:08.005698-Processing 70 of 188 batches.
+2019-11-01 06:47:13.212879-Processing 80 of 188 batches.
+2019-11-01 06:47:18.460401-Processing 90 of 188 batches.
+2019-11-01 06:47:23.684782-Processing 100 of 188 batches.
+2019-11-01 06:47:28.919548-Processing 110 of 188 batches.
+2019-11-01 06:47:34.102293-Processing 120 of 188 batches.
+2019-11-01 06:47:39.327571-Processing 130 of 188 batches.
+2019-11-01 06:47:44.527568-Processing 140 of 188 batches.
+2019-11-01 06:47:49.787292-Processing 150 of 188 batches.
+2019-11-01 06:47:55.064424-Processing 160 of 188 batches.
+2019-11-01 06:48:00.357383-Processing 170 of 188 batches.
+2019-11-01 06:48:05.672755-Processing 180 of 188 batches.
+corr_vote: 1337722, all pt num 1540096, true all pt num 1466235, acc0.868596503075133, true acc0.9123517035127384
+2019-11-01 06:48:09.878735-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_18/zero_0_pred.h5...
+2019-11-01 06:48:10.110127-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_18/half_0.h5...
+2019-11-01 06:48:10.857200-187 testing batches. 130/136 rooms
+2019-11-01 06:48:10.857281-Processing 0 of 187 batches.
+2019-11-01 06:48:16.226434-Processing 10 of 187 batches.
+2019-11-01 06:48:21.527390-Processing 20 of 187 batches.
+2019-11-01 06:48:26.890269-Processing 30 of 187 batches.
+2019-11-01 06:48:32.193859-Processing 40 of 187 batches.
+2019-11-01 06:48:37.471815-Processing 50 of 187 batches.
+2019-11-01 06:48:42.747741-Processing 60 of 187 batches.
+2019-11-01 06:48:48.012117-Processing 70 of 187 batches.
+2019-11-01 06:48:53.259577-Processing 80 of 187 batches.
+2019-11-01 06:48:58.512703-Processing 90 of 187 batches.
+2019-11-01 06:49:03.778955-Processing 100 of 187 batches.
+2019-11-01 06:49:09.053623-Processing 110 of 187 batches.
+2019-11-01 06:49:14.259554-Processing 120 of 187 batches.
+2019-11-01 06:49:19.478707-Processing 130 of 187 batches.
+2019-11-01 06:49:24.753477-Processing 140 of 187 batches.
+2019-11-01 06:49:30.001943-Processing 150 of 187 batches.
+2019-11-01 06:49:35.259455-Processing 160 of 187 batches.
+2019-11-01 06:49:40.479779-Processing 170 of 187 batches.
+2019-11-01 06:49:45.684032-Processing 180 of 187 batches.
+corr_vote: 1334509, all pt num 1531904, true all pt num 1465433, acc0.8711440142463235, true acc0.9106584879690849
+2019-11-01 06:49:49.335627-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_18/half_0_pred.h5...
+2019-11-01 06:49:49.732100-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_35/zero_0.h5...
+2019-11-01 06:49:50.699020-135 testing batches. 131/136 rooms
+2019-11-01 06:49:50.699107-Processing 0 of 135 batches.
+2019-11-01 06:49:56.077932-Processing 10 of 135 batches.
+2019-11-01 06:50:01.389346-Processing 20 of 135 batches.
+2019-11-01 06:50:06.658411-Processing 30 of 135 batches.
+2019-11-01 06:50:11.976589-Processing 40 of 135 batches.
+2019-11-01 06:50:17.250194-Processing 50 of 135 batches.
+2019-11-01 06:50:22.591245-Processing 60 of 135 batches.
+2019-11-01 06:50:27.857637-Processing 70 of 135 batches.
+2019-11-01 06:50:33.134385-Processing 80 of 135 batches.
+2019-11-01 06:50:38.414425-Processing 90 of 135 batches.
+2019-11-01 06:50:43.689867-Processing 100 of 135 batches.
+2019-11-01 06:50:49.007353-Processing 110 of 135 batches.
+2019-11-01 06:50:54.218875-Processing 120 of 135 batches.
+2019-11-01 06:50:59.452095-Processing 130 of 135 batches.
+corr_vote: 916196, all pt num 1105920, true all pt num 1040969, acc0.8284469039351852, true acc0.8801376409864271
+2019-11-01 06:51:02.090105-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_35/zero_0_pred.h5...
+2019-11-01 06:51:02.351086-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_35/half_0.h5...
+2019-11-01 06:51:03.519390-134 testing batches. 132/136 rooms
+2019-11-01 06:51:03.519484-Processing 0 of 134 batches.
+2019-11-01 06:51:08.864327-Processing 10 of 134 batches.
+2019-11-01 06:51:14.084332-Processing 20 of 134 batches.
+2019-11-01 06:51:19.342859-Processing 30 of 134 batches.
+2019-11-01 06:51:24.617520-Processing 40 of 134 batches.
+2019-11-01 06:51:29.926705-Processing 50 of 134 batches.
+2019-11-01 06:51:35.195782-Processing 60 of 134 batches.
+2019-11-01 06:51:40.453876-Processing 70 of 134 batches.
+2019-11-01 06:51:45.759809-Processing 80 of 134 batches.
+2019-11-01 06:51:51.071743-Processing 90 of 134 batches.
+2019-11-01 06:51:56.360484-Processing 100 of 134 batches.
+2019-11-01 06:52:01.609558-Processing 110 of 134 batches.
+2019-11-01 06:52:06.861372-Processing 120 of 134 batches.
+2019-11-01 06:52:12.131999-Processing 130 of 134 batches.
+corr_vote: 947957, all pt num 1097728, true all pt num 1040693, acc0.8635627404967351, true acc0.9108901472384267
+2019-11-01 06:52:14.231685-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_35/half_0_pred.h5...
+2019-11-01 06:52:14.479686-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_8/zero_0.h5...
+2019-11-01 06:52:15.311103-131 testing batches. 133/136 rooms
+2019-11-01 06:52:15.311184-Processing 0 of 131 batches.
+2019-11-01 06:52:20.613900-Processing 10 of 131 batches.
+2019-11-01 06:52:25.938953-Processing 20 of 131 batches.
+2019-11-01 06:52:31.199138-Processing 30 of 131 batches.
+2019-11-01 06:52:36.472204-Processing 40 of 131 batches.
+2019-11-01 06:52:41.736370-Processing 50 of 131 batches.
+2019-11-01 06:52:46.998946-Processing 60 of 131 batches.
+2019-11-01 06:52:52.252961-Processing 70 of 131 batches.
+2019-11-01 06:52:57.563033-Processing 80 of 131 batches.
+2019-11-01 06:53:02.846440-Processing 90 of 131 batches.
+2019-11-01 06:53:08.047165-Processing 100 of 131 batches.
+2019-11-01 06:53:13.283897-Processing 110 of 131 batches.
+2019-11-01 06:53:18.566357-Processing 120 of 131 batches.
+2019-11-01 06:53:23.901396-Processing 130 of 131 batches.
+corr_vote: 922981, all pt num 1073152, true all pt num 1024210, acc0.8600654893249046, true acc0.9011638238251921
+2019-11-01 06:53:24.444589-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_8/zero_0_pred.h5...
+2019-11-01 06:53:24.648556-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_8/half_0.h5...
+2019-11-01 06:53:25.861599-133 testing batches. 134/136 rooms
+2019-11-01 06:53:25.861678-Processing 0 of 133 batches.
+2019-11-01 06:53:31.130572-Processing 10 of 133 batches.
+2019-11-01 06:53:36.360669-Processing 20 of 133 batches.
+2019-11-01 06:53:41.623217-Processing 30 of 133 batches.
+2019-11-01 06:53:46.895412-Processing 40 of 133 batches.
+2019-11-01 06:53:52.192467-Processing 50 of 133 batches.
+2019-11-01 06:53:57.577835-Processing 60 of 133 batches.
+2019-11-01 06:54:02.946612-Processing 70 of 133 batches.
+2019-11-01 06:54:08.288877-Processing 80 of 133 batches.
+2019-11-01 06:54:13.554623-Processing 90 of 133 batches.
+2019-11-01 06:54:18.840110-Processing 100 of 133 batches.
+2019-11-01 06:54:24.147186-Processing 110 of 133 batches.
+2019-11-01 06:54:29.389558-Processing 120 of 133 batches.
+2019-11-01 06:54:34.658464-Processing 130 of 133 batches.
+corr_vote: 930540, all pt num 1089536, true all pt num 1025351, acc0.8540699894266918, true acc0.9075331276801798
+2019-11-01 06:54:36.271655-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_8/half_0_pred.h5...
+2019-11-01 06:54:36.538807-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_22/zero_0.h5...
+2019-11-01 06:54:37.022951-118 testing batches. 135/136 rooms
+2019-11-01 06:54:37.023031-Processing 0 of 118 batches.
+2019-11-01 06:54:42.279217-Processing 10 of 118 batches.
+2019-11-01 06:54:47.583101-Processing 20 of 118 batches.
+2019-11-01 06:54:52.864341-Processing 30 of 118 batches.
+point_num <= sample_num * tolerance 1645 4096 0.7
+2019-11-01 06:54:57.629360-Processing 40 of 118 batches.
+2019-11-01 06:55:02.933227-Processing 50 of 118 batches.
+2019-11-01 06:55:08.155346-Processing 60 of 118 batches.
+2019-11-01 06:55:13.357287-Processing 70 of 118 batches.
+2019-11-01 06:55:18.626807-Processing 80 of 118 batches.
+2019-11-01 06:55:23.892338-Processing 90 of 118 batches.
+2019-11-01 06:55:29.175102-Processing 100 of 118 batches.
+2019-11-01 06:55:34.430557-Processing 110 of 118 batches.
+corr_vote: 796322, all pt num 966656, true all pt num 904104, acc0.8237904694120762, true acc0.8807858387973065
+2019-11-01 06:55:38.629256-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_22/zero_0_pred.h5...
+2019-11-01 06:55:38.804944-Reading ../data/3DIS/prepare_label_rgb/./Area_5/office_22/half_0.h5...
+2019-11-01 06:55:39.315765-117 testing batches. 136/136 rooms
+2019-11-01 06:55:39.315847-Processing 0 of 117 batches.
+2019-11-01 06:55:44.572841-Processing 10 of 117 batches.
+2019-11-01 06:55:49.879157-Processing 20 of 117 batches.
+2019-11-01 06:55:55.197248-Processing 30 of 117 batches.
+2019-11-01 06:56:00.418210-Processing 40 of 117 batches.
+2019-11-01 06:56:05.672694-Processing 50 of 117 batches.
+2019-11-01 06:56:10.926855-Processing 60 of 117 batches.
+2019-11-01 06:56:16.180235-Processing 70 of 117 batches.
+2019-11-01 06:56:21.393390-Processing 80 of 117 batches.
+2019-11-01 06:56:26.695898-Processing 90 of 117 batches.
+2019-11-01 06:56:31.997034-Processing 100 of 117 batches.
+2019-11-01 06:56:37.327883-Processing 110 of 117 batches.
+point_num <= sample_num * tolerance 1625 4096 0.7
+point_num <= sample_num * tolerance 2529 4096 0.7
+corr_vote: 793490, all pt num 958464, true all pt num 899492, acc0.8278766860309829, true acc0.8821534821877237
+2019-11-01 06:56:39.985466-Saving ../data/3DIS/prepare_label_rgb/./Area_5/office_22/half_0_pred.h5...
+all tested!
