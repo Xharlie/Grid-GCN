@@ -15,16 +15,18 @@ cd ..
 * ### Classification
 
   * #### ModelNet40
-  ```
-  Preprocessed Modelnet40 dataset can be downloaded https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip. 
-  Rename the uncompressed data folder as data/modelnet40_normal_resampled.
-  ```
-  
-* ### Segmentation 
-  * #### ScanNet
-  Please refer to pointnet++ for downloading ScanNet use link: 
+  We refer to pointnet  https://github.com/charlesq34/pointnet/blob/master/provider.py
   ```
   cd data/
+  wget https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip
+  unzip modelnet40_ply_hdf5_2048.zip
+  unzip it and put it inside data/
+  ```
+  
+* ### Segmentation/ScanNet
+  Please refer to pointnet++ for downloading ScanNet use link: 
+  ```
+  # in data/
   wget https://shapenet.cs.stanford.edu/media/scannet_data_pointnet2.zip
   unzip scannet_data_pointnet2.zip
   mv data scannet
