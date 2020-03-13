@@ -1,6 +1,0 @@
-nohup python -u train/train_ggcn_scannet.py &> logs/ggcn_3533_maxpooling_12_12_locweightwithin_b12 &
-nohup python -u train/train_ggcn_scannet.py &> logs/ggcn_3533_maxpooling_12_0_locweightwithin_b12 &
-
-
-
-([DataDesc[data,(12, 8192, 3),<type 'numpy.float32'>,NCHW], DataDesc[neighbors_arr0,(12, 1024, 32),int32,NCHW], DataDesc[neighbors_up_arr0,(12, 64, 16),int32,NCHW], DataDesc[centers_arr0,(12, 1024, 4),<type 'numpy.float32'>,NCHW], DataDesc[centers_mask0,(12, 1024),<type 'numpy.float32'>,NCHW], DataDesc[neighbors_arr1,(12, 256, 32),int32,NCHW], DataDesc[neighbors_up_arr1,(12, 256, 32),int32,NCHW], DataDesc[centers_arr1,(12, 256, 4),<type 'numpy.float32'>,NCHW], DataDesc[centers_mask1,(12, 256),<type 'numpy.float32'>,NCHW], DataDesc[neighbors_arr2,(12, 64, 32),int32,NCHW], DataDesc[neighbors_up_arr2,(12, 1024, 32),int32,NCHW], DataDesc[centers_arr2,(12, 64, 4),<type 'numpy.float32'>,NCHW], DataDesc[centers_mask2,(12, 64),<type 'numpy.float32'>,NCHW], DataDesc[neighbors_arr3,(12, 16, 32),int32,NCHW], DataDesc[neighbors_up_arr3,(12, 8192, 32),int32,NCHW], DataDesc[centers_arr3,(12, 16, 4),<type 'numpy.float32'>,NCHW], DataDesc[centers_mask3,(12, 16),<type 'numpy.float32'>,NCHW]] vs.
