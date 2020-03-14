@@ -139,7 +139,7 @@ class BaseSolver(object):
         train_timer = utils.Timer()
         data_timer = utils.Timer()
         besthappend = False
-        self.evaluate(0)
+        # self.evaluate(0)
         for epoch in range(configs['num_epochs']):
             self.train_loader.reset()
             self.metric.reset()
