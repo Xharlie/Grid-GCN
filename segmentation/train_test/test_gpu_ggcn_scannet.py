@@ -2,7 +2,6 @@ import numpy as np
 import logging
 import sys
 import os
-# os.environ['MXNET_CUDNN_AUTOTUNE_DEFAULT'] = '0'
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '../../'))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '../'))
 import ctypes
@@ -13,7 +12,7 @@ import mxnet as mx
 
 from models.ggcn_models_g import get_symbol_seg_ggcn
 from data_loader.ggcn_gpu_scannet_loader import ScanNetLoader, ScanNetWholeSceneLoader
-from train.base_solver import BaseSolver
+from base_solver import BaseSolver
 from utils.utils import point_cloud_label_to_surface_voxel_label, point_cloud_label_to_surface_voxel_label_major
 from utils import metrics
 from configs.configs import configs

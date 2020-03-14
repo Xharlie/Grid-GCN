@@ -12,7 +12,7 @@ import mxnet as mx
 
 from models.ggcn_models_g import get_symbol_seg_ggcn
 from data_loader.ggcn_gpu_scannet_loader import ScanNetLoader, ScanNetWholeSceneLoader
-from train.base_solver import BaseSolver
+from base_solver import BaseSolver
 from utils.utils import point_cloud_label_to_surface_voxel_label
 from utils import metrics
 from configs.configs import configs
