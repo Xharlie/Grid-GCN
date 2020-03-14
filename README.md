@@ -26,7 +26,7 @@ cd ..
   please refer to pointnet++'s github
   ```
   download  modelnet40_normal_resampled from https://github.com/charlesq34/pointnet2
-  take the train test list and extract from modelnet40_ply_hdf5_2048 to create a modelnet10_ply_hdf5_2048
+  take the modelnet10_train.txt, modelnet10_test.txt and extract from modelnet40_ply_hdf5_2048 to create a modelnet10_ply_hdf5_2048
   or use modelnet40_normal_resampled directly, but configuration file configs_10.yaml new: True -> False
   ```
   
@@ -51,7 +51,7 @@ cd ..
   * #### ModelNet10
   please refer to pointnet++
   ```
-  nohup python -u train/train_ggcn_mdl40.py &> mdl10.log &
+  nohup python -u train/train_ggcn_mdl10.py &> mdl10.log &
   
   ```
   
