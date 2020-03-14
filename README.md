@@ -45,13 +45,14 @@ cd ..
   * #### ModelNet40
   ```
   cd classification
-  nohup python -u train/train_ggcn_mdl40.py &> mdl40.log & 
+  nohup python -u train/train_gpu_ggcn_mdl40.py &> mdl40.log & 
   
   ```
   * #### ModelNet10
   please refer to pointnet++
   ```
-  nohup python -u train/train_ggcn_mdl10.py &> mdl10.log &
+  cd classification
+  nohup python -u train/train_gpu_ggcn_mdl10.py &> mdl10.log &
   
   ```
   
@@ -60,6 +61,19 @@ cd ..
   Please refer to pointnet++ for downloading ScanNet use link: 
   ```
   cd segmentation
- 
-  nohup python -u train/train_ggcn_scannet.py &> log  &
+  
+  ### then you cd configs -> go to configs.yaml to choose 8192 points model or 81920 points model by leaving one of them uncommented
+  
+  nohup python -u train_test/train_ggcn_scannet.py &> train.log  &
+  ```
+## Testing
+* ### Segmentation
+  * #### ScanNet
+  ```
+  cd segmentation
+  
+  ### then you cd configs -> go to configs.yaml to choose 8192 points model or 81920 points model by leaving one of them uncommented
+  ### you should also change load_model_prefix to the intented trained model file in your output directory.
+  
+  nohup python -u train_test/test_ggcn_scannet.py &> test.log  &
   ```
