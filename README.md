@@ -22,6 +22,13 @@ cd ..
   unzip modelnet40_ply_hdf5_2048.zip
   unzip it and put it inside data/
   ```
+  * #### ModelNet10
+  please refer to pointnet++'s github
+  ```
+  download  modelnet40_normal_resampled from https://github.com/charlesq34/pointnet2
+  take the train test list and extract from modelnet40_ply_hdf5_2048 to create a modelnet10_ply_hdf5_2048
+  or use modelnet40_normal_resampled directly, but configuration file configs_10.yaml new: True -> False
+  ```
   
 * ### Segmentation/ScanNet
   Please refer to pointnet++ for downloading ScanNet use link: 
@@ -38,7 +45,13 @@ cd ..
   * #### ModelNet40
   ```
   cd classification
-  nohup python -u train/train_ggcn_mdl40.py &> log & 
+  nohup python -u train/train_ggcn_mdl40.py &> mdl40.log & 
+  
+  ```
+  * #### ModelNet10
+  please refer to pointnet++
+  ```
+  nohup python -u train/train_ggcn_mdl40.py &> mdl10.log &
   
   ```
   
