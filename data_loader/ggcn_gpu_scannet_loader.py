@@ -78,6 +78,7 @@ class BaseScanNetLoader(mx.io.DataIter):
         return [('label', self.label_shape)]
 
     def _dump_cache(self):
+        print("dump cache to".format(os.path.join(configs['data_dir'], self.cache_file)))
         with open(os.path.join(configs['data_dir'], self.cache_file), 'wb') as f:
             pickle.dump(self.cache, f, protocol=-1)
 
