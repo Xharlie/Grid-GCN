@@ -81,4 +81,4 @@ point_set: full
 batch_size: 16
 loc_weight: True
 loc_within: True
-# lr: 0.001
+lr: 0.001
