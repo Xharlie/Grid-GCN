@@ -1,16 +1,9 @@
 # env
 use_cpu: False
 kvstore: local
-
-# task is either [cls_ssg, cls_msg]
 task: cls
 model_dir: output
-# this is for both loading pretrained model in training and loading final model for testing
-# set load_model_epoch to 0 to disable loading pretrained model
-# train
 num_epochs: 330
-#num_epochs: 1000
-#num_epochs: 90
 display_interval: 20
 checkpoint_interval: 30
 val_interval: 1
@@ -18,16 +11,11 @@ optimizer: adam
 momentum: 0.9
 lr_policy: step
 lr_factor: 0.7
-#lr_factor: 0.9
-#lr_factor_epochs: [200, 400, 800]
-#lr_factor_epochs: [60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300]
-#lr_factor_epochs: [200]
 bn_decay_factor: 0.5
 bn_decay_clip: 0.99
 use_global_stats: False
 beta1: 0.9
 beta2: 0.999
-#beta2: 0.95
 weight_decay: 0
 #weight_decay: 0.000005
 # per_class_weights: none, auto, manual
@@ -36,14 +24,13 @@ per_class_weights: none
 # data
 data_dir: ../data/
 num_points: 1024
-#num_points: 1024
 use_normal: False
 input_dropout_ratio: 0
 hash: para
 relutp: relu
 
-####### GGCN 3 layers logs/ggcn_731_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu_old
-load_model_prefix: output/ggcn_731_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu/
+####### GGCN 3 layers logs
+load_model_prefix: output/modelnet40
 load_model_epoch: 0
 group_all: False
 lr_factor_epochs: [60, 120, 200, 270]
@@ -55,8 +42,8 @@ augment_level: 6
 use_bn: t
 att_full: next
 inputDim: [0, 128, 256]
-gpus: "0"
-save_model_prefix: ggcn_731_maxpooling_3_4_b16_330_1024_nopost_aug6_next_newdb_bgbgnet_gpall_bn90_slwlr_attcntxtfull_relu
+gpus: "3"
+save_model_prefix: modelnet40
 voxel_size_lst: [[0.05, 0.05, 0.05], [0.25, 0.25, 0.25], [2.0, 2.0, 2.0]]
 grid_size_lst: [[40, 40, 40], [8, 8, 8], [1, 1, 1]]
 lidar_coord: [1.0, 1.0, 1.0]
