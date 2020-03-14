@@ -49,6 +49,7 @@ input_dropout_ratio: 0
 ###256  cluster, interp , mlp_list=[256,256]
 ###1024 cluster, interp , mlp_list=[256,128]
 ###8192 cluster, interp , mlp_list=[128,128,128]
+normalize: ball
 use_bn: t
 bn_decay: 0.9
 aug_lv: 6
