@@ -2,6 +2,7 @@ import numpy as np
 import logging
 import sys
 import os
+# os.environ['MXNET_CUDNN_AUTOTUNE_DEFAULT'] = '0'
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '../../'))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '../'))
 import ctypes
@@ -18,7 +19,6 @@ from utils import metrics
 from configs.configs import configs
 import mxnet.profiler as profiler
 import time
-# os.environ["MXNET_CUDNN_AUTOTUNE_DEFAULT"] = "0"
 
 class ScanNetSolver(BaseSolver):
     def __init__(self):
