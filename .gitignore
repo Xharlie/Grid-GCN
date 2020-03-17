@@ -25,3 +25,5 @@ shapenetpart/models/__pycache__
 utils/__pycache__
 custom_op/__pycache__/
 data_loader/__pycache__/
+*/*/*/__pycache__/
+*/*/__pycache__/
