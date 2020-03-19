@@ -1,4 +1,4 @@
-# Grid-GCN for Fast and Scalable Point Cloud Learning
+# Grid-GCN for Fast and Scalable Point Cloud Learning (CVPR2020)
 Please cite us:
 ``` 
 @article{1912.02984,
