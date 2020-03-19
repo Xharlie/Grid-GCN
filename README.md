@@ -1,3 +1,6 @@
+Checkout the COVID-19 positive/test ratio in the U.S. https://coronavirus.1point3acres.com/en/test
+
+
 # GGCN implemented by MXNET 1.5.0
 
 make sure you have gcc version suggested by MXNET 1.5.0
