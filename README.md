@@ -1,3 +1,4 @@
+# Grid-GCN for Fast and Scalable Point Cloud Learning
 Please cite us:
 ``` 
 @article{1912.02984,
@@ -10,7 +11,7 @@ Howpublished = {Proceedings of the IEEE Conference on Computer Vision and Patter
 }
 ``` 
 
-# GGCN implemented by MXNET 1.5.0
+## Requirement: GGCN implemented by MXNET 1.5.0
 
 make sure you have gcc version suggested by MXNET 1.5.0
 
