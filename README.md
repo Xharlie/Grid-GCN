@@ -1,5 +1,14 @@
-Checkout the COVID-19 positive/test ratio in the U.S. https://coronavirus.1point3acres.com/en/test
-
+Please cite us:
+``` 
+@article{1912.02984,
+Author = {Qiangeng Xu and Xudong Sun and Cho-Ying Wu and Panqu Wang and Ulrich Neumann},
+Title = {Grid-GCN for Fast and Scalable Point Cloud Learning},
+Year = {2019},
+Eprint = {arXiv:1912.02984},
+Howpublished = {Proceedings of the IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR 2020)},
+}
+``` 
 
 # GGCN implemented by MXNET 1.5.0
 
